@@ -130,3 +130,11 @@ def render_home():
         "2. Open Matches, Players or Analytics above and use the filters to explore.\n"
         "3. Check the import time when assessing freshness. Browsing uses saved data."
     )
+    st.divider()
+    st.caption(
+        "Built with Python · Streamlit · SQLAlchemy · pandas · Plotly · REST API"
+    )
+    st.markdown(
+        "[Project documentation](https://github.com/purans07/Cricbuzz-LiveStats-/blob/main/documentation/README.md)"
+        " · [Folder structure](https://github.com/purans07/Cricbuzz-LiveStats-/blob/main/documentation/folder_guide.md)"
+    )
