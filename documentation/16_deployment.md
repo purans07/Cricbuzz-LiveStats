@@ -1,12 +1,18 @@
+# Deployment — current status
+
+The user-selected target is Streamlit Community Cloud, repository purans07/Cricbuzz-LiveStats-, branch main, entrypoint cloud_app.py, Python 3.13, no sample-demo secrets. Source is uploaded. Linux Docker build, healthy startup, all six pages and persistence after restart passed. The public Streamlit URL is still required for hosted acceptance. See [launch settings](community_cloud_deployment.md) and [mode comparison](live_refresh_and_demo.md).
+
+The remaining sections retain deployment options and earlier preparation context; current status above supersedes older pending-build statements.
+
 # Phase 16 — Deployment preparation
 
-This phase compares the requested hosts and supplies a portable, read-only sample deployment. **No site has been published, registry image pushed, cloud account changed or paid resource created.** Python startup/UI checks pass; an actual Docker image build remains unverified because the installed Docker CLI cannot reach a running engine.
+This phase compares the requested hosts and supplies a portable, read-only sample deployment. **No site has been published, registry image pushed, cloud account changed or paid resource created.** Python startup/UI checks pass; an actual Linux Docker build, healthy container, six-page rendering and restart persistence have now passed. Public Streamlit URL acceptance remains pending.
 
 ## Concepts and chosen design before implementation
 
 Deployment changes the execution environment: dependencies must install on the target OS, a process must bind the host's expected interface/port, startup must find its data, secrets must remain private and a restart must have a defined storage policy. A healthy HTTP endpoint does not prove database integrity, API authentication or every page's behavior.
 
-The current app supports local SQLite and a trusted local-operator access mode. It does not have public administrative authentication, a shared multi-instance writer/coordinator or verified PostgreSQL/MySQL support. A public deployment therefore defaults to sample data and public_readonly: no CRUD writes, custom SQL or provider refresh writes. The complete local application remains available through main.py for trusted use.
+The current app supports local SQLite and a trusted local-operator access mode. It does not have public administrative authentication, a shared multi-instance writer/coordinator but now includes verified PostgreSQL/MySQL support. A public deployment therefore defaults to sample data and public_readonly: no CRUD writes, custom SQL or provider refresh writes. The complete local application remains available through main.py for trusted use.
 
 Recommended first target: **Docker packaging for a read-only synthetic demo**, with an optional credential-free Streamlit Community Cloud route. The image excludes working databases and private configuration, and generates only a missing reviewed sample database at startup. Persistent live administration is a separate deployment decision, not an automatic consequence of uploading this app.
 
@@ -19,7 +25,7 @@ Recommended first target: **Docker packaging for a read-only synthetic demo**, w
 | Railway | Container service with a mounted volume where persistence is needed | Explicit volume and target port; one instance for SQLite; account/usage costs need review | Steps documented; no resource created |
 | Azure | Managed container/App Service deployment for an organization | Configure container port, storage and access using the chosen App Service configuration; do not assume container filesystem persistence | Steps documented; not provisioned |
 | AWS | ECS/EC2 container deployment with controlled networking | Match load balancer/WebSocket requirements and storage to the app. App Runner's filesystem is ephemeral and is not persistent SQLite storage | Architecture steps documented; not provisioned |
-| Docker | Reusable local/VM packaging and a reproducible runtime input set | Non-root runtime, explicit files, local-only published port in Compose and a named sample volume | Files prepared and Compose syntax validated; image build/run pending engine availability |
+| Docker | Reusable local/VM packaging and a reproducible runtime input set | Non-root runtime, explicit files, local-only published port in Compose and a named sample volume | Image build, health, six pages and restart verified locally |
 
 These are project-specific recommendations, not promises of current pricing, free quotas or an already-provisioned service. Current primary references: [Streamlit Community Cloud deployment](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app), [Streamlit repository organization](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/file-organization), [Render disks](https://render.com/docs/disks), [Railway volumes](https://docs.railway.com/volumes), [Azure container configuration](https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container), [AWS App Runner storage model](https://docs.aws.amazon.com/apprunner/latest/dg/develop.html) and [AWS ALB WebSocket listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html). These documents were consulted during preparation; hosted capabilities/billing should be rechecked when creating resources.
 
@@ -44,7 +50,7 @@ Docker copies application directories, reviewed SQL/sample input, documentation 
 
 cloud_app.py installs those effective mode/path/access/timezone values into process environment before running normal main.py navigation. They therefore override accidental private-file defaults during subsequent page settings loads. There are no UI permission-changing controls. A startup error shows a safe message and stops; it does not continue into a partially configured writable application.
 
-Compose uses a dedicated named demo-data volume. Do not mount the working data/runtime folder or a private .env into the sample image. For a host bind mount, the runtime user is UID 10001 and needs appropriate ownership/access; do not solve permission problems by making every file world-writable. A new named volume should receive the image directory's non-root metadata, but actual volume behavior remains part of container acceptance.
+Compose uses a dedicated named demo-data volume. Do not mount the working data/runtime folder or a private .env into the sample image. For a host bind mount, the runtime user is UID 10001 and needs appropriate ownership/access; do not solve permission problems by making every file world-writable. A new named volume should receive the image directory's non-root metadata, and the named volume retained 72 sample matches across the verified restart.
 
 Public pages can select Saved provider, but the packaged sample image contains no working live.db, so that target is unavailable unless separately provisioned. Do not mount private provider databases merely to make that selector nonempty. Public readonly is an application write policy, not OS-level filesystem immutability: startup needs writable space to create the sample.
 

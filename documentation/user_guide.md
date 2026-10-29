@@ -4,7 +4,7 @@ Start with the [installation guide](environment_setup.md). Check Home for datase
 
 | Page | Suggested action | Interpretation |
 | --- | --- | --- |
-| Home | Review counts and download a guide | Saved database summary, not API freshness proof |
+| Home | Review counts and open the documentation links | Saved database summary, not API freshness proof |
 | Live Matches | Filter status, select a match, inspect every innings | Saved statuses can be old; absent detail remains unknown |
 | Top Players | Choose source, exact format and ranking metric | Latest saved careers in that source; not a global leaderboard |
 | Analytics | Select a question, inspect SQL/parameters, run and compare its table | Results obey that question's scope and qualification rules |
@@ -31,6 +31,8 @@ Show the sample label and counts on Home, inspect one innings in Live Matches, c
 | SQL rejected/limited | Use supported read-only statements; narrow selected columns/rows |
 | Unexpected page error | Return Home/reload; check the safe diagnostic code; an action may already have committed |
 | Port already in use | Choose another local port; avoid terminating an unrelated process |
-| Docker unavailable | Start its engine; build/runtime acceptance remains pending |
+| Docker unavailable | Start its engine; the current Linux image passed build/runtime/restart checks |
 
 Errors deliberately hide private SQL, keys and raw responses. Share safe codes and reproduction steps instead of credentials. [API operations](api_setup.md), [database recovery](database_setup.md) and [deployment](16_deployment.md) provide the operational details.
+
+[Local features versus public demo](live_refresh_and_demo.md) explains refresh permissions and sample-data limits.

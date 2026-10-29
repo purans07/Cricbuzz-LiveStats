@@ -9,9 +9,9 @@
 | ui/ | Page presentation, preferences, error boundaries and visualizations |
 | services/ | Imports, CRUD, saved match/player reads and analytics execution |
 | api/ | Reviewed provider contracts, HTTP client, adapters and CLI |
-| database/ | Explicit initialization and additive migration |
+| database/ | SQLite initialization/migration and PostgreSQL/MySQL schema-2 initialization |
 | sql/schema.sql, sql/migrations/ | Schema and version changes |
-| sql/queries/ | 25 analytical questions and supporting SQL |
+| sql/queries/ | 26 analytical analyses and supporting SQL |
 | utils/ | Database connections, dates, charts and safe logging |
 | data/sample/ | Reviewed fictional seed inputs |
 | data/runtime/ | Ignored local databases; preserve separately |

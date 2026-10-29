@@ -91,9 +91,7 @@ def test_page_recovers_after_transient_unexpected_failure(settings, monkeypatch)
     monkeypatch.setattr(
         "ui.home.render_home", lambda: (_ for _ in ()).throw(RuntimeError("sensitive"))
     )
-    at = AppTest.from_file(
-        str(PROJECT_ROOT / "pages/01_Home.py"), default_timeout=15
-    ).run()
+    at = AppTest.from_file(str(PROJECT_ROOT / "main.py"), default_timeout=15).run()
     assert at.error
     monkeypatch.setattr("ui.home.render_home", render)
     at.run()

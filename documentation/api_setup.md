@@ -2,18 +2,19 @@
 
 ## Selected provider
 
-The reviewed manifest is [cricketapilive v2](../api/contracts/cricketapilive_v2.json), for [the RapidAPI listing](https://rapidapi.com/cricketapilive/api/cricbuzz-cricket). Authenticated capability checks were recorded on 2026-10-22. The listing version is v2 while the verified HTTP routes below contain v1; do not substitute guessed version paths.
+The reviewed manifest is [cricketapilive v2](../api/contracts/cricketapilive_v2.json), for [the RapidAPI listing](https://rapidapi.com/cricketapilive/api/cricbuzz-cricket). Authenticated capability checks were recorded on 2026-10-22 and expanded on 2026-10-29. The listing version is v2 while the verified HTTP routes below contain v1; do not substitute guessed version paths.
 
 | Capability | Route |
 | --- | --- |
 | Live list | /matches/v1/live |
+| Recent matches | /matches/v1/recent |
 | Regular scorecard | /mcenter/v1/{matchId}/scard |
 | Profile | /stats/v1/player/{playerId} |
 | Career formats | /stats/v1/player/{playerId}/career |
 | Career batting/bowling | /stats/v1/player/{playerId}/batting and /bowling |
 | Series matches | /series/v1/{seriesId} |
 
-The series route has capability evidence but no complete historical backfill workflow. The Hundred hscard route is not the regular scorecard adapter.
+Recent and series responses have verified import commands below. Global history and pagination completeness are not established. The Hundred hscard route is not the regular scorecard adapter.
 
 ## Private configuration
 
@@ -61,3 +62,7 @@ python -m api.cli sync-series 11595 --scope International --database data/runtim
 ```
 
 Use `--configured` instead of `--database PATH` to select a configured server backend with DATA_MODE=live. An explicit file path always selects SQLite. These commands use provider quota; browsing saved data does not. See [fresh verification and limits](remaining_requirements_completion.md).
+
+## Application behaviour
+
+See [local application versus public demo](live_refresh_and_demo.md). Live refresh is explicit, not continuous polling. Public sample deployment requires no API credential and disables refresh/custom SQL/CRUD writes. Private CLI player enrichment remains a local operator task.

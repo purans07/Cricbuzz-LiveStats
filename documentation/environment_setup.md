@@ -4,7 +4,7 @@
 
 ## Requirements
 
-The verified local environment uses Python 3.13.5, SQLite 3.50.2 and macOS. Other operating systems/interpreter versions have not been accepted. Run commands from the project root. Internet access is needed to install packages; the sample dashboard then runs without API access.
+The verified local environment uses Python 3.13.5, SQLite 3.50.2 and macOS. A Python 3.13 Linux Docker image also passed build, startup, six-page and restart checks; other interpreter versions remain unaccepted. Run commands from the project root. Internet access is needed to install packages; the sample dashboard then runs without API access.
 
 ```sh
 python3 --version
@@ -39,7 +39,7 @@ Open [localhost:8501](http://127.0.0.1:8501); stop with Ctrl+C. If the port is o
 
 ## Configuration
 
-Sample mode requires no .env. Optional .env.example values may be copied into a private .env; do not overwrite an existing private file. Process environment overrides .env. Implemented settings are DATA_MODE, DATABASE_URL, DISPLAY_TIMEZONE and APP_ACCESS_MODE; API configuration uses a separate reviewed manifest and private CRICBUZZ_API_KEY. Relative database paths resolve from the project root. Only persistent local SQLite file URLs are supported.
+Sample mode requires no .env. Optional .env.example values may be copied into a private .env; do not overwrite an existing private file. Process environment overrides .env. Implemented settings are DATA_MODE, DATABASE_URL, READ_DATABASE_URL (required for server backends), DISPLAY_TIMEZONE and APP_ACCESS_MODE; API configuration uses a separate reviewed manifest and private CRICBUZZ_API_KEY. Relative database paths resolve from the project root. SQLite file URLs and PostgreSQL/MySQL server URLs are supported. Server configuration requires a distinct SELECT-only reader account on the same database; see [server setup](database_compatibility.md).
 
 APP_ACCESS_MODE=local permits trusted administration. public_readonly disables administrative writes and custom SQL but is not authentication. Session timezone changes affect display only. The current API loader reads .env/process environment, not Streamlit st.secrets.
 

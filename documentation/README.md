@@ -73,3 +73,7 @@ Use the operational guides below for the current implementation. Numbered lesson
 ## Current requirements audit
 
 [Requirement-by-requirement audit](requirements_audit.md) · [Screenshots](screenshots/README.md) · [Walkthrough video](demo/README.md). The original 25 SQL questions plus Q26 coverage analysis are available. PostgreSQL/MySQL runtime support and dated quota/history verification are completed within the observed scope. The assignment deadline remains unverified.
+
+## Current operation
+
+[Live refresh and public demo](live_refresh_and_demo.md) · [Streamlit Cloud launch](community_cloud_deployment.md) · [Full brief comparison](brief_comparison_2026_10_29.md). Earlier numbered phase files are historical checkpoints, not current unfinished-task lists.

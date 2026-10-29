@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "errors": [],
+  "chapters": [
+    {
+      "title": "Cricket insights, one innings at a time.",
+      "frame": 11
+    },
+    {
+      "title": "Live Matches",
+      "frame": 30
+    },
+    {
+      "title": "Top Players",
+      "frame": 44
+    },
+    {
+      "title": "Analytics",
+      "frame": 58
+    },
+    {
+      "title": "CRUD",
+      "frame": 80
+    },
+    {
+      "title": "Settings",
+      "frame": 96
+    }
+  ],
+  "frames": 116,
+  "title": "Cricbuzz LiveStats",
+  "browser": "Installed Google Chrome via bundled Playwright; Browser plugin not available",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "duration_seconds": 57.5,
+  "refresh_checks_passed": 75,
+  "dataset": "isolated synthetic sample",
+  "api_requests": 0,
+  "public_cloud_status": "pending user sign-in/deployment and final URL"
+}

@@ -76,15 +76,15 @@ def test_settings_page_readonly_no_network_and_timezone_apply_reset(
 
 def test_timezone_is_applied_on_home_rerun(settings, monkeypatch):
     monkeypatch.setattr("ui.home.load_settings", lambda: settings)
-    at = AppTest.from_file(str(PROJECT_ROOT / "pages/01_Home.py"), default_timeout=15)
+    at = AppTest.from_file(str(PROJECT_ROOT / "main.py"), default_timeout=15)
     at.session_state["display_timezone_override"] = "UTC"
     at.run()
     assert not at.exception
-    assert any("Display timezone: UTC" in x.value for x in at.caption)
+    assert any("2026-10-01 00:00:00 UTC" in x.value for x in at.caption)
     at.session_state["display_timezone_override"] = "invalid/timezone"
     at.run()
     assert not at.exception
-    assert any("Display timezone: Asia/Kolkata" in x.value for x in at.caption)
+    assert any("2026-10-01 05:30:00 IST" in x.value for x in at.caption)
 
 
 def test_settings_missing_target_still_explains_api_status(

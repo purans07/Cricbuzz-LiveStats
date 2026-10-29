@@ -4,7 +4,7 @@
 
 ## Two isolated datasets
 
-SQLite is the implemented engine. `data/runtime/sample.db` contains fictional training fixtures; `data/runtime/live.db` contains separately imported provider data. A database records its mode and must match the selected configuration. Never relabel sample data as live.
+SQLite is the default local engine; PostgreSQL 14.21 and MySQL 9.5.0 also passed actual server acceptance. See [server setup](database_compatibility.md). `data/runtime/sample.db` contains fictional training fixtures; `data/runtime/live.db` contains separately imported provider data. A database records its mode and must match the selected configuration. Never relabel sample data as live.
 
 The preserved sample has schema 1, revision 1 and 18 explicit indexes. Fresh initialization creates schema 2, 21 tables, six views and 19 explicit indexes. Both schemas are readable; live ingestion needs schema 2. Opening the dashboard never migrates a database.
 
@@ -41,4 +41,4 @@ Use SQLite's backup API for a consistent backup, or stop every connection before
 
 ## SQL and limitations
 
-Analytics offers 25 reviewed questions and restricted local custom read-only SQL with statement/function checks, time and output budgets. Public-readonly mode disables custom SQL and writes; it does not authenticate users. Views hide soft-deleted facts. Sample analysis uses 2026-10-01; provider history is sparse and saved imports are dated 2026-10-22. PostgreSQL/MySQL support is now accepted on the tested versions; see database_compatibility.md. Multi-instance hosted writable SQLite remains unaccepted. See [testing](15_testing.md) and [deployment](16_deployment.md).
+Analytics offers 26 reviewed analyses and restricted local custom read-only SQL with statement/function checks, time and output budgets. Public-readonly mode disables custom SQL and writes; it does not authenticate users. Views hide soft-deleted facts. Sample analysis uses 2026-10-01; provider history is partial and was expanded on 2026-10-29. PostgreSQL/MySQL support is now accepted on the tested versions; see database_compatibility.md. Multi-instance hosted writable SQLite remains unaccepted. See [testing](15_testing.md) and [deployment](16_deployment.md).
