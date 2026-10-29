@@ -1,6 +1,6 @@
 # Deployment — current status
 
-The user-selected target is Streamlit Community Cloud, repository purans07/Cricbuzz-LiveStats-, branch main, entrypoint cloud_app.py, Python 3.13, no sample-demo secrets. Source is uploaded. Linux Docker build, healthy startup, all six pages and persistence after restart passed. The public Streamlit URL is still required for hosted acceptance. See [launch settings](community_cloud_deployment.md) and [mode comparison](live_refresh_and_demo.md).
+The user-selected target is Streamlit Community Cloud, repository purans07/Cricbuzz-LiveStats-, branch main, entrypoint cloud_app.py, Python 3.13, no sample-demo secrets. Source is uploaded. Linux Docker build, healthy startup, all six pages and persistence after restart passed. The public sample at https://cricbuzz-livestats-web.streamlit.app/ passed hosted acceptance; see cloud_verification.json. See [launch settings](community_cloud_deployment.md) and [mode comparison](live_refresh_and_demo.md).
 
 The remaining sections retain deployment options and earlier preparation context; current status above supersedes older pending-build statements.
 

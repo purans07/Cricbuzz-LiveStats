@@ -1,0 +1,78 @@
+{
+  "url": "https://cricbuzz-livestats-web.streamlit.app/",
+  "pages": [
+    {
+      "name": "Home",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAMPLE DATA \u00b7 Fictional training records for learning and testing."
+      ],
+      "counts": [
+        "72",
+        "12",
+        "2",
+        "2"
+      ],
+      "sample": true
+    },
+    {
+      "name": "Live Matches",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAMPLE DATA \u00b7 Fictional training scorecards."
+      ],
+      "refreshDisabled": true
+    },
+    {
+      "name": "Top Players",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAMPLE DATA \u00b7 Fictional career statistics."
+      ]
+    },
+    {
+      "name": "Analytics",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAMPLE DATA \u00b7 Fictional training records."
+      ],
+      "queryResult": true,
+      "afterRun": "Skip to main content\n\ud83c\udfe0\n\nHome\n\n\ud83c\udfcf\n\nLive Matches\n\n\u2b50\n\nTop Players\n\n\ud83d\udcca\n\nAnalytics\n\n\u270f\ufe0f\n\nCRUD\n\n\u2699\ufe0f\n\nSettings\n\n\ud83c\udfcf Cricbuzz LiveStats\n\nCricket insights & SQL analytics\n\nSAVED CRICKET INSIGHTS\n\nMatches \u00b7 Players \u00b7 Analytics\n\nCheck the dataset label and import time for coverage.\n\nFork\n\nCRICBUZZ LIVESTATS / SQL WORKSPACE\n\nAnalytics\n\nExplore the 26 saved SQL analyses or investigate saved data with a read-only query.\n\nDataset\n\nSAMPLE DATA \u00b7 Fictional training records.\n\nNo API requests are made. Results reflect the last submitted form. Form edits take effect when Run is pressed; switching questions or workspaces clears the result. Each run reads one committed database snapshot.\n\nWorkspace\n\nSaved questions\n\nCustom SQL\n\nVisualizations\n\nSQL question\n\nQ01 \u00b7 India players\n\nEach lesson documents definitions, missing-data rules, limitations and optimization. Some SQL has fixed historical scope; only named parameters below change with the analysis date.\n\nkeyboard_arrow_right\n\nLesson and interpretation\n\nkeyboard_arrow_right\n\nSQL to execute\n\nAnalysis date (UTC)\n\n2026\n/\n10\n/\n01\n\nDates bind midnight UTC. Q02 uses the preceding 30 days; Q22 the preceding three calendar years; Q25 the preceding twelve completed quarters. See the lesson for exact inclusivity.\n\nMaximum displayed rows\n\nRun saved question\n\nSample lessons use 2026-10-01 for reproducible results. Live snapshots may be old or incomplete; choosing today does not fetch new records.\n\nBound parameters\n\n{\n\"as_of_date\":\"2026-10-01\"\n}\n\n6 displayed rows \u00b7 Dataset revision 1"
+    },
+    {
+      "name": "CRUD",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAMPLE DATA \u00b7 Changes affect the selected fictional dataset.",
+        "Read-only mode: administrative forms are unavailable."
+      ],
+      "forms": 0
+    },
+    {
+      "name": "Settings",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "Database is readable and its schema and dataset mode are supported.",
+        "Sample records are fictional. Schema 1 sample reads are supported; live API refresh requires schema 2.",
+        "API configuration is incomplete or invalid. Sample browsing and SQL lessons do not require API access. Configure the key privately using the API setup guide on Home."
+      ],
+      "readOnly": true
+    }
+  ],
+  "status": "passed",
+  "extra": {
+    "playerChart": true,
+    "playerTables": 1,
+    "scorecardTables": 1,
+    "customSqlInputs": 0,
+    "customSqlDisabled": true,
+    "mobileScreenshot": true
+  },
+  "verification_scope": "Public fictional sample; no API quota used or administrative edits attempted"
+}
