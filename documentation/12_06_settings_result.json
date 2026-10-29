@@ -1,0 +1,30 @@
+{
+  "milestone": "Phase 12 Settings",
+  "scope": "Existing databases checked read-only; API credentials neither loaded into this report nor tested; no HTTP",
+  "datasets": {
+    "sample": {
+      "available": true,
+      "schema_version": 1,
+      "mode": "sample",
+      "revision": 1,
+      "matches": 72,
+      "players": 12,
+      "teams": 2,
+      "venues": 2,
+      "latest_import": "2026-10-01T00:00:00Z",
+      "partial_imports": 0
+    },
+    "live": {
+      "available": true,
+      "schema_version": 2,
+      "mode": "live",
+      "revision": 4,
+      "matches": 4,
+      "players": 22,
+      "teams": 8,
+      "venues": 4,
+      "latest_import": "2026-10-22T07:52:04Z",
+      "partial_imports": 4
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "question": "Q02",
+  "definition": "Start time within inclusive rolling 30-day UTC window; completed status accepted, live/abandoned require recorded legal balls",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "window_start": "2026-09-01T00:00:00Z",
+        "as_of_utc": "2026-10-01T00:00:00Z"
+      },
+      "row_count": 6,
+      "rows": [
+        {
+          "match_description": "Synthetic match 072",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 1",
+          "venue_city": "Sample City 1",
+          "match_date": "2026-09-21T08:00:00Z"
+        },
+        {
+          "match_description": "Synthetic match 071",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 2",
+          "venue_city": "Sample City 2",
+          "match_date": "2026-09-17T08:00:00Z"
+        },
+        {
+          "match_description": "Synthetic match 070",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 1",
+          "venue_city": "Sample City 1",
+          "match_date": "2026-09-13T08:00:00Z"
+        },
+        {
+          "match_description": "Synthetic match 069",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 2",
+          "venue_city": "Sample City 2",
+          "match_date": "2026-09-09T08:00:00Z"
+        },
+        {
+          "match_description": "Synthetic match 068",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 1",
+          "venue_city": "Sample City 1",
+          "match_date": "2026-09-05T08:00:00Z"
+        },
+        {
+          "match_description": "Synthetic match 067",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "venue_name": "Sample Ground 2",
+          "venue_city": "Sample City 2",
+          "match_date": "2026-09-01T08:00:00Z"
+        }
+      ],
+      "query_plan": [
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)",
+        "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "window_start": "2026-09-22T07:52:06Z",
+        "as_of_utc": "2026-10-22T07:52:06Z"
+      },
+      "row_count": 4,
+      "rows": [
+        {
+          "match_description": "Warm-up Match",
+          "team1_name": "Bangladesh Cricket Board XI",
+          "team2_name": "West Indies",
+          "venue_name": "Bashundhara Sports City Cricket Ground",
+          "venue_city": "Dhaka",
+          "match_date": "2026-10-22T04:00:00Z"
+        },
+        {
+          "match_description": "6th Match",
+          "team1_name": "New South Wales",
+          "team2_name": "Western Australia",
+          "venue_name": "W.A.C.A. Ground",
+          "venue_city": "Perth",
+          "match_date": "2026-10-19T02:30:00Z"
+        },
+        {
+          "match_description": "4th Match",
+          "team1_name": "Tasmania",
+          "team2_name": "Victoria",
+          "venue_name": "Bellerive Oval",
+          "venue_city": "Hobart",
+          "match_date": "2026-10-18T23:30:00Z"
+        },
+        {
+          "match_description": "2nd Test",
+          "team1_name": "South Africa",
+          "team2_name": "Australia",
+          "venue_name": "St George's Park",
+          "venue_city": "Gqeberha",
+          "match_date": "2026-10-18T08:00:00Z"
+        }
+      ],
+      "query_plan": [
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)",
+        "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "question": "Q07",
+  "scope": "Maximum of latest known individual career highest scores from a selected source; not verified worldwide records",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "source_name": "Synthetic training fixture"
+      },
+      "rows": [
+        {
+          "format": "Test",
+          "highest_score": 172
+        },
+        {
+          "format": "ODI",
+          "highest_score": 172
+        },
+        {
+          "format": "T20I",
+          "highest_score": 172
+        }
+      ],
+      "query_plan": [
+        "CO-ROUTINE requested_formats",
+        "SCAN 3 CONSTANT ROWS",
+        "MATERIALIZE v_latest_career",
+        "SCAN c",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCALAR SUBQUERY 4",
+        "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "CORRELATED SCALAR SUBQUERY 8",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN rf",
+        "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?) LEFT-JOIN",
+        "SCAN c LEFT-JOIN",
+        "SCALAR SUBQUERY 4",
+        "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+      },
+      "rows": [
+        {
+          "format": "Test",
+          "highest_score": 179
+        },
+        {
+          "format": "ODI",
+          "highest_score": 144
+        },
+        {
+          "format": "T20I",
+          "highest_score": null
+        }
+      ],
+      "query_plan": [
+        "CO-ROUTINE requested_formats",
+        "SCAN 3 CONSTANT ROWS",
+        "MATERIALIZE v_latest_career",
+        "SCAN c",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCALAR SUBQUERY 4",
+        "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "CORRELATED SCALAR SUBQUERY 8",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN rf",
+        "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?) LEFT-JOIN",
+        "SCAN c LEFT-JOIN",
+        "SCALAR SUBQUERY 4",
+        "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

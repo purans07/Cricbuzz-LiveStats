@@ -1,0 +1,34 @@
+{
+  "question": "Q04",
+  "capacity_threshold": 50000,
+  "comparison": "strictly greater than",
+  "datasets": {
+    "sample": {
+      "row_count": 1,
+      "rows": [
+        {
+          "venue_name": "Sample Ground 1",
+          "city": "Sample City 1",
+          "country": "India",
+          "capacity": 60000
+        }
+      ],
+      "venues_with_unknown_capacity": 0,
+      "query_plan": [
+        "SCAN v",
+        "SEARCH c USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 0,
+      "rows": [],
+      "venues_with_unknown_capacity": 4,
+      "query_plan": [
+        "SCAN v",
+        "SEARCH c USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

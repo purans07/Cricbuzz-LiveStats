@@ -1,0 +1,48 @@
+{
+  "question": "Q06",
+  "scope": "Active players by defined role; unassigned players are excluded from role counts and inventoried separately",
+  "datasets": {
+    "sample": {
+      "rows": [
+        {
+          "playing_role": "All-rounder",
+          "player_count": 3
+        },
+        {
+          "playing_role": "Batsman",
+          "player_count": 3
+        },
+        {
+          "playing_role": "Bowler",
+          "player_count": 3
+        },
+        {
+          "playing_role": "Wicket-keeper",
+          "player_count": 3
+        }
+      ],
+      "active_players": 12,
+      "players_without_known_role": 0,
+      "query_plan": [
+        "SCAN r",
+        "SEARCH players USING INDEX idx_players_role (role_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "rows": [
+        {
+          "playing_role": "Batsman",
+          "player_count": 1
+        }
+      ],
+      "active_players": 22,
+      "players_without_known_role": 21,
+      "query_plan": [
+        "SCAN r",
+        "SEARCH players USING INDEX idx_players_role (role_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

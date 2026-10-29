@@ -1,0 +1,128 @@
+{
+  "phase": 13,
+  "scope": "Read-only existing saved data; no upstream requests or working-data writes",
+  "datasets": {
+    "sample": {
+      "Q14": {
+        "rows": 24,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "venue_name",
+          "average_economy_rate",
+          "total_wickets",
+          "matches_played"
+        ]
+      },
+      "Q19": {
+        "rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "eligible_innings",
+          "average_runs",
+          "standard_deviation_runs"
+        ]
+      },
+      "Q25": {
+        "rows": 144,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "year",
+          "quarter",
+          "batting_matches",
+          "observed_quarters",
+          "average_runs",
+          "average_strike_rate",
+          "runs_change",
+          "strike_rate_change",
+          "quarterly_trend",
+          "comparison_status",
+          "runs_slope_per_quarter",
+          "strike_rate_slope_per_quarter",
+          "career_phase"
+        ]
+      },
+      "career_ranking_inputs": [
+        {
+          "source": "Synthetic training fixture",
+          "format": "ODI",
+          "players": 12
+        },
+        {
+          "source": "Synthetic training fixture",
+          "format": "T20I",
+          "players": 12
+        },
+        {
+          "source": "Synthetic training fixture",
+          "format": "TEST",
+          "players": 12
+        }
+      ]
+    },
+    "live": {
+      "Q14": {
+        "rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "venue_name",
+          "average_economy_rate",
+          "total_wickets",
+          "matches_played"
+        ]
+      },
+      "Q19": {
+        "rows": 16,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "eligible_innings",
+          "average_runs",
+          "standard_deviation_runs"
+        ]
+      },
+      "Q25": {
+        "rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "year",
+          "quarter",
+          "batting_matches",
+          "observed_quarters",
+          "average_runs",
+          "average_strike_rate",
+          "runs_change",
+          "strike_rate_change",
+          "quarterly_trend",
+          "comparison_status",
+          "runs_slope_per_quarter",
+          "strike_rate_slope_per_quarter",
+          "career_phase"
+        ]
+      },
+      "career_ranking_inputs": [
+        {
+          "source": "cricketapilive-cricbuzz-cricket/v2/provider",
+          "format": "INTERNATIONAL_T20",
+          "players": 1
+        },
+        {
+          "source": "cricketapilive-cricbuzz-cricket/v2/provider",
+          "format": "ODI",
+          "players": 1
+        },
+        {
+          "source": "cricketapilive-cricbuzz-cricket/v2/provider",
+          "format": "TEST",
+          "players": 1
+        }
+      ]
+    }
+  }
+}

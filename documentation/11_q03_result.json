@@ -1,0 +1,120 @@
+{
+  "question": "Q03",
+  "snapshot_policy": "Latest committed snapshot per player/format/source by fetched_at, then batch ID; not an as-of historical ranking",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "source_name": "Synthetic training fixture"
+      },
+      "row_count": 10,
+      "rows": [
+        {
+          "player_name": "Sample Player 12",
+          "total_runs": 2980,
+          "batting_average": 57.31,
+          "centuries": 2
+        },
+        {
+          "player_name": "Sample Player 11",
+          "total_runs": 2860,
+          "batting_average": 56.08,
+          "centuries": 1
+        },
+        {
+          "player_name": "Sample Player 10",
+          "total_runs": 2740,
+          "batting_average": 54.8,
+          "centuries": 0
+        },
+        {
+          "player_name": "Sample Player 09",
+          "total_runs": 2620,
+          "batting_average": 53.47,
+          "centuries": 4
+        },
+        {
+          "player_name": "Sample Player 08",
+          "total_runs": 2500,
+          "batting_average": 52.08,
+          "centuries": 3
+        },
+        {
+          "player_name": "Sample Player 07",
+          "total_runs": 2380,
+          "batting_average": 50.64,
+          "centuries": 2
+        },
+        {
+          "player_name": "Sample Player 06",
+          "total_runs": 2260,
+          "batting_average": 49.13,
+          "centuries": 1
+        },
+        {
+          "player_name": "Sample Player 05",
+          "total_runs": 2140,
+          "batting_average": 47.56,
+          "centuries": 0
+        },
+        {
+          "player_name": "Sample Player 04",
+          "total_runs": 2020,
+          "batting_average": 45.91,
+          "centuries": 4
+        },
+        {
+          "player_name": "Sample Player 03",
+          "total_runs": 1900,
+          "batting_average": 44.19,
+          "centuries": 3
+        }
+      ],
+      "query_plan": [
+        "SEARCH f USING COVERING INDEX sqlite_autoindex_formats_1 (code=?)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH c USING INDEX idx_career_format_player (format_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+      },
+      "row_count": 1,
+      "rows": [
+        {
+          "player_name": "Temba Bavuma",
+          "total_runs": 2168,
+          "batting_average": 43.36,
+          "centuries": 6
+        }
+      ],
+      "query_plan": [
+        "SEARCH f USING COVERING INDEX sqlite_autoindex_formats_1 (code=?)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH c USING INDEX idx_career_format_player (format_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

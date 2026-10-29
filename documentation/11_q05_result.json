@@ -1,0 +1,68 @@
+{
+  "question": "Q05",
+  "scope": "All stored completed matches with structured winning results, grouped by team identity",
+  "datasets": {
+    "sample": {
+      "row_count": 2,
+      "rows": [
+        {
+          "team_name": "Sample India XI",
+          "total_wins": 37
+        },
+        {
+          "team_name": "Sample Australia XI",
+          "total_wins": 35
+        }
+      ],
+      "completed_matches_with_unresolved_results": 0,
+      "query_plan": [
+        "SCAN t",
+        "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 8,
+      "rows": [
+        {
+          "team_name": "Australia",
+          "total_wins": 0
+        },
+        {
+          "team_name": "Bangladesh Cricket Board XI",
+          "total_wins": 0
+        },
+        {
+          "team_name": "New South Wales",
+          "total_wins": 0
+        },
+        {
+          "team_name": "South Africa",
+          "total_wins": 0
+        },
+        {
+          "team_name": "Tasmania",
+          "total_wins": 0
+        },
+        {
+          "team_name": "Victoria",
+          "total_wins": 0
+        },
+        {
+          "team_name": "West Indies",
+          "total_wins": 0
+        },
+        {
+          "team_name": "Western Australia",
+          "total_wins": 0
+        }
+      ],
+      "completed_matches_with_unresolved_results": 1,
+      "query_plan": [
+        "SCAN t",
+        "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

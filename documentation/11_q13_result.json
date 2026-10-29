@@ -1,0 +1,5600 @@
+{
+  "question": "Q13",
+  "scope": "Adjacent known batting positions within the same ordinary innings; sum of individual scores, not actual partnership runs",
+  "datasets": {
+    "sample": {
+      "row_count": 691,
+      "rows": [
+        {
+          "match_id": 5,
+          "innings_id": 51,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 10,
+          "innings_id": 104,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 16,
+          "innings_id": 163,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 35,
+          "innings_id": 351,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 40,
+          "innings_id": 404,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 46,
+          "innings_id": 463,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 65,
+          "innings_id": 651,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 70,
+          "innings_id": 704,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 227
+        },
+        {
+          "match_id": 6,
+          "innings_id": 62,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 12,
+          "innings_id": 121,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 19,
+          "innings_id": 193,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 23,
+          "innings_id": 231,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 25,
+          "innings_id": 252,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 36,
+          "innings_id": 362,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 42,
+          "innings_id": 421,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 49,
+          "innings_id": 493,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 53,
+          "innings_id": 531,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 55,
+          "innings_id": 552,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 66,
+          "innings_id": 662,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 72,
+          "innings_id": 721,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 225
+        },
+        {
+          "match_id": 7,
+          "innings_id": 73,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 11,
+          "innings_id": 111,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 13,
+          "innings_id": 132,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 24,
+          "innings_id": 242,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 30,
+          "innings_id": 301,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 37,
+          "innings_id": 373,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 41,
+          "innings_id": 411,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 43,
+          "innings_id": 432,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 54,
+          "innings_id": 542,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 60,
+          "innings_id": 601,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 67,
+          "innings_id": 673,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 71,
+          "innings_id": 711,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 223
+        },
+        {
+          "match_id": 1,
+          "innings_id": 12,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 221
+        },
+        {
+          "match_id": 25,
+          "innings_id": 253,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 221
+        },
+        {
+          "match_id": 31,
+          "innings_id": 312,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 221
+        },
+        {
+          "match_id": 55,
+          "innings_id": 553,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 221
+        },
+        {
+          "match_id": 61,
+          "innings_id": 612,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 221
+        },
+        {
+          "match_id": 4,
+          "innings_id": 42,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 10,
+          "innings_id": 101,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 21,
+          "innings_id": 211,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 34,
+          "innings_id": 342,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 40,
+          "innings_id": 401,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 51,
+          "innings_id": 511,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 64,
+          "innings_id": 642,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 70,
+          "innings_id": 701,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 219
+        },
+        {
+          "match_id": 9,
+          "innings_id": 91,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 11,
+          "innings_id": 112,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 22,
+          "innings_id": 222,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 28,
+          "innings_id": 281,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 39,
+          "innings_id": 391,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 41,
+          "innings_id": 412,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 52,
+          "innings_id": 522,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 58,
+          "innings_id": 581,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 69,
+          "innings_id": 691,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 71,
+          "innings_id": 712,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 217
+        },
+        {
+          "match_id": 10,
+          "innings_id": 102,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 16,
+          "innings_id": 161,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 25,
+          "innings_id": 254,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 29,
+          "innings_id": 292,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 40,
+          "innings_id": 402,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 46,
+          "innings_id": 461,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 55,
+          "innings_id": 554,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 59,
+          "innings_id": 592,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 70,
+          "innings_id": 702,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 215
+        },
+        {
+          "match_id": 13,
+          "innings_id": 134,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 213
+        },
+        {
+          "match_id": 19,
+          "innings_id": 191,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 213
+        },
+        {
+          "match_id": 43,
+          "innings_id": 434,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 213
+        },
+        {
+          "match_id": 49,
+          "innings_id": 491,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 213
+        },
+        {
+          "match_id": 7,
+          "innings_id": 71,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 9,
+          "innings_id": 92,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 20,
+          "innings_id": 202,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 26,
+          "innings_id": 261,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 37,
+          "innings_id": 371,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 39,
+          "innings_id": 392,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 50,
+          "innings_id": 502,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 56,
+          "innings_id": 561,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 67,
+          "innings_id": 671,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 69,
+          "innings_id": 692,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 211
+        },
+        {
+          "match_id": 4,
+          "innings_id": 44,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 8,
+          "innings_id": 82,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 10,
+          "innings_id": 103,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 14,
+          "innings_id": 141,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 25,
+          "innings_id": 251,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 27,
+          "innings_id": 272,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 34,
+          "innings_id": 344,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 38,
+          "innings_id": 382,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 40,
+          "innings_id": 403,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 44,
+          "innings_id": 441,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 55,
+          "innings_id": 551,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 57,
+          "innings_id": 572,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 64,
+          "innings_id": 644,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 68,
+          "innings_id": 682,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 70,
+          "innings_id": 703,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 209
+        },
+        {
+          "match_id": 15,
+          "innings_id": 152,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 22,
+          "innings_id": 224,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 28,
+          "innings_id": 283,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 45,
+          "innings_id": 452,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 52,
+          "innings_id": 524,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 58,
+          "innings_id": 583,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 207
+        },
+        {
+          "match_id": 5,
+          "innings_id": 51,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 18,
+          "innings_id": 182,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 24,
+          "innings_id": 241,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 35,
+          "innings_id": 351,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 48,
+          "innings_id": 482,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 54,
+          "innings_id": 541,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 65,
+          "innings_id": 651,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 205
+        },
+        {
+          "match_id": 6,
+          "innings_id": 62,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 12,
+          "innings_id": 121,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 19,
+          "innings_id": 193,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 23,
+          "innings_id": 231,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 25,
+          "innings_id": 252,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 36,
+          "innings_id": 362,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 42,
+          "innings_id": 421,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 49,
+          "innings_id": 493,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 53,
+          "innings_id": 531,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 55,
+          "innings_id": 552,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 66,
+          "innings_id": 662,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 72,
+          "innings_id": 721,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 203
+        },
+        {
+          "match_id": 7,
+          "innings_id": 73,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 13,
+          "innings_id": 132,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 24,
+          "innings_id": 242,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 30,
+          "innings_id": 301,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 37,
+          "innings_id": 373,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 43,
+          "innings_id": 432,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 54,
+          "innings_id": 542,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 60,
+          "innings_id": 601,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 67,
+          "innings_id": 673,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 201
+        },
+        {
+          "match_id": 3,
+          "innings_id": 31,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 199
+        },
+        {
+          "match_id": 33,
+          "innings_id": 331,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 199
+        },
+        {
+          "match_id": 63,
+          "innings_id": 631,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 199
+        },
+        {
+          "match_id": 4,
+          "innings_id": 42,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 10,
+          "innings_id": 101,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 21,
+          "innings_id": 211,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 23,
+          "innings_id": 232,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 34,
+          "innings_id": 342,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 40,
+          "innings_id": 401,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 51,
+          "innings_id": 511,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 53,
+          "innings_id": 532,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 64,
+          "innings_id": 642,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 70,
+          "innings_id": 701,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 197
+        },
+        {
+          "match_id": 7,
+          "innings_id": 74,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 9,
+          "innings_id": 91,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 11,
+          "innings_id": 112,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 22,
+          "innings_id": 222,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 28,
+          "innings_id": 281,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 37,
+          "innings_id": 374,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 39,
+          "innings_id": 391,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 41,
+          "innings_id": 412,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 52,
+          "innings_id": 522,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 58,
+          "innings_id": 581,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 67,
+          "innings_id": 674,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 69,
+          "innings_id": 691,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 71,
+          "innings_id": 712,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 195
+        },
+        {
+          "match_id": 25,
+          "innings_id": 254,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 193
+        },
+        {
+          "match_id": 29,
+          "innings_id": 292,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 193
+        },
+        {
+          "match_id": 55,
+          "innings_id": 554,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 193
+        },
+        {
+          "match_id": 59,
+          "innings_id": 592,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 193
+        },
+        {
+          "match_id": 2,
+          "innings_id": 22,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 8,
+          "innings_id": 81,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 13,
+          "innings_id": 134,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 19,
+          "innings_id": 191,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 32,
+          "innings_id": 322,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 38,
+          "innings_id": 381,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 43,
+          "innings_id": 434,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 49,
+          "innings_id": 491,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 62,
+          "innings_id": 622,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 68,
+          "innings_id": 681,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 191
+        },
+        {
+          "match_id": 7,
+          "innings_id": 71,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 9,
+          "innings_id": 92,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 16,
+          "innings_id": 164,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 20,
+          "innings_id": 202,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 22,
+          "innings_id": 223,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 26,
+          "innings_id": 261,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 37,
+          "innings_id": 371,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 39,
+          "innings_id": 392,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 46,
+          "innings_id": 464,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 50,
+          "innings_id": 502,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 52,
+          "innings_id": 523,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 56,
+          "innings_id": 561,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 67,
+          "innings_id": 671,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 69,
+          "innings_id": 692,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 189
+        },
+        {
+          "match_id": 4,
+          "innings_id": 44,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 8,
+          "innings_id": 82,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 10,
+          "innings_id": 103,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 14,
+          "innings_id": 141,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 27,
+          "innings_id": 272,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 34,
+          "innings_id": 344,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 38,
+          "innings_id": 382,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 40,
+          "innings_id": 403,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 44,
+          "innings_id": 441,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 57,
+          "innings_id": 572,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 64,
+          "innings_id": 644,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 68,
+          "innings_id": 682,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 70,
+          "innings_id": 703,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 187
+        },
+        {
+          "match_id": 17,
+          "innings_id": 171,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 22,
+          "innings_id": 224,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 28,
+          "innings_id": 283,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 47,
+          "innings_id": 471,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 52,
+          "innings_id": 524,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 58,
+          "innings_id": 583,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 185
+        },
+        {
+          "match_id": 1,
+          "innings_id": 13,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 5,
+          "innings_id": 51,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 7,
+          "innings_id": 72,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 18,
+          "innings_id": 182,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 24,
+          "innings_id": 241,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 31,
+          "innings_id": 313,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 35,
+          "innings_id": 351,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 37,
+          "innings_id": 372,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 48,
+          "innings_id": 482,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 54,
+          "innings_id": 541,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 61,
+          "innings_id": 613,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 65,
+          "innings_id": 651,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 67,
+          "innings_id": 672,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 6,
+          "innings_id": 62,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 12,
+          "innings_id": 121,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 19,
+          "innings_id": 193,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 23,
+          "innings_id": 231,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 25,
+          "innings_id": 252,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 36,
+          "innings_id": 362,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 42,
+          "innings_id": 421,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 49,
+          "innings_id": 493,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 53,
+          "innings_id": 531,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 55,
+          "innings_id": 552,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 66,
+          "innings_id": 662,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 72,
+          "innings_id": 721,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 181
+        },
+        {
+          "match_id": 7,
+          "innings_id": 73,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 13,
+          "innings_id": 132,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 37,
+          "innings_id": 373,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 43,
+          "innings_id": 432,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 67,
+          "innings_id": 673,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 3,
+          "innings_id": 31,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 16,
+          "innings_id": 162,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 22,
+          "innings_id": 221,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 33,
+          "innings_id": 331,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 46,
+          "innings_id": 462,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 52,
+          "innings_id": 521,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 63,
+          "innings_id": 631,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 177
+        },
+        {
+          "match_id": 4,
+          "innings_id": 42,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 10,
+          "innings_id": 101,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 21,
+          "innings_id": 211,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 23,
+          "innings_id": 232,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 34,
+          "innings_id": 342,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 40,
+          "innings_id": 401,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 51,
+          "innings_id": 511,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 53,
+          "innings_id": 532,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 64,
+          "innings_id": 642,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 70,
+          "innings_id": 701,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 175
+        },
+        {
+          "match_id": 7,
+          "innings_id": 74,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 11,
+          "innings_id": 112,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 22,
+          "innings_id": 222,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 28,
+          "innings_id": 281,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 37,
+          "innings_id": 374,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 41,
+          "innings_id": 412,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 52,
+          "innings_id": 522,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 58,
+          "innings_id": 581,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 67,
+          "innings_id": 674,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 71,
+          "innings_id": 712,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 173
+        },
+        {
+          "match_id": 1,
+          "innings_id": 11,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 171
+        },
+        {
+          "match_id": 25,
+          "innings_id": 254,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 171
+        },
+        {
+          "match_id": 31,
+          "innings_id": 311,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 171
+        },
+        {
+          "match_id": 55,
+          "innings_id": 554,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 171
+        },
+        {
+          "match_id": 61,
+          "innings_id": 611,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 171
+        },
+        {
+          "match_id": 2,
+          "innings_id": 22,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 8,
+          "innings_id": 81,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 19,
+          "innings_id": 191,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 21,
+          "innings_id": 212,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 32,
+          "innings_id": 322,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 38,
+          "innings_id": 381,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 49,
+          "innings_id": 491,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 51,
+          "innings_id": 512,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 62,
+          "innings_id": 622,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 68,
+          "innings_id": 681,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 169
+        },
+        {
+          "match_id": 7,
+          "innings_id": 71,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 9,
+          "innings_id": 92,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 16,
+          "innings_id": 164,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 20,
+          "innings_id": 202,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 22,
+          "innings_id": 223,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 26,
+          "innings_id": 261,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 37,
+          "innings_id": 371,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 39,
+          "innings_id": 392,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 46,
+          "innings_id": 464,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 50,
+          "innings_id": 502,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 52,
+          "innings_id": 523,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 56,
+          "innings_id": 561,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 67,
+          "innings_id": 671,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 69,
+          "innings_id": 692,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 4,
+          "innings_id": 44,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 10,
+          "innings_id": 103,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 27,
+          "innings_id": 272,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 34,
+          "innings_id": 344,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 40,
+          "innings_id": 403,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 57,
+          "innings_id": 572,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 64,
+          "innings_id": 644,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 70,
+          "innings_id": 703,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 165
+        },
+        {
+          "match_id": 6,
+          "innings_id": 61,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 17,
+          "innings_id": 171,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 30,
+          "innings_id": 302,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 36,
+          "innings_id": 361,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 47,
+          "innings_id": 471,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 60,
+          "innings_id": 602,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 66,
+          "innings_id": 661,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 163
+        },
+        {
+          "match_id": 1,
+          "innings_id": 13,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 5,
+          "innings_id": 51,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 7,
+          "innings_id": 72,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 18,
+          "innings_id": 182,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 24,
+          "innings_id": 241,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 31,
+          "innings_id": 313,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 35,
+          "innings_id": 351,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 37,
+          "innings_id": 372,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 48,
+          "innings_id": 482,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 54,
+          "innings_id": 541,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 61,
+          "innings_id": 613,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 65,
+          "innings_id": 651,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 67,
+          "innings_id": 672,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 161
+        },
+        {
+          "match_id": 6,
+          "innings_id": 62,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 12,
+          "innings_id": 121,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 19,
+          "innings_id": 193,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 25,
+          "innings_id": 252,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 36,
+          "innings_id": 362,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 42,
+          "innings_id": 421,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 49,
+          "innings_id": 493,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 55,
+          "innings_id": 552,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 66,
+          "innings_id": 662,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 72,
+          "innings_id": 721,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 159
+        },
+        {
+          "match_id": 15,
+          "innings_id": 151,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 157
+        },
+        {
+          "match_id": 45,
+          "innings_id": 451,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 157
+        },
+        {
+          "match_id": 3,
+          "innings_id": 31,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 5,
+          "innings_id": 52,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 16,
+          "innings_id": 162,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 22,
+          "innings_id": 221,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 33,
+          "innings_id": 331,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 35,
+          "innings_id": 352,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 46,
+          "innings_id": 462,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 52,
+          "innings_id": 521,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 63,
+          "innings_id": 631,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 65,
+          "innings_id": 652,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 155
+        },
+        {
+          "match_id": 4,
+          "innings_id": 42,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 10,
+          "innings_id": 101,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 19,
+          "innings_id": 194,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 21,
+          "innings_id": 211,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 23,
+          "innings_id": 232,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 34,
+          "innings_id": 342,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 40,
+          "innings_id": 401,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 49,
+          "innings_id": 494,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 51,
+          "innings_id": 511,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 53,
+          "innings_id": 532,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 64,
+          "innings_id": 642,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 70,
+          "innings_id": 701,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 153
+        },
+        {
+          "match_id": 7,
+          "innings_id": 74,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 11,
+          "innings_id": 112,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 37,
+          "innings_id": 374,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 41,
+          "innings_id": 412,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 67,
+          "innings_id": 674,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 71,
+          "innings_id": 712,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 151
+        },
+        {
+          "match_id": 1,
+          "innings_id": 11,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 14,
+          "innings_id": 142,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 20,
+          "innings_id": 201,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 25,
+          "innings_id": 254,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 31,
+          "innings_id": 311,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 44,
+          "innings_id": 442,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 50,
+          "innings_id": 501,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 55,
+          "innings_id": 554,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 61,
+          "innings_id": 611,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 149
+        },
+        {
+          "match_id": 2,
+          "innings_id": 22,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 4,
+          "innings_id": 43,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 8,
+          "innings_id": 81,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 19,
+          "innings_id": 191,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 21,
+          "innings_id": 212,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 28,
+          "innings_id": 284,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 32,
+          "innings_id": 322,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 34,
+          "innings_id": 343,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 38,
+          "innings_id": 381,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 49,
+          "innings_id": 491,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 51,
+          "innings_id": 512,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 58,
+          "innings_id": 584,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 62,
+          "innings_id": 622,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 64,
+          "innings_id": 643,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 68,
+          "innings_id": 681,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 147
+        },
+        {
+          "match_id": 9,
+          "innings_id": 92,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 16,
+          "innings_id": 164,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 20,
+          "innings_id": 202,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 22,
+          "innings_id": 223,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 26,
+          "innings_id": 261,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 39,
+          "innings_id": 392,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 46,
+          "innings_id": 464,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 50,
+          "innings_id": 502,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 52,
+          "innings_id": 523,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 56,
+          "innings_id": 561,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 69,
+          "innings_id": 692,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 145
+        },
+        {
+          "match_id": 3,
+          "innings_id": 32,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 10,
+          "innings_id": 104,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 16,
+          "innings_id": 163,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 33,
+          "innings_id": 332,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 40,
+          "innings_id": 404,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 46,
+          "innings_id": 463,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 63,
+          "innings_id": 632,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 70,
+          "innings_id": 704,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 144
+        },
+        {
+          "match_id": 4,
+          "innings_id": 44,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 10,
+          "innings_id": 103,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 29,
+          "innings_id": 291,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 34,
+          "innings_id": 344,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 40,
+          "innings_id": 403,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 59,
+          "innings_id": 591,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 64,
+          "innings_id": 644,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 70,
+          "innings_id": 703,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 143
+        },
+        {
+          "match_id": 6,
+          "innings_id": 62,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 12,
+          "innings_id": 121,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 23,
+          "innings_id": 231,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 36,
+          "innings_id": 362,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 42,
+          "innings_id": 421,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 53,
+          "innings_id": 531,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 66,
+          "innings_id": 662,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 72,
+          "innings_id": 721,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 142
+        },
+        {
+          "match_id": 6,
+          "innings_id": 61,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 13,
+          "innings_id": 133,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 17,
+          "innings_id": 171,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 19,
+          "innings_id": 192,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 30,
+          "innings_id": 302,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 36,
+          "innings_id": 361,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 43,
+          "innings_id": 433,
+          "innings_number": 3,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 47,
+          "innings_id": 471,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 49,
+          "innings_id": 492,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 60,
+          "innings_id": 602,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 66,
+          "innings_id": 661,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 141
+        },
+        {
+          "match_id": 7,
+          "innings_id": 73,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 11,
+          "innings_id": 111,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 13,
+          "innings_id": 132,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 24,
+          "innings_id": 242,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 30,
+          "innings_id": 301,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 37,
+          "innings_id": 373,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 41,
+          "innings_id": 411,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 43,
+          "innings_id": 432,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 54,
+          "innings_id": 542,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 60,
+          "innings_id": 601,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 67,
+          "innings_id": 673,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 71,
+          "innings_id": 711,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 140
+        },
+        {
+          "match_id": 1,
+          "innings_id": 13,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 5,
+          "innings_id": 51,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 7,
+          "innings_id": 72,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 18,
+          "innings_id": 182,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 24,
+          "innings_id": 241,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 31,
+          "innings_id": 313,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 35,
+          "innings_id": 351,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 37,
+          "innings_id": 372,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 48,
+          "innings_id": 482,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 54,
+          "innings_id": 541,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 61,
+          "innings_id": 613,
+          "innings_number": 3,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 65,
+          "innings_id": 651,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 67,
+          "innings_id": 672,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 139
+        },
+        {
+          "match_id": 1,
+          "innings_id": 12,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 12,
+          "innings_id": 122,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 18,
+          "innings_id": 181,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 25,
+          "innings_id": 253,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 31,
+          "innings_id": 312,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 42,
+          "innings_id": 422,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 48,
+          "innings_id": 481,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 55,
+          "innings_id": 553,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 61,
+          "innings_id": 612,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 72,
+          "innings_id": 722,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 138
+        },
+        {
+          "match_id": 19,
+          "innings_id": 193,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 137
+        },
+        {
+          "match_id": 25,
+          "innings_id": 252,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 137
+        },
+        {
+          "match_id": 49,
+          "innings_id": 493,
+          "innings_number": 3,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 137
+        },
+        {
+          "match_id": 55,
+          "innings_id": 552,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 137
+        },
+        {
+          "match_id": 21,
+          "innings_id": 211,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 136
+        },
+        {
+          "match_id": 51,
+          "innings_id": 511,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 136
+        },
+        {
+          "match_id": 4,
+          "innings_id": 41,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 15,
+          "innings_id": 151,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 28,
+          "innings_id": 282,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 34,
+          "innings_id": 341,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 45,
+          "innings_id": 451,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 58,
+          "innings_id": 582,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 64,
+          "innings_id": 641,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 135
+        },
+        {
+          "match_id": 9,
+          "innings_id": 91,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 11,
+          "innings_id": 112,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 22,
+          "innings_id": 222,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 28,
+          "innings_id": 281,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 39,
+          "innings_id": 391,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 41,
+          "innings_id": 412,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 52,
+          "innings_id": 522,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 58,
+          "innings_id": 581,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 69,
+          "innings_id": 691,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 71,
+          "innings_id": 712,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 134
+        },
+        {
+          "match_id": 3,
+          "innings_id": 31,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 5,
+          "innings_id": 52,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 16,
+          "innings_id": 162,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 22,
+          "innings_id": 221,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 33,
+          "innings_id": 331,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 35,
+          "innings_id": 352,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 46,
+          "innings_id": 462,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 52,
+          "innings_id": 521,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 63,
+          "innings_id": 631,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 65,
+          "innings_id": 652,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 133
+        },
+        {
+          "match_id": 10,
+          "innings_id": 102,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 16,
+          "innings_id": 161,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 25,
+          "innings_id": 254,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 27,
+          "innings_id": 271,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 29,
+          "innings_id": 292,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 40,
+          "innings_id": 402,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 46,
+          "innings_id": 461,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 55,
+          "innings_id": 554,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 57,
+          "innings_id": 571,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 59,
+          "innings_id": 592,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 70,
+          "innings_id": 702,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 132
+        },
+        {
+          "match_id": 4,
+          "innings_id": 42,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 10,
+          "innings_id": 101,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 19,
+          "innings_id": 194,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 23,
+          "innings_id": 232,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 34,
+          "innings_id": 342,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 40,
+          "innings_id": 401,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 49,
+          "innings_id": 494,
+          "innings_number": 4,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 53,
+          "innings_id": 532,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 64,
+          "innings_id": 642,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 70,
+          "innings_id": 701,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 131
+        },
+        {
+          "match_id": 13,
+          "innings_id": 134,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 130
+        },
+        {
+          "match_id": 17,
+          "innings_id": 172,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 130
+        },
+        {
+          "match_id": 43,
+          "innings_id": 434,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 130
+        },
+        {
+          "match_id": 47,
+          "innings_id": 472,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 130
+        },
+        {
+          "match_id": 7,
+          "innings_id": 74,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 129
+        },
+        {
+          "match_id": 13,
+          "innings_id": 131,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 129
+        },
+        {
+          "match_id": 37,
+          "innings_id": 374,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 129
+        },
+        {
+          "match_id": 43,
+          "innings_id": 431,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 129
+        },
+        {
+          "match_id": 67,
+          "innings_id": 674,
+          "innings_number": 4,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 129
+        },
+        {
+          "match_id": 1,
+          "innings_id": 14,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 7,
+          "innings_id": 71,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 20,
+          "innings_id": 202,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 26,
+          "innings_id": 261,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 31,
+          "innings_id": 314,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 37,
+          "innings_id": 371,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 50,
+          "innings_id": 502,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 56,
+          "innings_id": 561,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 61,
+          "innings_id": 614,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 67,
+          "innings_id": 671,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 128
+        },
+        {
+          "match_id": 1,
+          "innings_id": 11,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 3,
+          "innings_id": 32,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 14,
+          "innings_id": 142,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 20,
+          "innings_id": 201,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 31,
+          "innings_id": 311,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 33,
+          "innings_id": 332,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 44,
+          "innings_id": 442,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 50,
+          "innings_id": 501,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 61,
+          "innings_id": 611,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 63,
+          "innings_id": 632,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 127
+        },
+        {
+          "match_id": 4,
+          "innings_id": 44,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 8,
+          "innings_id": 82,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 10,
+          "innings_id": 103,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 14,
+          "innings_id": 141,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 25,
+          "innings_id": 251,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 27,
+          "innings_id": 272,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 34,
+          "innings_id": 344,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 38,
+          "innings_id": 382,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 40,
+          "innings_id": 403,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 44,
+          "innings_id": 441,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 55,
+          "innings_id": 551,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 57,
+          "innings_id": 572,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 64,
+          "innings_id": 644,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 68,
+          "innings_id": 682,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 70,
+          "innings_id": 703,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 126
+        },
+        {
+          "match_id": 2,
+          "innings_id": 22,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 4,
+          "innings_id": 43,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 8,
+          "innings_id": 81,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 19,
+          "innings_id": 191,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 21,
+          "innings_id": 212,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 28,
+          "innings_id": 284,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 32,
+          "innings_id": 322,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 34,
+          "innings_id": 343,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 38,
+          "innings_id": 381,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 49,
+          "innings_id": 491,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 51,
+          "innings_id": 512,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 58,
+          "innings_id": 584,
+          "innings_number": 4,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 62,
+          "innings_id": 622,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 64,
+          "innings_id": 643,
+          "innings_number": 3,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 68,
+          "innings_id": 681,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 125
+        },
+        {
+          "match_id": 2,
+          "innings_id": 21,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 15,
+          "innings_id": 152,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 22,
+          "innings_id": 224,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 26,
+          "innings_id": 262,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 28,
+          "innings_id": 283,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 32,
+          "innings_id": 321,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 45,
+          "innings_id": 452,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 52,
+          "innings_id": 524,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 56,
+          "innings_id": 562,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 58,
+          "innings_id": 583,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 62,
+          "innings_id": 621,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 124
+        },
+        {
+          "match_id": 9,
+          "innings_id": 92,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 16,
+          "innings_id": 164,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 22,
+          "innings_id": 223,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 39,
+          "innings_id": 392,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 46,
+          "innings_id": 464,
+          "innings_number": 4,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 52,
+          "innings_id": 523,
+          "innings_number": 3,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 69,
+          "innings_id": 692,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 123
+        },
+        {
+          "match_id": 12,
+          "innings_id": 122,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 18,
+          "innings_id": 181,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 29,
+          "innings_id": 291,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 42,
+          "innings_id": 422,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 48,
+          "innings_id": 481,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 59,
+          "innings_id": 591,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 72,
+          "innings_id": 722,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 121
+        },
+        {
+          "match_id": 6,
+          "innings_id": 61,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 13,
+          "innings_id": 133,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 17,
+          "innings_id": 171,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 19,
+          "innings_id": 192,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 30,
+          "innings_id": 302,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 36,
+          "innings_id": 361,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 43,
+          "innings_id": 433,
+          "innings_number": 3,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 47,
+          "innings_id": 471,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 49,
+          "innings_id": 492,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 60,
+          "innings_id": 602,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 66,
+          "innings_id": 661,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 119
+        },
+        {
+          "match_id": 1,
+          "innings_id": 13,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 7,
+          "innings_id": 72,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 18,
+          "innings_id": 182,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 24,
+          "innings_id": 241,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 31,
+          "innings_id": 313,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 37,
+          "innings_id": 372,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 48,
+          "innings_id": 482,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 54,
+          "innings_id": 541,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 61,
+          "innings_id": 613,
+          "innings_number": 3,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 67,
+          "innings_id": 672,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 117
+        },
+        {
+          "match_id": 27,
+          "innings_id": 271,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 115
+        },
+        {
+          "match_id": 57,
+          "innings_id": 571,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 115
+        },
+        {
+          "match_id": 4,
+          "innings_id": 41,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 15,
+          "innings_id": 151,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 17,
+          "innings_id": 172,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 28,
+          "innings_id": 282,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 34,
+          "innings_id": 341,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 45,
+          "innings_id": 451,
+          "innings_number": 1,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 47,
+          "innings_id": 472,
+          "innings_number": 2,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 58,
+          "innings_id": 582,
+          "innings_number": 2,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 64,
+          "innings_id": 641,
+          "innings_number": 1,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 113
+        },
+        {
+          "match_id": 1,
+          "innings_id": 14,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 3,
+          "innings_id": 31,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 5,
+          "innings_id": 52,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 16,
+          "innings_id": 162,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 22,
+          "innings_id": 221,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 31,
+          "innings_id": 314,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 33,
+          "innings_id": 331,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 35,
+          "innings_id": 352,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 46,
+          "innings_id": 462,
+          "innings_number": 2,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 52,
+          "innings_id": 521,
+          "innings_number": 1,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 61,
+          "innings_id": 614,
+          "innings_number": 4,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 63,
+          "innings_id": 631,
+          "innings_number": 1,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 65,
+          "innings_id": 652,
+          "innings_number": 2,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 111
+        },
+        {
+          "match_id": 19,
+          "innings_id": 194,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 109
+        },
+        {
+          "match_id": 23,
+          "innings_id": 232,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 109
+        },
+        {
+          "match_id": 49,
+          "innings_id": 494,
+          "innings_number": 4,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 109
+        },
+        {
+          "match_id": 53,
+          "innings_id": 532,
+          "innings_number": 2,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 109
+        },
+        {
+          "match_id": 2,
+          "innings_id": 21,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 7,
+          "innings_id": 74,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 13,
+          "innings_id": 131,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 26,
+          "innings_id": 262,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 32,
+          "innings_id": 321,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 37,
+          "innings_id": 374,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 43,
+          "innings_id": 431,
+          "innings_number": 1,
+          "player1_name": "Sample Player 04",
+          "player2_name": "Sample Player 05",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 56,
+          "innings_id": 562,
+          "innings_number": 2,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 62,
+          "innings_id": 621,
+          "innings_number": 1,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 67,
+          "innings_id": 674,
+          "innings_number": 4,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 107
+        },
+        {
+          "match_id": 1,
+          "innings_id": 11,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 3,
+          "innings_id": 32,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 10,
+          "innings_id": 104,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 14,
+          "innings_id": 142,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 16,
+          "innings_id": 163,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 20,
+          "innings_id": 201,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 31,
+          "innings_id": 311,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 33,
+          "innings_id": 332,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 40,
+          "innings_id": 404,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 44,
+          "innings_id": 442,
+          "innings_number": 2,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 46,
+          "innings_id": 463,
+          "innings_number": 3,
+          "player1_name": "Sample Player 11",
+          "player2_name": "Sample Player 12",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 50,
+          "innings_id": 501,
+          "innings_number": 1,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 61,
+          "innings_id": 611,
+          "innings_number": 1,
+          "player1_name": "Sample Player 02",
+          "player2_name": "Sample Player 03",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 63,
+          "innings_id": 632,
+          "innings_number": 2,
+          "player1_name": "Sample Player 10",
+          "player2_name": "Sample Player 11",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 70,
+          "innings_id": 704,
+          "innings_number": 4,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 105
+        },
+        {
+          "match_id": 2,
+          "innings_id": 22,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 4,
+          "innings_id": 43,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 8,
+          "innings_id": 81,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 21,
+          "innings_id": 212,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 28,
+          "innings_id": 284,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 32,
+          "innings_id": 322,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 34,
+          "innings_id": 343,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 38,
+          "innings_id": 381,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 51,
+          "innings_id": 512,
+          "innings_number": 2,
+          "player1_name": "Sample Player 08",
+          "player2_name": "Sample Player 09",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 58,
+          "innings_id": 584,
+          "innings_number": 4,
+          "player1_name": "Sample Player 03",
+          "player2_name": "Sample Player 04",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 62,
+          "innings_id": 622,
+          "innings_number": 2,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 64,
+          "innings_id": 643,
+          "innings_number": 3,
+          "player1_name": "Sample Player 09",
+          "player2_name": "Sample Player 10",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 68,
+          "innings_id": 681,
+          "innings_number": 1,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 103
+        },
+        {
+          "match_id": 11,
+          "innings_id": 111,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 16,
+          "innings_id": 164,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 22,
+          "innings_id": 223,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 41,
+          "innings_id": 411,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 46,
+          "innings_id": 464,
+          "innings_number": 4,
+          "player1_name": "Sample Player 01",
+          "player2_name": "Sample Player 02",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 52,
+          "innings_id": 523,
+          "innings_number": 3,
+          "player1_name": "Sample Player 07",
+          "player2_name": "Sample Player 08",
+          "combined_runs": 101
+        },
+        {
+          "match_id": 71,
+          "innings_id": 711,
+          "innings_number": 1,
+          "player1_name": "Sample Player 05",
+          "player2_name": "Sample Player 06",
+          "combined_runs": 101
+        }
+      ],
+      "query_plan": [
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH b USING INDEX sqlite_autoindex_batting_performances_2 (innings_id=? AND batting_position=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 4,
+      "rows": [
+        {
+          "match_id": 1,
+          "innings_id": 1,
+          "innings_number": 1,
+          "player1_name": "Temba Bavuma",
+          "player2_name": "Matthew Breetzke",
+          "combined_runs": 183
+        },
+        {
+          "match_id": 1,
+          "innings_id": 1,
+          "innings_number": 1,
+          "player1_name": "David Bedingham",
+          "player2_name": "Temba Bavuma",
+          "combined_runs": 179
+        },
+        {
+          "match_id": 1,
+          "innings_id": 1,
+          "innings_number": 1,
+          "player1_name": "Marco Jansen",
+          "player2_name": "Simon Harmer",
+          "combined_runs": 167
+        },
+        {
+          "match_id": 1,
+          "innings_id": 3,
+          "innings_number": 3,
+          "player1_name": "Travis Head",
+          "player2_name": "Marnus Labuschagne",
+          "combined_runs": 126
+        }
+      ],
+      "query_plan": [
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH b USING INDEX sqlite_autoindex_batting_performances_2 (innings_id=? AND batting_position=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

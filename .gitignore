@@ -1,0 +1,34 @@
+# Private configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# Local runtime data; sanitized sample inputs remain trackable
+data/runtime/*
+!data/runtime/.gitkeep
+data/raw/*
+!data/raw/README.md
+logs/*
+!logs/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+# Local editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+
+# Backups created by the explicit additive schema migration
+*.db.v1-backup
+# Operator-local provider contracts are reviewed before any explicit tracking.
+api/contracts/local.json

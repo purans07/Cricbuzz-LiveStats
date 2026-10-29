@@ -1,0 +1,111 @@
+{
+  "question": "Q09",
+  "scope": "Latest career rows per player/format/source, canonical All-rounder role, runs > 1000 AND wickets > 50",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "source_name": "Synthetic training fixture"
+      },
+      "row_count": 9,
+      "rows": [
+        {
+          "player_name": "Sample Player 11",
+          "total_runs": 2860,
+          "total_wickets": 93,
+          "cricket_format": "ODI"
+        },
+        {
+          "player_name": "Sample Player 11",
+          "total_runs": 2860,
+          "total_wickets": 93,
+          "cricket_format": "T20I"
+        },
+        {
+          "player_name": "Sample Player 11",
+          "total_runs": 2860,
+          "total_wickets": 93,
+          "cricket_format": "TEST"
+        },
+        {
+          "player_name": "Sample Player 07",
+          "total_runs": 2380,
+          "total_wickets": 81,
+          "cricket_format": "ODI"
+        },
+        {
+          "player_name": "Sample Player 07",
+          "total_runs": 2380,
+          "total_wickets": 81,
+          "cricket_format": "T20I"
+        },
+        {
+          "player_name": "Sample Player 07",
+          "total_runs": 2380,
+          "total_wickets": 81,
+          "cricket_format": "TEST"
+        },
+        {
+          "player_name": "Sample Player 03",
+          "total_runs": 1900,
+          "total_wickets": 69,
+          "cricket_format": "ODI"
+        },
+        {
+          "player_name": "Sample Player 03",
+          "total_runs": 1900,
+          "total_wickets": 69,
+          "cricket_format": "T20I"
+        },
+        {
+          "player_name": "Sample Player 03",
+          "total_runs": 1900,
+          "total_wickets": 69,
+          "cricket_format": "TEST"
+        }
+      ],
+      "active_players_without_role": 0,
+      "query_plan": [
+        "SEARCH r USING COVERING INDEX sqlite_autoindex_playing_roles_1 (name=?)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH p USING INDEX idx_players_role (role_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH c USING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+      },
+      "row_count": 0,
+      "rows": [],
+      "active_players_without_role": 21,
+      "query_plan": [
+        "SEARCH r USING COVERING INDEX sqlite_autoindex_playing_roles_1 (name=?)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH p USING INDEX idx_players_role (role_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH c USING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

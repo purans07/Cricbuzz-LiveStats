@@ -1,0 +1,1579 @@
+{
+  "milestone": "Phase 12 Analytics",
+  "scope": "All 25 saved lessons plus Q22 venue variant, restricted reader; no HTTP or writes",
+  "datasets": {
+    "sample": [
+      {
+        "question": "Q01",
+        "parameters": {
+          "as_of_date": "2026-10-01"
+        },
+        "displayed_rows": 6,
+        "truncated": false,
+        "columns": [
+          "full_name",
+          "playing_role",
+          "batting_style",
+          "bowling_style"
+        ],
+        "preview": [
+          [
+            "Sample Player 01",
+            "Batsman",
+            "Right-hand bat",
+            "Right-arm medium"
+          ],
+          [
+            "Sample Player 02",
+            "Bowler",
+            "Left-hand bat",
+            "Right-arm medium"
+          ],
+          [
+            "Sample Player 03",
+            "All-rounder",
+            "Right-hand bat",
+            "Right-arm medium"
+          ]
+        ]
+      },
+      {
+        "question": "Q02",
+        "parameters": {
+          "window_start": "2026-09-01T00:00:00Z",
+          "as_of_utc": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 6,
+        "truncated": false,
+        "columns": [
+          "match_description",
+          "team1_name",
+          "team2_name",
+          "venue_name",
+          "venue_city",
+          "match_date"
+        ],
+        "preview": [
+          [
+            "Synthetic match 072",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Ground 1",
+            "Sample City 1",
+            "2026-09-21T08:00:00Z"
+          ],
+          [
+            "Synthetic match 071",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Ground 2",
+            "Sample City 2",
+            "2026-09-17T08:00:00Z"
+          ],
+          [
+            "Synthetic match 070",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Ground 1",
+            "Sample City 1",
+            "2026-09-13T08:00:00Z"
+          ]
+        ]
+      },
+      {
+        "question": "Q03",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 10,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "total_runs",
+          "batting_average",
+          "centuries"
+        ],
+        "preview": [
+          [
+            "Sample Player 12",
+            2980,
+            57.31,
+            2
+          ],
+          [
+            "Sample Player 11",
+            2860,
+            56.08,
+            1
+          ],
+          [
+            "Sample Player 10",
+            2740,
+            54.8,
+            0
+          ]
+        ]
+      },
+      {
+        "question": "Q04",
+        "parameters": {},
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "venue_name",
+          "city",
+          "country",
+          "capacity"
+        ],
+        "preview": [
+          [
+            "Sample Ground 1",
+            "Sample City 1",
+            "India",
+            60000
+          ]
+        ]
+      },
+      {
+        "question": "Q05",
+        "parameters": {},
+        "displayed_rows": 2,
+        "truncated": false,
+        "columns": [
+          "team_name",
+          "total_wins"
+        ],
+        "preview": [
+          [
+            "Sample India XI",
+            37
+          ],
+          [
+            "Sample Australia XI",
+            35
+          ]
+        ]
+      },
+      {
+        "question": "Q06",
+        "parameters": {},
+        "displayed_rows": 4,
+        "truncated": false,
+        "columns": [
+          "playing_role",
+          "player_count"
+        ],
+        "preview": [
+          [
+            "All-rounder",
+            3
+          ],
+          [
+            "Batsman",
+            3
+          ],
+          [
+            "Bowler",
+            3
+          ]
+        ]
+      },
+      {
+        "question": "Q07",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 3,
+        "truncated": false,
+        "columns": [
+          "format",
+          "highest_score"
+        ],
+        "preview": [
+          [
+            "Test",
+            172
+          ],
+          [
+            "ODI",
+            172
+          ],
+          [
+            "T20I",
+            172
+          ]
+        ]
+      },
+      {
+        "question": "Q08",
+        "parameters": {},
+        "displayed_rows": 4,
+        "truncated": false,
+        "columns": [
+          "series_name",
+          "host_country",
+          "match_type",
+          "start_date",
+          "total_matches_planned"
+        ],
+        "preview": [
+          [
+            "Synthetic series 2024 Q1",
+            "India",
+            "ODI, T20I, TEST",
+            "2024-01-01",
+            6
+          ],
+          [
+            "Synthetic series 2024 Q2",
+            "Australia",
+            "ODI, T20I, TEST",
+            "2024-04-01",
+            6
+          ],
+          [
+            "Synthetic series 2024 Q3",
+            "India",
+            "ODI, T20I, TEST",
+            "2024-07-01",
+            6
+          ]
+        ]
+      },
+      {
+        "question": "Q09",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 9,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "total_runs",
+          "total_wickets",
+          "cricket_format"
+        ],
+        "preview": [
+          [
+            "Sample Player 11",
+            2860,
+            93,
+            "ODI"
+          ],
+          [
+            "Sample Player 11",
+            2860,
+            93,
+            "T20I"
+          ],
+          [
+            "Sample Player 11",
+            2860,
+            93,
+            "TEST"
+          ]
+        ]
+      },
+      {
+        "question": "Q10",
+        "parameters": {},
+        "displayed_rows": 20,
+        "truncated": false,
+        "columns": [
+          "match_description",
+          "team1_name",
+          "team2_name",
+          "winning_team",
+          "victory_margin",
+          "victory_type",
+          "venue_name"
+        ],
+        "preview": [
+          [
+            "Synthetic match 072",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Australia XI",
+            168,
+            "runs",
+            "Sample Ground 1"
+          ],
+          [
+            "Synthetic match 071",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Australia XI",
+            99,
+            "runs",
+            "Sample Ground 2"
+          ],
+          [
+            "Synthetic match 070",
+            "Sample India XI",
+            "Sample Australia XI",
+            "Sample Australia XI",
+            231,
+            "runs",
+            "Sample Ground 1"
+          ]
+        ]
+      },
+      {
+        "question": "Q11",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "test_runs",
+          "odi_runs",
+          "t20i_runs",
+          "overall_batting_average"
+        ],
+        "preview": [
+          [
+            1,
+            "Sample Player 01",
+            1660,
+            1660,
+            1660,
+            40.49
+          ],
+          [
+            2,
+            "Sample Player 02",
+            1780,
+            1780,
+            1780,
+            42.38
+          ],
+          [
+            3,
+            "Sample Player 03",
+            1900,
+            1900,
+            1900,
+            44.19
+          ]
+        ]
+      },
+      {
+        "question": "Q12",
+        "parameters": {},
+        "displayed_rows": 2,
+        "truncated": false,
+        "columns": [
+          "team_name",
+          "home_wins",
+          "away_wins",
+          "unclassified_wins"
+        ],
+        "preview": [
+          [
+            "Sample Australia XI",
+            17,
+            18,
+            0
+          ],
+          [
+            "Sample India XI",
+            18,
+            19,
+            0
+          ]
+        ]
+      },
+      {
+        "question": "Q13",
+        "parameters": {},
+        "displayed_rows": 500,
+        "truncated": true,
+        "columns": [
+          "match_id",
+          "innings_id",
+          "innings_number",
+          "player1_name",
+          "player2_name",
+          "combined_runs"
+        ],
+        "preview": [
+          [
+            5,
+            51,
+            1,
+            "Sample Player 05",
+            "Sample Player 06",
+            227
+          ],
+          [
+            10,
+            104,
+            4,
+            "Sample Player 01",
+            "Sample Player 02",
+            227
+          ],
+          [
+            16,
+            163,
+            3,
+            "Sample Player 07",
+            "Sample Player 08",
+            227
+          ]
+        ]
+      },
+      {
+        "question": "Q14",
+        "parameters": {},
+        "displayed_rows": 24,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "venue_name",
+          "average_economy_rate",
+          "total_wickets",
+          "matches_played"
+        ],
+        "preview": [
+          [
+            "Sample Player 01",
+            "Sample Ground 1",
+            8.92,
+            48,
+            36
+          ],
+          [
+            "Sample Player 01",
+            "Sample Ground 2",
+            8.9,
+            48,
+            36
+          ],
+          [
+            "Sample Player 02",
+            "Sample Ground 1",
+            8.95,
+            48,
+            36
+          ]
+        ]
+      },
+      {
+        "question": "Q15",
+        "parameters": {},
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "average_runs",
+          "total_close_matches_played",
+          "team_wins_when_batted"
+        ],
+        "preview": [
+          [
+            "Sample Player 03",
+            150.89,
+            9,
+            7
+          ],
+          [
+            "Sample Player 04",
+            144.67,
+            9,
+            7
+          ],
+          [
+            "Sample Player 12",
+            143.56,
+            9,
+            2
+          ]
+        ]
+      },
+      {
+        "question": "Q16",
+        "parameters": {},
+        "displayed_rows": 48,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "match_year",
+          "matches_played",
+          "average_runs_per_match",
+          "average_strike_rate"
+        ],
+        "preview": [
+          [
+            "Sample Player 01",
+            2023,
+            6,
+            73.0,
+            138.61
+          ],
+          [
+            "Sample Player 01",
+            2024,
+            24,
+            90.5,
+            140.91
+          ],
+          [
+            "Sample Player 01",
+            2025,
+            24,
+            87.0,
+            142.32
+          ]
+        ]
+      },
+      {
+        "question": "Q17",
+        "parameters": {},
+        "displayed_rows": 2,
+        "truncated": false,
+        "columns": [
+          "toss_decision",
+          "eligible_matches",
+          "toss_winner_match_wins",
+          "win_percentage"
+        ],
+        "preview": [
+          [
+            "bat",
+            72,
+            43,
+            59.72
+          ],
+          [
+            "bowl",
+            0,
+            0,
+            null
+          ]
+        ]
+      },
+      {
+        "question": "Q18",
+        "parameters": {},
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "overall_economy_rate",
+          "total_wickets",
+          "matches_bowled",
+          "average_overs_per_match"
+        ],
+        "preview": [
+          [
+            "Sample Player 03",
+            8.93,
+            48,
+            48,
+            7.53
+          ],
+          [
+            "Sample Player 01",
+            8.96,
+            48,
+            48,
+            7.57
+          ],
+          [
+            "Sample Player 06",
+            8.99,
+            0,
+            48,
+            7.43
+          ]
+        ]
+      },
+      {
+        "question": "Q19",
+        "parameters": {},
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "eligible_innings",
+          "average_runs",
+          "standard_deviation_runs"
+        ],
+        "preview": [
+          [
+            "Sample Player 09",
+            96,
+            65.31,
+            29.35
+          ],
+          [
+            "Sample Player 10",
+            96,
+            65.38,
+            29.41
+          ],
+          [
+            "Sample Player 01",
+            96,
+            67.0,
+            29.53
+          ]
+        ]
+      },
+      {
+        "question": "Q20",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "test_matches",
+          "test_batting_average",
+          "odi_matches",
+          "odi_batting_average",
+          "t20_matches",
+          "t20_batting_average",
+          "total_known_matches"
+        ],
+        "preview": [
+          [
+            "Sample Player 01",
+            43,
+            40.49,
+            43,
+            40.49,
+            43,
+            40.49,
+            129
+          ],
+          [
+            "Sample Player 02",
+            44,
+            42.38,
+            44,
+            42.38,
+            44,
+            42.38,
+            132
+          ],
+          [
+            "Sample Player 03",
+            45,
+            44.19,
+            45,
+            44.19,
+            45,
+            44.19,
+            135
+          ]
+        ]
+      },
+      {
+        "question": "Q21",
+        "parameters": {
+          "source_name": "Synthetic training fixture"
+        },
+        "displayed_rows": 36,
+        "truncated": false,
+        "columns": [
+          "cricket_format",
+          "performance_rank",
+          "player_name",
+          "batting_points",
+          "bowling_points",
+          "fielding_points",
+          "total_points"
+        ],
+        "preview": [
+          [
+            "ODI",
+            1,
+            "Sample Player 12",
+            92.84,
+            200.66,
+            66.0,
+            359.5
+          ],
+          [
+            "ODI",
+            2,
+            "Sample Player 11",
+            90.29,
+            194.61,
+            73.0,
+            357.9
+          ],
+          [
+            "ODI",
+            3,
+            "Sample Player 10",
+            87.68,
+            188.56,
+            65.0,
+            341.24
+          ]
+        ]
+      },
+      {
+        "question": "Q22",
+        "parameters": {
+          "window_start": "2023-10-01T00:00:00Z",
+          "window_end": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 2,
+        "truncated": false,
+        "columns": [
+          "team_a_id",
+          "team_b_id",
+          "team_a",
+          "team_b",
+          "team_id",
+          "team_name",
+          "matches_played",
+          "wins",
+          "unknown_results",
+          "win_percentage",
+          "run_margin_wins",
+          "average_win_margin_runs",
+          "wicket_margin_wins",
+          "average_win_margin_wickets",
+          "wins_missing_margin"
+        ],
+        "preview": [
+          [
+            1,
+            2,
+            "Sample India XI",
+            "Sample Australia XI",
+            1,
+            "Sample India XI",
+            72,
+            37,
+            0,
+            51.39,
+            37,
+            149.59,
+            0,
+            null,
+            0
+          ],
+          [
+            1,
+            2,
+            "Sample India XI",
+            "Sample Australia XI",
+            2,
+            "Sample Australia XI",
+            72,
+            35,
+            0,
+            48.61,
+            35,
+            137.31,
+            0,
+            null,
+            0
+          ]
+        ]
+      },
+      {
+        "question": "Q23",
+        "parameters": {
+          "as_of_utc": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 12,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "matches_last_5",
+          "matches_last_10",
+          "average_runs_last_5",
+          "average_runs_last_10",
+          "runs_momentum",
+          "strike_rate_last_5",
+          "strike_rate_last_10",
+          "strike_rate_change",
+          "scores_above_50_last_5",
+          "scores_above_50_last_10",
+          "standard_deviation_runs",
+          "consistency_score",
+          "form_category",
+          "coverage_status"
+        ],
+        "preview": [
+          [
+            1,
+            "Sample Player 01",
+            5,
+            10,
+            122.4,
+            108.8,
+            13.6,
+            161.9,
+            155.43,
+            6.48,
+            5,
+            9,
+            45.63,
+            35.4,
+            "Average Form",
+            "classified"
+          ],
+          [
+            2,
+            "Sample Player 02",
+            5,
+            10,
+            114.6,
+            112.6,
+            2.0,
+            160.96,
+            157.92,
+            3.03,
+            4,
+            9,
+            58.27,
+            30.02,
+            "Average Form",
+            "classified"
+          ],
+          [
+            3,
+            "Sample Player 03",
+            5,
+            10,
+            64.8,
+            95.4,
+            -30.6,
+            139.66,
+            151.19,
+            -11.53,
+            2,
+            7,
+            55.47,
+            31.07,
+            "Average Form",
+            "classified"
+          ]
+        ]
+      },
+      {
+        "question": "Q24",
+        "parameters": {},
+        "displayed_rows": 10,
+        "truncated": false,
+        "columns": [
+          "success_rank",
+          "player_a_id",
+          "player_a_name",
+          "player_b_id",
+          "player_b_name",
+          "pair_appearances",
+          "known_scores",
+          "missing_scores",
+          "average_combined_runs",
+          "scores_above_50",
+          "highest_combined_runs",
+          "success_percentage",
+          "coverage_status"
+        ],
+        "preview": [
+          [
+            1,
+            11,
+            "Sample Player 11",
+            12,
+            "Sample Player 12",
+            96,
+            96,
+            0,
+            136.41,
+            94,
+            225,
+            97.92,
+            "ranked"
+          ],
+          [
+            2,
+            5,
+            "Sample Player 05",
+            6,
+            "Sample Player 06",
+            96,
+            96,
+            0,
+            134.56,
+            93,
+            227,
+            96.88,
+            "ranked"
+          ],
+          [
+            3,
+            7,
+            "Sample Player 07",
+            8,
+            "Sample Player 08",
+            96,
+            96,
+            0,
+            131.53,
+            93,
+            227,
+            96.88,
+            "ranked"
+          ]
+        ]
+      },
+      {
+        "question": "Q25",
+        "parameters": {
+          "window_start": "2023-10-01T00:00:00Z",
+          "window_end": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 144,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "year",
+          "quarter",
+          "batting_matches",
+          "observed_quarters",
+          "average_runs",
+          "average_strike_rate",
+          "runs_change",
+          "strike_rate_change",
+          "quarterly_trend",
+          "comparison_status",
+          "runs_slope_per_quarter",
+          "strike_rate_slope_per_quarter",
+          "career_phase"
+        ],
+        "preview": [
+          [
+            1,
+            "Sample Player 01",
+            2023,
+            4,
+            6,
+            12,
+            73.0,
+            138.61,
+            null,
+            null,
+            null,
+            "first_observed_quarter",
+            1.1748,
+            0.4493,
+            "Career Ascending"
+          ],
+          [
+            1,
+            "Sample Player 01",
+            2024,
+            1,
+            6,
+            12,
+            129.0,
+            160.27,
+            56.0,
+            21.66,
+            "Improving",
+            "compared",
+            1.1748,
+            0.4493,
+            "Career Ascending"
+          ],
+          [
+            1,
+            "Sample Player 01",
+            2024,
+            2,
+            6,
+            12,
+            45.0,
+            117.09,
+            -84.0,
+            -43.19,
+            "Declining",
+            "compared",
+            1.1748,
+            0.4493,
+            "Career Ascending"
+          ]
+        ]
+      },
+      {
+        "question": "Q22 venue breakdown",
+        "displayed_rows": 8,
+        "truncated": false
+      }
+    ],
+    "live": [
+      {
+        "question": "Q01",
+        "parameters": {
+          "as_of_date": "2026-10-01"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "full_name",
+          "playing_role",
+          "batting_style",
+          "bowling_style"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q02",
+        "parameters": {
+          "window_start": "2026-09-01T00:00:00Z",
+          "as_of_utc": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "match_description",
+          "team1_name",
+          "team2_name",
+          "venue_name",
+          "venue_city",
+          "match_date"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q03",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "total_runs",
+          "batting_average",
+          "centuries"
+        ],
+        "preview": [
+          [
+            "Temba Bavuma",
+            2168,
+            43.36,
+            6
+          ]
+        ]
+      },
+      {
+        "question": "Q04",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "venue_name",
+          "city",
+          "country",
+          "capacity"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q05",
+        "parameters": {},
+        "displayed_rows": 8,
+        "truncated": false,
+        "columns": [
+          "team_name",
+          "total_wins"
+        ],
+        "preview": [
+          [
+            "Australia",
+            0
+          ],
+          [
+            "Bangladesh Cricket Board XI",
+            0
+          ],
+          [
+            "New South Wales",
+            0
+          ]
+        ]
+      },
+      {
+        "question": "Q06",
+        "parameters": {},
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "playing_role",
+          "player_count"
+        ],
+        "preview": [
+          [
+            "Batsman",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "Q07",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 3,
+        "truncated": false,
+        "columns": [
+          "format",
+          "highest_score"
+        ],
+        "preview": [
+          [
+            "Test",
+            179
+          ],
+          [
+            "ODI",
+            144
+          ],
+          [
+            "T20I",
+            null
+          ]
+        ]
+      },
+      {
+        "question": "Q08",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "series_name",
+          "host_country",
+          "match_type",
+          "start_date",
+          "total_matches_planned"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q09",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "total_runs",
+          "total_wickets",
+          "cricket_format"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q10",
+        "parameters": {},
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "match_description",
+          "team1_name",
+          "team2_name",
+          "winning_team",
+          "victory_margin",
+          "victory_type",
+          "venue_name"
+        ],
+        "preview": [
+          [
+            "4th Match",
+            "Tasmania",
+            "Victoria",
+            null,
+            null,
+            null,
+            "Bellerive Oval"
+          ]
+        ]
+      },
+      {
+        "question": "Q11",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "test_runs",
+          "odi_runs",
+          "t20i_runs",
+          "overall_batting_average"
+        ],
+        "preview": [
+          [
+            4,
+            "Temba Bavuma",
+            3993,
+            2168,
+            null,
+            40.27
+          ]
+        ]
+      },
+      {
+        "question": "Q12",
+        "parameters": {},
+        "displayed_rows": 4,
+        "truncated": false,
+        "columns": [
+          "team_name",
+          "home_wins",
+          "away_wins",
+          "unclassified_wins"
+        ],
+        "preview": [
+          [
+            "Australia",
+            0,
+            0,
+            0
+          ],
+          [
+            "Bangladesh Cricket Board XI",
+            0,
+            0,
+            0
+          ],
+          [
+            "South Africa",
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "question": "Q13",
+        "parameters": {},
+        "displayed_rows": 4,
+        "truncated": false,
+        "columns": [
+          "match_id",
+          "innings_id",
+          "innings_number",
+          "player1_name",
+          "player2_name",
+          "combined_runs"
+        ],
+        "preview": [
+          [
+            1,
+            1,
+            1,
+            "Temba Bavuma",
+            "Matthew Breetzke",
+            183
+          ],
+          [
+            1,
+            1,
+            1,
+            "David Bedingham",
+            "Temba Bavuma",
+            179
+          ],
+          [
+            1,
+            1,
+            1,
+            "Marco Jansen",
+            "Simon Harmer",
+            167
+          ]
+        ]
+      },
+      {
+        "question": "Q14",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "venue_name",
+          "average_economy_rate",
+          "total_wickets",
+          "matches_played"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q15",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "average_runs",
+          "total_close_matches_played",
+          "team_wins_when_batted"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q16",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "match_year",
+          "matches_played",
+          "average_runs_per_match",
+          "average_strike_rate"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q17",
+        "parameters": {},
+        "displayed_rows": 2,
+        "truncated": false,
+        "columns": [
+          "toss_decision",
+          "eligible_matches",
+          "toss_winner_match_wins",
+          "win_percentage"
+        ],
+        "preview": [
+          [
+            "bat",
+            0,
+            0,
+            null
+          ],
+          [
+            "bowl",
+            0,
+            0,
+            null
+          ]
+        ]
+      },
+      {
+        "question": "Q18",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "overall_economy_rate",
+          "total_wickets",
+          "matches_bowled",
+          "average_overs_per_match"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q19",
+        "parameters": {},
+        "displayed_rows": 16,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "eligible_innings",
+          "average_runs",
+          "standard_deviation_runs"
+        ],
+        "preview": [
+          [
+            "Temba Bavuma",
+            1,
+            179.0,
+            0.0
+          ],
+          [
+            "Marco Jansen",
+            1,
+            85.0,
+            0.0
+          ],
+          [
+            "Simon Harmer",
+            1,
+            82.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "question": "Q20",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 1,
+        "truncated": false,
+        "columns": [
+          "player_name",
+          "test_matches",
+          "test_batting_average",
+          "odi_matches",
+          "odi_batting_average",
+          "t20_matches",
+          "t20_batting_average",
+          "total_known_matches"
+        ],
+        "preview": [
+          [
+            "Temba Bavuma",
+            68,
+            38.77,
+            57,
+            43.36,
+            36,
+            20.94,
+            161
+          ]
+        ]
+      },
+      {
+        "question": "Q21",
+        "parameters": {
+          "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "cricket_format",
+          "performance_rank",
+          "player_name",
+          "batting_points",
+          "bowling_points",
+          "fielding_points",
+          "total_points"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q22",
+        "parameters": {
+          "window_start": "2023-10-01T00:00:00Z",
+          "window_end": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "team_a_id",
+          "team_b_id",
+          "team_a",
+          "team_b",
+          "team_id",
+          "team_name",
+          "matches_played",
+          "wins",
+          "unknown_results",
+          "win_percentage",
+          "run_margin_wins",
+          "average_win_margin_runs",
+          "wicket_margin_wins",
+          "average_win_margin_wickets",
+          "wins_missing_margin"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q23",
+        "parameters": {
+          "as_of_utc": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "matches_last_5",
+          "matches_last_10",
+          "average_runs_last_5",
+          "average_runs_last_10",
+          "runs_momentum",
+          "strike_rate_last_5",
+          "strike_rate_last_10",
+          "strike_rate_change",
+          "scores_above_50_last_5",
+          "scores_above_50_last_10",
+          "standard_deviation_runs",
+          "consistency_score",
+          "form_category",
+          "coverage_status"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q24",
+        "parameters": {},
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "success_rank",
+          "player_a_id",
+          "player_a_name",
+          "player_b_id",
+          "player_b_name",
+          "pair_appearances",
+          "known_scores",
+          "missing_scores",
+          "average_combined_runs",
+          "scores_above_50",
+          "highest_combined_runs",
+          "success_percentage",
+          "coverage_status"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q25",
+        "parameters": {
+          "window_start": "2023-10-01T00:00:00Z",
+          "window_end": "2026-10-01T00:00:00Z"
+        },
+        "displayed_rows": 0,
+        "truncated": false,
+        "columns": [
+          "player_id",
+          "player_name",
+          "year",
+          "quarter",
+          "batting_matches",
+          "observed_quarters",
+          "average_runs",
+          "average_strike_rate",
+          "runs_change",
+          "strike_rate_change",
+          "quarterly_trend",
+          "comparison_status",
+          "runs_slope_per_quarter",
+          "strike_rate_slope_per_quarter",
+          "career_phase"
+        ],
+        "preview": []
+      },
+      {
+        "question": "Q22 venue breakdown",
+        "displayed_rows": 0,
+        "truncated": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "question": "Q10",
+  "ordering": "Known completion timestamps descending first, then undated completions by start time; stable match-ID tie-breaker",
+  "datasets": {
+    "sample": {
+      "row_count": 20,
+      "rows": [
+        {
+          "match_description": "Synthetic match 072",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 168,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 071",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 99,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 070",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 231,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 069",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 99,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 068",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 63,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 067",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 12,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 066",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 147,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 065",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 216,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 064",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 399,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 063",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 111,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 062",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 147,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 061",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 117,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 060",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 63,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 059",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 99,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 058",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 231,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 057",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 99,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 056",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 168,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        },
+        {
+          "match_description": "Synthetic match 055",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 303,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 054",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample Australia XI",
+          "victory_margin": 63,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 2"
+        },
+        {
+          "match_description": "Synthetic match 053",
+          "team1_name": "Sample India XI",
+          "team2_name": "Sample Australia XI",
+          "winning_team": "Sample India XI",
+          "victory_margin": 6,
+          "victory_type": "runs",
+          "venue_name": "Sample Ground 1"
+        }
+      ],
+      "coverage": {
+        "completed_matches": 72,
+        "unknown_completion_time": 0,
+        "unresolved_results": 0
+      },
+      "query_plan": [
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH winner USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 1,
+      "rows": [
+        {
+          "match_description": "4th Match",
+          "team1_name": "Tasmania",
+          "team2_name": "Victoria",
+          "winning_team": null,
+          "victory_margin": null,
+          "victory_type": null,
+          "venue_name": "Bellerive Oval"
+        }
+      ],
+      "coverage": {
+        "completed_matches": 1,
+        "unknown_completion_time": 1,
+        "unresolved_results": 1
+      },
+      "query_plan": [
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)",
+        "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH winner USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

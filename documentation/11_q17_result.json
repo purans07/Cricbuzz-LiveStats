@@ -1,0 +1,54 @@
+{
+  "question": "Q17",
+  "denominator": "Completed matches with resolved win/draw/tie/no_result, known toss winner and decision; nonwinning outcomes remain in denominator",
+  "datasets": {
+    "sample": {
+      "rows": [
+        {
+          "toss_decision": "bat",
+          "eligible_matches": 72,
+          "toss_winner_match_wins": 43,
+          "win_percentage": 59.72
+        },
+        {
+          "toss_decision": "bowl",
+          "eligible_matches": 0,
+          "toss_winner_match_wins": 0,
+          "win_percentage": null
+        }
+      ],
+      "completed_matches_missing_eligibility_metadata": 0,
+      "query_plan": [
+        "CO-ROUTINE toss_options",
+        "SCAN 2 CONSTANT ROWS",
+        "SCAN d",
+        "SEARCH m USING INDEX idx_matches_status_date (status=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR GROUP BY"
+      ]
+    },
+    "live": {
+      "rows": [
+        {
+          "toss_decision": "bat",
+          "eligible_matches": 0,
+          "toss_winner_match_wins": 0,
+          "win_percentage": null
+        },
+        {
+          "toss_decision": "bowl",
+          "eligible_matches": 0,
+          "toss_winner_match_wins": 0,
+          "win_percentage": null
+        }
+      ],
+      "completed_matches_missing_eligibility_metadata": 1,
+      "query_plan": [
+        "CO-ROUTINE toss_options",
+        "SCAN 2 CONSTANT ROWS",
+        "SCAN d",
+        "SEARCH m USING INDEX idx_matches_status_date (status=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR GROUP BY"
+      ]
+    }
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "question": "Q23",
+  "scope": "Last ten completed batting matches per active player, ordinary innings combined, all formats, starts before explicit UTC cutoff",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "as_of_utc": "2026-10-01T00:00:00Z"
+      },
+      "row_count": 12,
+      "rows": [
+        {
+          "player_id": 1,
+          "player_name": "Sample Player 01",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 122.4,
+          "average_runs_last_10": 108.8,
+          "runs_momentum": 13.6,
+          "strike_rate_last_5": 161.9,
+          "strike_rate_last_10": 155.43,
+          "strike_rate_change": 6.48,
+          "scores_above_50_last_5": 5,
+          "scores_above_50_last_10": 9,
+          "standard_deviation_runs": 45.63,
+          "consistency_score": 35.4,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 2,
+          "player_name": "Sample Player 02",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 114.6,
+          "average_runs_last_10": 112.6,
+          "runs_momentum": 2.0,
+          "strike_rate_last_5": 160.96,
+          "strike_rate_last_10": 157.92,
+          "strike_rate_change": 3.03,
+          "scores_above_50_last_5": 4,
+          "scores_above_50_last_10": 9,
+          "standard_deviation_runs": 58.27,
+          "consistency_score": 30.02,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 3,
+          "player_name": "Sample Player 03",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 64.8,
+          "average_runs_last_10": 95.4,
+          "runs_momentum": -30.6,
+          "strike_rate_last_5": 139.66,
+          "strike_rate_last_10": 151.19,
+          "strike_rate_change": -11.53,
+          "scores_above_50_last_5": 2,
+          "scores_above_50_last_10": 7,
+          "standard_deviation_runs": 55.47,
+          "consistency_score": 31.07,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 4,
+          "player_name": "Sample Player 04",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 36.0,
+          "average_runs_last_10": 88.7,
+          "runs_momentum": -52.7,
+          "strike_rate_last_5": 111.11,
+          "strike_rate_last_10": 148.83,
+          "strike_rate_change": -37.71,
+          "scores_above_50_last_5": 1,
+          "scores_above_50_last_10": 6,
+          "standard_deviation_runs": 67.84,
+          "consistency_score": 26.93,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 5,
+          "player_name": "Sample Player 05",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 49.2,
+          "average_runs_last_10": 82.0,
+          "runs_momentum": -32.8,
+          "strike_rate_last_5": 128.13,
+          "strike_rate_last_10": 145.91,
+          "strike_rate_change": -17.78,
+          "scores_above_50_last_5": 2,
+          "scores_above_50_last_10": 6,
+          "standard_deviation_runs": 53.91,
+          "consistency_score": 31.68,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 6,
+          "player_name": "Sample Player 06",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 62.4,
+          "average_runs_last_10": 75.3,
+          "runs_momentum": -12.9,
+          "strike_rate_last_5": 136.84,
+          "strike_rate_last_10": 141.81,
+          "strike_rate_change": -4.97,
+          "scores_above_50_last_5": 3,
+          "scores_above_50_last_10": 7,
+          "standard_deviation_runs": 35.87,
+          "consistency_score": 41.07,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 7,
+          "player_name": "Sample Player 07",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 74.4,
+          "average_runs_last_10": 68.3,
+          "runs_momentum": 6.1,
+          "strike_rate_last_5": 144.19,
+          "strike_rate_last_10": 137.42,
+          "strike_rate_change": 6.76,
+          "scores_above_50_last_5": 4,
+          "scores_above_50_last_10": 6,
+          "standard_deviation_runs": 32.69,
+          "consistency_score": 43.33,
+          "form_category": "Good Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 8,
+          "player_name": "Sample Player 08",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 87.6,
+          "average_runs_last_10": 72.1,
+          "runs_momentum": 15.5,
+          "strike_rate_last_5": 152.08,
+          "strike_rate_last_10": 141.37,
+          "strike_rate_change": 10.71,
+          "scores_above_50_last_5": 5,
+          "scores_above_50_last_10": 7,
+          "standard_deviation_runs": 34.75,
+          "consistency_score": 41.84,
+          "form_category": "Good Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 9,
+          "player_name": "Sample Player 09",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 100.8,
+          "average_runs_last_10": 86.4,
+          "runs_momentum": 14.4,
+          "strike_rate_last_5": 155.56,
+          "strike_rate_last_10": 146.94,
+          "strike_rate_change": 8.62,
+          "scores_above_50_last_5": 5,
+          "scores_above_50_last_10": 8,
+          "standard_deviation_runs": 38.34,
+          "consistency_score": 39.47,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 10,
+          "player_name": "Sample Player 10",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 114.0,
+          "average_runs_last_10": 100.7,
+          "runs_momentum": 13.3,
+          "strike_rate_last_5": 161.02,
+          "strike_rate_last_10": 154.21,
+          "strike_rate_change": 6.81,
+          "scores_above_50_last_5": 5,
+          "scores_above_50_last_10": 9,
+          "standard_deviation_runs": 42.23,
+          "consistency_score": 37.19,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 11,
+          "player_name": "Sample Player 11",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 127.2,
+          "average_runs_last_10": 115.0,
+          "runs_momentum": 12.2,
+          "strike_rate_last_5": 163.08,
+          "strike_rate_last_10": 157.32,
+          "strike_rate_change": 5.76,
+          "scores_above_50_last_5": 5,
+          "scores_above_50_last_10": 10,
+          "standard_deviation_runs": 46.34,
+          "consistency_score": 35.04,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        },
+        {
+          "player_id": 12,
+          "player_name": "Sample Player 12",
+          "matches_last_5": 5,
+          "matches_last_10": 10,
+          "average_runs_last_5": 77.4,
+          "average_runs_last_10": 97.8,
+          "runs_momentum": -20.4,
+          "strike_rate_last_5": 146.59,
+          "strike_rate_last_10": 152.81,
+          "strike_rate_change": -6.22,
+          "scores_above_50_last_5": 3,
+          "scores_above_50_last_10": 8,
+          "standard_deviation_runs": 52.28,
+          "consistency_score": 32.35,
+          "form_category": "Average Form",
+          "coverage_status": "classified"
+        }
+      ],
+      "query_plan": [
+        {
+          "id": 2,
+          "parent": 0,
+          "notused": 0,
+          "detail": "CO-ROUTINE dispersion"
+        },
+        {
+          "id": 4,
+          "parent": 2,
+          "notused": 0,
+          "detail": "CO-ROUTINE metrics"
+        },
+        {
+          "id": 7,
+          "parent": 4,
+          "notused": 0,
+          "detail": "MATERIALIZE ordered"
+        },
+        {
+          "id": 10,
+          "parent": 7,
+          "notused": 0,
+          "detail": "CO-ROUTINE (subquery-12)"
+        },
+        {
+          "id": 13,
+          "parent": 10,
+          "notused": 0,
+          "detail": "MATERIALIZE match_scores"
+        },
+        {
+          "id": 24,
+          "parent": 13,
+          "notused": 213,
+          "detail": "SCAN b USING INDEX idx_batting_player_match"
+        },
+        {
+          "id": 29,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 34,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 39,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 46,
+          "parent": 13,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 115,
+          "parent": 10,
+          "notused": 82,
+          "detail": "SCAN match_scores"
+        },
+        {
+          "id": 128,
+          "parent": 10,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR ORDER BY"
+        },
+        {
+          "id": 150,
+          "parent": 7,
+          "notused": 82,
+          "detail": "SCAN (subquery-12)"
+        },
+        {
+          "id": 210,
+          "parent": 4,
+          "notused": 82,
+          "detail": "SCAN ordered"
+        },
+        {
+          "id": 214,
+          "parent": 4,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 363,
+          "parent": 2,
+          "notused": 82,
+          "detail": "SCAN m"
+        },
+        {
+          "id": 368,
+          "parent": 2,
+          "notused": 0,
+          "detail": "BLOOM FILTER ON ordered (player_id=?)"
+        },
+        {
+          "id": 381,
+          "parent": 2,
+          "notused": 53,
+          "detail": "SEARCH ordered USING AUTOMATIC PARTIAL COVERING INDEX (player_id=?)"
+        },
+        {
+          "id": 390,
+          "parent": 2,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 453,
+          "parent": 0,
+          "notused": 82,
+          "detail": "SCAN dispersion"
+        },
+        {
+          "id": 456,
+          "parent": 0,
+          "notused": 45,
+          "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 565,
+          "parent": 0,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR ORDER BY"
+        }
+      ]
+    },
+    "live": {
+      "parameters": {
+        "as_of_utc": "2026-10-22T07:52:06Z"
+      },
+      "row_count": 0,
+      "rows": [],
+      "query_plan": [
+        {
+          "id": 2,
+          "parent": 0,
+          "notused": 0,
+          "detail": "CO-ROUTINE dispersion"
+        },
+        {
+          "id": 4,
+          "parent": 2,
+          "notused": 0,
+          "detail": "CO-ROUTINE metrics"
+        },
+        {
+          "id": 7,
+          "parent": 4,
+          "notused": 0,
+          "detail": "MATERIALIZE ordered"
+        },
+        {
+          "id": 10,
+          "parent": 7,
+          "notused": 0,
+          "detail": "CO-ROUTINE (subquery-12)"
+        },
+        {
+          "id": 13,
+          "parent": 10,
+          "notused": 0,
+          "detail": "MATERIALIZE match_scores"
+        },
+        {
+          "id": 24,
+          "parent": 13,
+          "notused": 213,
+          "detail": "SCAN b USING INDEX idx_batting_player_match"
+        },
+        {
+          "id": 29,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 34,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 39,
+          "parent": 13,
+          "notused": 45,
+          "detail": "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 46,
+          "parent": 13,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 115,
+          "parent": 10,
+          "notused": 82,
+          "detail": "SCAN match_scores"
+        },
+        {
+          "id": 128,
+          "parent": 10,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR ORDER BY"
+        },
+        {
+          "id": 150,
+          "parent": 7,
+          "notused": 82,
+          "detail": "SCAN (subquery-12)"
+        },
+        {
+          "id": 210,
+          "parent": 4,
+          "notused": 82,
+          "detail": "SCAN ordered"
+        },
+        {
+          "id": 214,
+          "parent": 4,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 363,
+          "parent": 2,
+          "notused": 82,
+          "detail": "SCAN m"
+        },
+        {
+          "id": 368,
+          "parent": 2,
+          "notused": 0,
+          "detail": "BLOOM FILTER ON ordered (player_id=?)"
+        },
+        {
+          "id": 381,
+          "parent": 2,
+          "notused": 53,
+          "detail": "SEARCH ordered USING AUTOMATIC PARTIAL COVERING INDEX (player_id=?)"
+        },
+        {
+          "id": 390,
+          "parent": 2,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR GROUP BY"
+        },
+        {
+          "id": 453,
+          "parent": 0,
+          "notused": 82,
+          "detail": "SCAN dispersion"
+        },
+        {
+          "id": 456,
+          "parent": 0,
+          "notused": 45,
+          "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        },
+        {
+          "id": 565,
+          "parent": 0,
+          "notused": 0,
+          "detail": "USE TEMP B-TREE FOR ORDER BY"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "milestone": "Phase 12 Live Matches",
+  "verification": "Read-only existing sample/live snapshots; no new HTTP request",
+  "datasets": {
+    "sample": {
+      "match_count": 72,
+      "ongoing_saved_count": 0,
+      "scorecards": [
+        {
+          "local_match_id": 72,
+          "provider_match_id": "fixture-match-72",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 509,
+              "wickets": 5,
+              "legal_balls": 323,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 2,
+              "runs": 341,
+              "wickets": 5,
+              "legal_balls": 239,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            }
+          ]
+        },
+        {
+          "local_match_id": 71,
+          "provider_match_id": "fixture-match-71",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 386,
+              "wickets": 5,
+              "legal_balls": 261,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 2,
+              "runs": 485,
+              "wickets": 5,
+              "legal_balls": 311,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            }
+          ]
+        },
+        {
+          "local_match_id": 70,
+          "provider_match_id": "fixture-match-70",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 530,
+              "wickets": 5,
+              "legal_balls": 333,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 2,
+              "runs": 362,
+              "wickets": 5,
+              "legal_balls": 249,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 3,
+              "runs": 461,
+              "wickets": 5,
+              "legal_balls": 299,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 4,
+              "runs": 398,
+              "wickets": 5,
+              "legal_balls": 267,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            }
+          ]
+        },
+        {
+          "local_match_id": 69,
+          "provider_match_id": "fixture-match-69",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 407,
+              "wickets": 5,
+              "legal_balls": 272,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            },
+            {
+              "number": 2,
+              "runs": 506,
+              "wickets": 5,
+              "legal_balls": 321,
+              "batting_rows": 6,
+              "bowling_rows": 6
+            }
+          ]
+        }
+      ]
+    },
+    "live": {
+      "match_count": 4,
+      "ongoing_saved_count": 3,
+      "scorecards": [
+        {
+          "local_match_id": 2,
+          "provider_match_id": "173040",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 110,
+              "wickets": 2,
+              "legal_balls": 174,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            }
+          ]
+        },
+        {
+          "local_match_id": 4,
+          "provider_match_id": "166620",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 440,
+              "wickets": 6,
+              "legal_balls": 660,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 2,
+              "runs": 339,
+              "wickets": 10,
+              "legal_balls": 631,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 3,
+              "runs": 262,
+              "wickets": 5,
+              "legal_balls": 309,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 4,
+              "runs": 122,
+              "wickets": 4,
+              "legal_balls": 342,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            }
+          ]
+        },
+        {
+          "local_match_id": 3,
+          "provider_match_id": "166607",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 241,
+              "wickets": 10,
+              "legal_balls": 536,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 2,
+              "runs": 207,
+              "wickets": 10,
+              "legal_balls": 367,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 3,
+              "runs": 236,
+              "wickets": 10,
+              "legal_balls": 513,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            },
+            {
+              "number": 4,
+              "runs": 266,
+              "wickets": 10,
+              "legal_balls": 510,
+              "batting_rows": 0,
+              "bowling_rows": 0
+            }
+          ]
+        },
+        {
+          "local_match_id": 1,
+          "provider_match_id": "147931",
+          "innings": [
+            {
+              "number": 1,
+              "runs": 425,
+              "wickets": 9,
+              "legal_balls": 763,
+              "batting_rows": 10,
+              "bowling_rows": 8
+            },
+            {
+              "number": 2,
+              "runs": 99,
+              "wickets": 10,
+              "legal_balls": 255,
+              "batting_rows": 11,
+              "bowling_rows": 6
+            },
+            {
+              "number": 3,
+              "runs": 156,
+              "wickets": 4,
+              "legal_balls": 324,
+              "batting_rows": 6,
+              "bowling_rows": 5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

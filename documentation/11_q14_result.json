@@ -1,0 +1,211 @@
+{
+  "question": "Q14",
+  "definition": "Aggregate ordinary innings per player/match/venue first; >=24 known legal balls per qualifying match, >=3 qualifying matches per venue, arithmetic mean of per-match economies",
+  "datasets": {
+    "sample": {
+      "row_count": 24,
+      "rows": [
+        {
+          "player_name": "Sample Player 01",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.92,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 01",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.9,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 02",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.95,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 02",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.93,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 03",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.89,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 03",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.86,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 04",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.95,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 04",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.94,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 05",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.97,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 05",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.95,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 06",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.94,
+          "total_wickets": 0,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 06",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.92,
+          "total_wickets": 0,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 07",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.95,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 07",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.98,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 08",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.97,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 08",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 9.0,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 09",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.9,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 09",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.93,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 10",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.98,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 10",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 9.0,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 11",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.99,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 11",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 9.01,
+          "total_wickets": 48,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 12",
+          "venue_name": "Sample Ground 1",
+          "average_economy_rate": 8.96,
+          "total_wickets": 0,
+          "matches_played": 36
+        },
+        {
+          "player_name": "Sample Player 12",
+          "venue_name": "Sample Ground 2",
+          "average_economy_rate": 8.99,
+          "total_wickets": 0,
+          "matches_played": 36
+        }
+      ],
+      "matches_with_active_bowling_data": 72,
+      "query_plan": [
+        "CO-ROUTINE qualifying_matches",
+        "SCAN b USING INDEX idx_bowling_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 0,
+      "rows": [],
+      "matches_with_active_bowling_data": 1,
+      "query_plan": [
+        "CO-ROUTINE qualifying_matches",
+        "SCAN b USING INDEX idx_bowling_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

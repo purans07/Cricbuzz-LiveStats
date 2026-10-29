@@ -1,0 +1,36 @@
+{
+  "verified_on": "2026-10-29",
+  "tests": 659,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 26.553,
+  "engines": {
+    "sqlite": "3.50.2",
+    "postgresql": "14.21",
+    "mysql": "9.5.0"
+  },
+  "acceptance": [
+    "26 analytical questions compared against SQLite on each server",
+    "Q22 venue variant compared on each server",
+    "player and innings statistics CRUD",
+    "atomic and duplicate imports",
+    "transaction rollback and revision consistency",
+    "SELECT-only reader enforcement",
+    "privileged reader rejection",
+    "all six Streamlit dashboard pages on each server"
+  ],
+  "limits": [
+    "local isolated servers only; remote TLS and hosted deployment not acceptance-tested",
+    "server schema 2 initialization requires empty database",
+    "public packaged demo remains SQLite"
+  ],
+  "working_live_counts": {
+    "matches": 87,
+    "innings": 199,
+    "players": 53,
+    "career_stats_snapshots": 11,
+    "enriched_players": 3
+  },
+  "working_live_integrity_check": "ok"
+}

@@ -1,0 +1,2224 @@
+{
+  "application_functions_missing_docstrings": [],
+  "saved_query_count": 26,
+  "queries": [
+    {
+      "id": "Q01",
+      "sql": "q01_india_players.sql",
+      "plan": [
+        [
+          4,
+          0,
+          216,
+          "SCAN players"
+        ],
+        [
+          9,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 1"
+        ],
+        [
+          16,
+          9,
+          45,
+          "SEARCH c USING COVERING INDEX sqlite_autoindex_countries_1 (name=?)"
+        ],
+        [
+          20,
+          9,
+          51,
+          "SEARCH pm USING INDEX idx_memberships_player_dates (player_id=? AND valid_from<?)"
+        ],
+        [
+          32,
+          9,
+          45,
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          45,
+          0,
+          45,
+          "SEARCH r USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          61,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q02",
+      "sql": "q02_recent_matches.sql",
+      "plan": [
+        [
+          11,
+          0,
+          78,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          40,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 1"
+        ],
+        [
+          45,
+          40,
+          62,
+          "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)"
+        ],
+        [
+          57,
+          0,
+          47,
+          "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          66,
+          0,
+          45,
+          "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          69,
+          0,
+          47,
+          "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          78,
+          0,
+          45,
+          "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          81,
+          0,
+          45,
+          "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          100,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q03",
+      "sql": "q03_top_odi_run_scorers.sql",
+      "plan": [
+        [
+          10,
+          0,
+          45,
+          "SEARCH f USING COVERING INDEX sqlite_autoindex_formats_1 (code=?)"
+        ],
+        [
+          14,
+          0,
+          45,
+          "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          20,
+          0,
+          61,
+          "SEARCH c USING INDEX idx_career_format_player (format_id=?)"
+        ],
+        [
+          29,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          38,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 4"
+        ],
+        [
+          45,
+          38,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          46,
+          45,
+          0,
+          "INDEX 1"
+        ],
+        [
+          56,
+          46,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          61,
+          45,
+          0,
+          "INDEX 2"
+        ],
+        [
+          72,
+          61,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          92,
+          38,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          104,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          112,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          144,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q04",
+      "sql": "q04_large_venues.sql",
+      "plan": [
+        [
+          4,
+          0,
+          216,
+          "SCAN v"
+        ],
+        [
+          8,
+          0,
+          45,
+          "SEARCH c USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q05",
+      "sql": "q05_team_wins.sql",
+      "plan": [
+        [
+          9,
+          0,
+          216,
+          "SCAN t"
+        ],
+        [
+          11,
+          0,
+          60,
+          "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN"
+        ],
+        [
+          59,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q06",
+      "sql": "q06_players_per_role.sql",
+      "plan": [
+        [
+          9,
+          0,
+          216,
+          "SCAN r"
+        ],
+        [
+          11,
+          0,
+          61,
+          "SEARCH players USING INDEX idx_players_role (role_id=?) LEFT-JOIN"
+        ],
+        [
+          56,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q07",
+      "sql": "q07_highest_score_per_format.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE requested_formats"
+        ],
+        [
+          3,
+          2,
+          0,
+          "SCAN 3 CONSTANT ROWS"
+        ],
+        [
+          19,
+          0,
+          0,
+          "MATERIALIZE v_latest_career"
+        ],
+        [
+          24,
+          19,
+          216,
+          "SCAN c"
+        ],
+        [
+          28,
+          19,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          36,
+          19,
+          0,
+          "SCALAR SUBQUERY 4"
+        ],
+        [
+          40,
+          36,
+          39,
+          "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          51,
+          19,
+          0,
+          "CORRELATED SCALAR SUBQUERY 8"
+        ],
+        [
+          58,
+          51,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          59,
+          58,
+          0,
+          "INDEX 1"
+        ],
+        [
+          69,
+          59,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          74,
+          58,
+          0,
+          "INDEX 2"
+        ],
+        [
+          85,
+          74,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          105,
+          51,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          117,
+          19,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          158,
+          0,
+          19,
+          "SCAN rf"
+        ],
+        [
+          161,
+          0,
+          47,
+          "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?) LEFT-JOIN"
+        ],
+        [
+          175,
+          0,
+          192,
+          "SCAN c LEFT-JOIN"
+        ],
+        [
+          184,
+          0,
+          0,
+          "SCALAR SUBQUERY 4"
+        ],
+        [
+          188,
+          184,
+          39,
+          "SEARCH sources USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          202,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          252,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q08",
+      "sql": "q08_series_started_2024.sql",
+      "plan": [
+        [
+          4,
+          0,
+          164,
+          "SEARCH s USING INDEX idx_series_start (start_date>? AND start_date<?)"
+        ],
+        [
+          12,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 2"
+        ],
+        [
+          15,
+          12,
+          0,
+          "CO-ROUTINE h"
+        ],
+        [
+          19,
+          15,
+          56,
+          "SEARCH sh USING COVERING INDEX sqlite_autoindex_series_hosts_1 (series_id=?)"
+        ],
+        [
+          23,
+          15,
+          45,
+          "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          31,
+          15,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        [
+          41,
+          12,
+          97,
+          "SCAN h"
+        ],
+        [
+          54,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 4"
+        ],
+        [
+          57,
+          54,
+          0,
+          "CO-ROUTINE ft"
+        ],
+        [
+          61,
+          57,
+          56,
+          "SEARCH sf USING COVERING INDEX sqlite_autoindex_series_formats_1 (series_id=?)"
+        ],
+        [
+          65,
+          57,
+          45,
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          73,
+          57,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        [
+          83,
+          54,
+          97,
+          "SCAN ft"
+        ]
+      ]
+    },
+    {
+      "id": "Q09",
+      "sql": "q09_qualified_all_rounders.sql",
+      "plan": [
+        [
+          11,
+          0,
+          45,
+          "SEARCH r USING COVERING INDEX sqlite_autoindex_playing_roles_1 (name=?)"
+        ],
+        [
+          15,
+          0,
+          45,
+          "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          21,
+          0,
+          61,
+          "SEARCH p USING INDEX idx_players_role (role_id=?)"
+        ],
+        [
+          26,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          34,
+          0,
+          61,
+          "SEARCH c USING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=?)"
+        ],
+        [
+          51,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          60,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 4"
+        ],
+        [
+          67,
+          60,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          68,
+          67,
+          0,
+          "INDEX 1"
+        ],
+        [
+          78,
+          68,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          83,
+          67,
+          0,
+          "INDEX 2"
+        ],
+        [
+          94,
+          83,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          114,
+          60,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          126,
+          0,
+          45,
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          138,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q10",
+      "sql": "q10_last_completed_matches.sql",
+      "plan": [
+        [
+          13,
+          0,
+          62,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          18,
+          0,
+          47,
+          "SEARCH mt1 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          27,
+          0,
+          45,
+          "SEARCH t1 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          30,
+          0,
+          47,
+          "SEARCH mt2 USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          39,
+          0,
+          45,
+          "SEARCH t2 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          42,
+          0,
+          45,
+          "SEARCH winner USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          47,
+          0,
+          45,
+          "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          80,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q11",
+      "sql": "q11_cross_format_batting.sql",
+      "plan": [
+        [
+          14,
+          0,
+          45,
+          "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          20,
+          0,
+          63,
+          "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?)"
+        ],
+        [
+          44,
+          0,
+          61,
+          "SEARCH c USING INDEX idx_career_format_player (format_id=?)"
+        ],
+        [
+          53,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          62,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 5"
+        ],
+        [
+          69,
+          62,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          70,
+          69,
+          0,
+          "INDEX 1"
+        ],
+        [
+          80,
+          70,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          85,
+          69,
+          0,
+          "INDEX 2"
+        ],
+        [
+          96,
+          85,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          116,
+          62,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          128,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          136,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          142,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          237,
+          0,
+          0,
+          "USE TEMP B-TREE FOR count(DISTINCT)"
+        ],
+        [
+          240,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q12",
+      "sql": "q12_home_away_wins.sql",
+      "plan": [
+        [
+          10,
+          0,
+          216,
+          "SCAN t"
+        ],
+        [
+          14,
+          0,
+          60,
+          "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN"
+        ],
+        [
+          27,
+          0,
+          45,
+          "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+        ],
+        [
+          98,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q13",
+      "sql": "q13_adjacent_batting_pairs.sql",
+      "plan": [
+        [
+          13,
+          0,
+          208,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          18,
+          0,
+          46,
+          "SEARCH b USING INDEX sqlite_autoindex_batting_performances_2 (innings_id=? AND batting_position=?)"
+        ],
+        [
+          36,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          52,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          60,
+          0,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          68,
+          0,
+          45,
+          "SEARCH p1 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          74,
+          0,
+          45,
+          "SEARCH p2 USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          80,
+          0,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          99,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q14",
+      "sql": "q14_bowling_by_venue.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE qualifying_matches"
+        ],
+        [
+          12,
+          2,
+          214,
+          "SCAN b USING INDEX idx_bowling_player_match"
+        ],
+        [
+          17,
+          2,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          22,
+          2,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          27,
+          2,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          2,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          111,
+          0,
+          82,
+          "SCAN q"
+        ],
+        [
+          114,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          117,
+          0,
+          45,
+          "SEARCH v USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          120,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          188,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q15",
+      "sql": "q15_close_match_batting.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE close_player_matches"
+        ],
+        [
+          12,
+          2,
+          213,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          17,
+          2,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          2,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          37,
+          2,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          42,
+          2,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          102,
+          0,
+          82,
+          "SCAN q"
+        ],
+        [
+          105,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          108,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          178,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q16",
+      "sql": "q16_yearly_batting.sql",
+      "plan": [
+        [
+          3,
+          0,
+          0,
+          "MATERIALIZE match_batting"
+        ],
+        [
+          13,
+          3,
+          213,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          18,
+          3,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          23,
+          3,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          90,
+          0,
+          78,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          117,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 2"
+        ],
+        [
+          122,
+          117,
+          62,
+          "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)"
+        ],
+        [
+          134,
+          0,
+          62,
+          "SEARCH mp USING INDEX sqlite_autoindex_match_players_2 (match_id=?)"
+        ],
+        [
+          139,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          147,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          157,
+          0,
+          0,
+          "BLOOM FILTER ON mb (player_id=? AND match_id=?)"
+        ],
+        [
+          169,
+          0,
+          47,
+          "SEARCH mb USING AUTOMATIC COVERING INDEX (player_id=? AND match_id=?) LEFT-JOIN"
+        ],
+        [
+          184,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          271,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q17",
+      "sql": "q17_toss_decision_win_rate.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE toss_options"
+        ],
+        [
+          3,
+          2,
+          0,
+          "SCAN 2 CONSTANT ROWS"
+        ],
+        [
+          16,
+          0,
+          18,
+          "SCAN d"
+        ],
+        [
+          19,
+          0,
+          62,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?) LEFT-JOIN"
+        ],
+        [
+          52,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q18",
+      "sql": "q18_limited_overs_economy.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE qualified_bowlers"
+        ],
+        [
+          4,
+          2,
+          0,
+          "CO-ROUTINE match_bowling"
+        ],
+        [
+          15,
+          4,
+          214,
+          "SCAN b USING INDEX idx_bowling_player_match"
+        ],
+        [
+          20,
+          4,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          25,
+          4,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          30,
+          4,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          33,
+          4,
+          45,
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          104,
+          2,
+          82,
+          "SCAN match_bowling"
+        ],
+        [
+          107,
+          2,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          177,
+          0,
+          82,
+          "SCAN q"
+        ],
+        [
+          180,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          208,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q19",
+      "sql": "q19_batting_consistency.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE player_variances"
+        ],
+        [
+          4,
+          2,
+          0,
+          "CO-ROUTINE player_means"
+        ],
+        [
+          14,
+          4,
+          213,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          23,
+          4,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          28,
+          4,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          33,
+          4,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          79,
+          2,
+          217,
+          "SCAN a"
+        ],
+        [
+          82,
+          2,
+          61,
+          "SEARCH b USING INDEX idx_batting_player_match (player_id=?)"
+        ],
+        [
+          95,
+          2,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          103,
+          2,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          108,
+          2,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          113,
+          2,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          167,
+          0,
+          82,
+          "SCAN v"
+        ],
+        [
+          170,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          186,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q20",
+      "sql": "q20_format_matches_and_averages.sql",
+      "plan": [
+        [
+          14,
+          0,
+          45,
+          "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          20,
+          0,
+          70,
+          "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?)"
+        ],
+        [
+          50,
+          0,
+          61,
+          "SEARCH c USING INDEX idx_career_format_player (format_id=?)"
+        ],
+        [
+          57,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          66,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 5"
+        ],
+        [
+          73,
+          66,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          74,
+          73,
+          0,
+          "INDEX 1"
+        ],
+        [
+          84,
+          74,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          89,
+          73,
+          0,
+          "INDEX 2"
+        ],
+        [
+          100,
+          89,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          120,
+          66,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          132,
+          0,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          140,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          146,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          358,
+          0,
+          0,
+          "USE TEMP B-TREE FOR count(DISTINCT)"
+        ],
+        [
+          361,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q21",
+      "sql": "q21_weighted_performance_rank.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE ranked_players"
+        ],
+        [
+          5,
+          2,
+          0,
+          "CO-ROUTINE (subquery-9)"
+        ],
+        [
+          13,
+          5,
+          45,
+          "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)"
+        ],
+        [
+          19,
+          5,
+          209,
+          "SCAN c USING INDEX idx_career_format_player"
+        ],
+        [
+          88,
+          5,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          97,
+          5,
+          0,
+          "CORRELATED SCALAR SUBQUERY 8"
+        ],
+        [
+          104,
+          97,
+          0,
+          "MULTI-INDEX OR"
+        ],
+        [
+          105,
+          104,
+          0,
+          "INDEX 1"
+        ],
+        [
+          115,
+          105,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)"
+        ],
+        [
+          120,
+          104,
+          0,
+          "INDEX 2"
+        ],
+        [
+          131,
+          120,
+          50,
+          "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)"
+        ],
+        [
+          151,
+          97,
+          44,
+          "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)"
+        ],
+        [
+          163,
+          5,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          168,
+          5,
+          45,
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          407,
+          5,
+          0,
+          "USE TEMP B-TREE FOR LAST TERM OF ORDER BY"
+        ],
+        [
+          433,
+          2,
+          193,
+          "SCAN (subquery-9)"
+        ],
+        [
+          516,
+          0,
+          193,
+          "SCAN r"
+        ],
+        [
+          519,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          537,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q22",
+      "sql": "q22_head_to_head.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE team_results"
+        ],
+        [
+          3,
+          2,
+          0,
+          "COMPOUND QUERY"
+        ],
+        [
+          4,
+          3,
+          0,
+          "LEFT-MOST SUBQUERY"
+        ],
+        [
+          7,
+          4,
+          0,
+          "MATERIALIZE eligible"
+        ],
+        [
+          21,
+          7,
+          62,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          30,
+          7,
+          47,
+          "SEARCH a USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          39,
+          7,
+          47,
+          "SEARCH b USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          48,
+          7,
+          46,
+          "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=? AND innings_number=?) LEFT-JOIN"
+        ],
+        [
+          59,
+          7,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          124,
+          4,
+          62,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          133,
+          4,
+          47,
+          "SEARCH a USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          142,
+          4,
+          47,
+          "SEARCH b USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          151,
+          4,
+          46,
+          "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=? AND innings_number=?) LEFT-JOIN"
+        ],
+        [
+          166,
+          4,
+          0,
+          "BLOOM FILTER ON e (team_a_id=? AND team_b_id=?)"
+        ],
+        [
+          176,
+          4,
+          47,
+          "SEARCH e USING AUTOMATIC COVERING INDEX (team_a_id=? AND team_b_id=?)"
+        ],
+        [
+          235,
+          3,
+          0,
+          "UNION ALL"
+        ],
+        [
+          246,
+          235,
+          62,
+          "SEARCH m USING INDEX idx_matches_status_date (status=?)"
+        ],
+        [
+          255,
+          235,
+          47,
+          "SEARCH a USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          264,
+          235,
+          47,
+          "SEARCH b USING INDEX sqlite_autoindex_match_teams_2 (match_id=? AND slot=?)"
+        ],
+        [
+          275,
+          235,
+          0,
+          "BLOOM FILTER ON e (team_a_id=? AND team_b_id=?)"
+        ],
+        [
+          285,
+          235,
+          53,
+          "SEARCH e USING AUTOMATIC COVERING INDEX (team_a_id=? AND team_b_id=?)"
+        ],
+        [
+          301,
+          235,
+          46,
+          "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=? AND innings_number=?) LEFT-JOIN"
+        ],
+        [
+          364,
+          0,
+          97,
+          "SCAN r"
+        ],
+        [
+          367,
+          0,
+          45,
+          "SEARCH a USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          370,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          373,
+          0,
+          45,
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          376,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q23",
+      "sql": "q23_recent_player_form.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE dispersion"
+        ],
+        [
+          4,
+          2,
+          0,
+          "CO-ROUTINE metrics"
+        ],
+        [
+          7,
+          4,
+          0,
+          "MATERIALIZE ordered"
+        ],
+        [
+          10,
+          7,
+          0,
+          "CO-ROUTINE (subquery-12)"
+        ],
+        [
+          13,
+          10,
+          0,
+          "MATERIALIZE match_scores"
+        ],
+        [
+          24,
+          13,
+          213,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          29,
+          13,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          34,
+          13,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          39,
+          13,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          46,
+          13,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          115,
+          10,
+          82,
+          "SCAN match_scores"
+        ],
+        [
+          128,
+          10,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        [
+          150,
+          7,
+          82,
+          "SCAN (subquery-12)"
+        ],
+        [
+          210,
+          4,
+          82,
+          "SCAN ordered"
+        ],
+        [
+          214,
+          4,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          363,
+          2,
+          82,
+          "SCAN m"
+        ],
+        [
+          368,
+          2,
+          0,
+          "BLOOM FILTER ON ordered (player_id=?)"
+        ],
+        [
+          381,
+          2,
+          53,
+          "SEARCH ordered USING AUTOMATIC PARTIAL COVERING INDEX (player_id=?)"
+        ],
+        [
+          390,
+          2,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          453,
+          0,
+          82,
+          "SCAN dispersion"
+        ],
+        [
+          456,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          565,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q24",
+      "sql": "q24_successful_batting_pairs.sql",
+      "plan": [
+        [
+          3,
+          0,
+          0,
+          "MATERIALIZE summaries"
+        ],
+        [
+          16,
+          3,
+          216,
+          "SCAN b"
+        ],
+        [
+          20,
+          3,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          28,
+          3,
+          46,
+          "SEARCH b USING INDEX sqlite_autoindex_batting_performances_2 (innings_id=? AND batting_position=?)"
+        ],
+        [
+          42,
+          3,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          47,
+          3,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          55,
+          3,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          60,
+          3,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          164,
+          0,
+          0,
+          "MATERIALIZE ranked"
+        ],
+        [
+          167,
+          164,
+          0,
+          "CO-ROUTINE (subquery-13)"
+        ],
+        [
+          171,
+          167,
+          216,
+          "SCAN summaries"
+        ],
+        [
+          184,
+          167,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        [
+          202,
+          164,
+          215,
+          "SCAN (subquery-13)"
+        ],
+        [
+          283,
+          0,
+          82,
+          "SCAN s"
+        ],
+        [
+          285,
+          0,
+          45,
+          "SEARCH a USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          288,
+          0,
+          45,
+          "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          295,
+          0,
+          0,
+          "BLOOM FILTER ON r (player_a_id=? AND player_b_id=?)"
+        ],
+        [
+          306,
+          0,
+          53,
+          "SEARCH r USING AUTOMATIC COVERING INDEX (player_a_id=? AND player_b_id=?) LEFT-JOIN"
+        ],
+        [
+          349,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q25",
+      "sql": "q25_quarterly_player_evolution.sql",
+      "plan": [
+        [
+          2,
+          0,
+          0,
+          "CO-ROUTINE previous"
+        ],
+        [
+          7,
+          2,
+          0,
+          "CO-ROUTINE (subquery-16)"
+        ],
+        [
+          10,
+          7,
+          0,
+          "MATERIALIZE quarters"
+        ],
+        [
+          13,
+          10,
+          0,
+          "MATERIALIZE match_scores"
+        ],
+        [
+          24,
+          13,
+          213,
+          "SCAN b USING INDEX idx_batting_player_match"
+        ],
+        [
+          29,
+          13,
+          45,
+          "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          38,
+          13,
+          45,
+          "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          43,
+          13,
+          45,
+          "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          117,
+          10,
+          82,
+          "SCAN match_scores"
+        ],
+        [
+          119,
+          10,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          194,
+          7,
+          0,
+          "MATERIALIZE eligible"
+        ],
+        [
+          202,
+          194,
+          216,
+          "SCAN quarters"
+        ],
+        [
+          204,
+          194,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          279,
+          7,
+          82,
+          "SCAN q"
+        ],
+        [
+          285,
+          7,
+          0,
+          "BLOOM FILTER ON e (player_id=?)"
+        ],
+        [
+          294,
+          7,
+          47,
+          "SEARCH e USING AUTOMATIC COVERING INDEX (player_id=?)"
+        ],
+        [
+          315,
+          7,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        [
+          341,
+          2,
+          125,
+          "SCAN (subquery-16)"
+        ],
+        [
+          437,
+          0,
+          0,
+          "MATERIALIZE slopes"
+        ],
+        [
+          447,
+          437,
+          216,
+          "SCAN e"
+        ],
+        [
+          451,
+          437,
+          0,
+          "BLOOM FILTER ON q (player_id=?)"
+        ],
+        [
+          463,
+          437,
+          53,
+          "SEARCH q USING AUTOMATIC COVERING INDEX (player_id=?)"
+        ],
+        [
+          470,
+          437,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          553,
+          0,
+          82,
+          "SCAN s"
+        ],
+        [
+          555,
+          0,
+          45,
+          "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          563,
+          0,
+          0,
+          "BLOOM FILTER ON previous (player_id=?)"
+        ],
+        [
+          581,
+          0,
+          49,
+          "SEARCH previous USING AUTOMATIC COVERING INDEX (player_id=?)"
+        ],
+        [
+          801,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "id": "Q26",
+      "sql": "q26_match_coverage.sql",
+      "plan": [
+        [
+          10,
+          0,
+          216,
+          "SCAN m"
+        ],
+        [
+          12,
+          0,
+          45,
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          15,
+          0,
+          45,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          18,
+          0,
+          54,
+          "SEARCH i USING COVERING INDEX sqlite_autoindex_innings_1 (match_id=?) LEFT-JOIN"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ],
+        [
+          103,
+          0,
+          0,
+          "USE TEMP B-TREE FOR count(DISTINCT)"
+        ],
+        [
+          105,
+          0,
+          0,
+          "USE TEMP B-TREE FOR count(DISTINCT)"
+        ],
+        [
+          107,
+          0,
+          0,
+          "USE TEMP B-TREE FOR count(DISTINCT)"
+        ],
+        [
+          110,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    }
+  ],
+  "databases": {
+    "sample": {
+      "counts": {
+        "matches": 72,
+        "players": 12,
+        "series": 12,
+        "innings": 192,
+        "batting_performances": 1152,
+        "bowling_performances": 1152,
+        "career_stats_snapshots": 72
+      },
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "schema": 1
+    },
+    "live": {
+      "counts": {
+        "matches": 27,
+        "players": 53,
+        "series": 8,
+        "innings": 71,
+        "batting_performances": 45,
+        "bowling_performances": 38,
+        "career_stats_snapshots": 3
+      },
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "schema": 2
+    }
+  },
+  "reference_sha256": {
+    "Cricbuzz.docx": "f2a40798a390395c3eedac95fe27dbadd7d24528f887ddff5addd7c11b7e1b6d",
+    "Prompt to be used in Claude.docx": "979d9de1d422ab8d3d33719910e0c08af28b08730f801251764daf630e529e46",
+    "Retail_Arcade.html": "e99f80a4f13286273337b9cdc1b6dde942acc11688f70786b8f05646bb0a1b1f"
+  },
+  "date": "2026-10-29",
+  "validation": {
+    "tests": "523",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "21.088"
+  },
+  "browser": {
+    "status": "passed",
+    "page_errors": 0,
+    "desktop": "1440x1000",
+    "mobile": "390x844",
+    "mode": "disposable synthetic sample",
+    "driver": "bundled Playwright / installed Chrome; Browser plugin not available",
+    "provider_http_calls": 0
+  },
+  "follow_up_2026_10_29": {
+    "server_validation": "server_validation_report.json",
+    "api_verification": "api_verification_2026_10_29.json",
+    "completion": "remaining_requirements_completion.md",
+    "deadline": "unverified: assignment date unknown"
+  }
+}

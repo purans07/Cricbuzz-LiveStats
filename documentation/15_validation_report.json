@@ -1,0 +1,234 @@
+{
+  "phase": 15,
+  "scope": "Automated temporary-database/injected-transport checks; no fresh live/hosted acceptance",
+  "suite": {
+    "total": 513,
+    "passed": 513,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "sqlite": "3.50.2",
+    "packages": {
+      "pytest": "9.1.1",
+      "streamlit": "1.66.0",
+      "SQLAlchemy": "2.1.5",
+      "plotly": "7.1.0",
+      "ruff": "0.17.1"
+    }
+  },
+  "checks": {
+    "pytest": "passed",
+    "ruff_check": "passed",
+    "ruff_format": "passed",
+    "git_diff_check": "passed",
+    "pip_check": "No broken requirements found"
+  },
+  "working_database_files": {
+    "sample": {
+      "sha256_before": "b16209e87fd8849fd99cd425fad450219ea34401c527bf84e4d52b50abc9b990",
+      "sha256_after": "b16209e87fd8849fd99cd425fad450219ea34401c527bf84e4d52b50abc9b990",
+      "unchanged": true
+    },
+    "live": {
+      "sha256_before": "4d582ec3da0d3e99f8a39d63564e6f8474a0e28ac4d9cf5d6288ff821db5d25f",
+      "sha256_after": "4d582ec3da0d3e99f8a39d63564e6f8474a0e28ac4d9cf5d6288ff821db5d25f",
+      "unchanged": true
+    }
+  },
+  "per_test_file": {
+    "tests/test_acceptance_journeys.py": {
+      "cases": 3,
+      "seconds": 0.931
+    },
+    "tests/test_adapter.py": {
+      "cases": 12,
+      "seconds": 0.026
+    },
+    "tests/test_analytics_page.py": {
+      "cases": 44,
+      "seconds": 1.24
+    },
+    "tests/test_api_client.py": {
+      "cases": 35,
+      "seconds": 0.049
+    },
+    "tests/test_cricbuzz_v2.py": {
+      "cases": 25,
+      "seconds": 0.172
+    },
+    "tests/test_crud_page.py": {
+      "cases": 13,
+      "seconds": 3.152
+    },
+    "tests/test_database.py": {
+      "cases": 29,
+      "seconds": 0.949
+    },
+    "tests/test_error_handling.py": {
+      "cases": 18,
+      "seconds": 0.656
+    },
+    "tests/test_home.py": {
+      "cases": 10,
+      "seconds": 1.136
+    },
+    "tests/test_ingestion.py": {
+      "cases": 21,
+      "seconds": 1.218
+    },
+    "tests/test_live_matches_page.py": {
+      "cases": 13,
+      "seconds": 1.304
+    },
+    "tests/test_live_sync.py": {
+      "cases": 3,
+      "seconds": 0.137
+    },
+    "tests/test_match_stats_crud.py": {
+      "cases": 18,
+      "seconds": 0.622
+    },
+    "tests/test_migration.py": {
+      "cases": 4,
+      "seconds": 0.067
+    },
+    "tests/test_player_api.py": {
+      "cases": 16,
+      "seconds": 0.149
+    },
+    "tests/test_player_crud.py": {
+      "cases": 12,
+      "seconds": 0.152
+    },
+    "tests/test_q01.py": {
+      "cases": 4,
+      "seconds": 0.04
+    },
+    "tests/test_q02.py": {
+      "cases": 4,
+      "seconds": 0.042
+    },
+    "tests/test_q03.py": {
+      "cases": 6,
+      "seconds": 0.066
+    },
+    "tests/test_q04.py": {
+      "cases": 4,
+      "seconds": 0.045
+    },
+    "tests/test_q05.py": {
+      "cases": 5,
+      "seconds": 0.059
+    },
+    "tests/test_q06.py": {
+      "cases": 5,
+      "seconds": 0.047
+    },
+    "tests/test_q07.py": {
+      "cases": 5,
+      "seconds": 0.058
+    },
+    "tests/test_q08.py": {
+      "cases": 5,
+      "seconds": 0.053
+    },
+    "tests/test_q09.py": {
+      "cases": 5,
+      "seconds": 0.061
+    },
+    "tests/test_q10.py": {
+      "cases": 6,
+      "seconds": 0.06
+    },
+    "tests/test_q11.py": {
+      "cases": 6,
+      "seconds": 0.076
+    },
+    "tests/test_q12.py": {
+      "cases": 6,
+      "seconds": 0.065
+    },
+    "tests/test_q13.py": {
+      "cases": 6,
+      "seconds": 0.107
+    },
+    "tests/test_q14.py": {
+      "cases": 6,
+      "seconds": 0.146
+    },
+    "tests/test_q15.py": {
+      "cases": 6,
+      "seconds": 0.095
+    },
+    "tests/test_q16.py": {
+      "cases": 6,
+      "seconds": 0.123
+    },
+    "tests/test_q17.py": {
+      "cases": 6,
+      "seconds": 0.084
+    },
+    "tests/test_q18.py": {
+      "cases": 7,
+      "seconds": 0.137
+    },
+    "tests/test_q19.py": {
+      "cases": 6,
+      "seconds": 0.089
+    },
+    "tests/test_q20.py": {
+      "cases": 7,
+      "seconds": 0.1
+    },
+    "tests/test_q21.py": {
+      "cases": 11,
+      "seconds": 0.154
+    },
+    "tests/test_q22.py": {
+      "cases": 6,
+      "seconds": 0.113
+    },
+    "tests/test_q23.py": {
+      "cases": 13,
+      "seconds": 0.197
+    },
+    "tests/test_q24.py": {
+      "cases": 8,
+      "seconds": 0.121
+    },
+    "tests/test_q25.py": {
+      "cases": 12,
+      "seconds": 0.241
+    },
+    "tests/test_scorecard.py": {
+      "cases": 8,
+      "seconds": 0.213
+    },
+    "tests/test_settings_page.py": {
+      "cases": 8,
+      "seconds": 1.082
+    },
+    "tests/test_top_players.py": {
+      "cases": 11,
+      "seconds": 1.163
+    },
+    "tests/test_validation.py": {
+      "cases": 35,
+      "seconds": 0.052
+    },
+    "tests/test_visualizations.py": {
+      "cases": 14,
+      "seconds": 1.258
+    }
+  },
+  "not_claimed": [
+    "Statement/branch coverage percentage",
+    "Fresh authenticated provider subscription/quota verification",
+    "Hosted deployment acceptance",
+    "Cross-engine compatibility",
+    "Pixel-level browser/accessibility verification"
+  ]
+}

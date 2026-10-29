@@ -1,0 +1,162 @@
+{
+  "question": "Q11",
+  "scope": "Latest selected-source career rows; at least two evidenced Test/ODI/T20I formats; pooled runs/dismissals with completeness checks",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "source_name": "Synthetic training fixture"
+      },
+      "row_count": 12,
+      "rows": [
+        {
+          "player_id": 1,
+          "player_name": "Sample Player 01",
+          "test_runs": 1660,
+          "odi_runs": 1660,
+          "t20i_runs": 1660,
+          "overall_batting_average": 40.49
+        },
+        {
+          "player_id": 2,
+          "player_name": "Sample Player 02",
+          "test_runs": 1780,
+          "odi_runs": 1780,
+          "t20i_runs": 1780,
+          "overall_batting_average": 42.38
+        },
+        {
+          "player_id": 3,
+          "player_name": "Sample Player 03",
+          "test_runs": 1900,
+          "odi_runs": 1900,
+          "t20i_runs": 1900,
+          "overall_batting_average": 44.19
+        },
+        {
+          "player_id": 4,
+          "player_name": "Sample Player 04",
+          "test_runs": 2020,
+          "odi_runs": 2020,
+          "t20i_runs": 2020,
+          "overall_batting_average": 45.91
+        },
+        {
+          "player_id": 5,
+          "player_name": "Sample Player 05",
+          "test_runs": 2140,
+          "odi_runs": 2140,
+          "t20i_runs": 2140,
+          "overall_batting_average": 47.56
+        },
+        {
+          "player_id": 6,
+          "player_name": "Sample Player 06",
+          "test_runs": 2260,
+          "odi_runs": 2260,
+          "t20i_runs": 2260,
+          "overall_batting_average": 49.13
+        },
+        {
+          "player_id": 7,
+          "player_name": "Sample Player 07",
+          "test_runs": 2380,
+          "odi_runs": 2380,
+          "t20i_runs": 2380,
+          "overall_batting_average": 50.64
+        },
+        {
+          "player_id": 8,
+          "player_name": "Sample Player 08",
+          "test_runs": 2500,
+          "odi_runs": 2500,
+          "t20i_runs": 2500,
+          "overall_batting_average": 52.08
+        },
+        {
+          "player_id": 9,
+          "player_name": "Sample Player 09",
+          "test_runs": 2620,
+          "odi_runs": 2620,
+          "t20i_runs": 2620,
+          "overall_batting_average": 53.47
+        },
+        {
+          "player_id": 10,
+          "player_name": "Sample Player 10",
+          "test_runs": 2740,
+          "odi_runs": 2740,
+          "t20i_runs": 2740,
+          "overall_batting_average": 54.8
+        },
+        {
+          "player_id": 11,
+          "player_name": "Sample Player 11",
+          "test_runs": 2860,
+          "odi_runs": 2860,
+          "t20i_runs": 2860,
+          "overall_batting_average": 56.08
+        },
+        {
+          "player_id": 12,
+          "player_name": "Sample Player 12",
+          "test_runs": 2980,
+          "odi_runs": 2980,
+          "t20i_runs": 2980,
+          "overall_batting_average": 57.31
+        }
+      ],
+      "query_plan": [
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?)",
+        "SEARCH c USING INDEX idx_career_format_player (format_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 5",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR count(DISTINCT)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+      },
+      "row_count": 1,
+      "rows": [
+        {
+          "player_id": 4,
+          "player_name": "Temba Bavuma",
+          "test_runs": 3993,
+          "odi_runs": 2168,
+          "t20i_runs": null,
+          "overall_batting_average": 40.27
+        }
+      ],
+      "query_plan": [
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SEARCH f USING INDEX sqlite_autoindex_formats_1 (code=?)",
+        "SEARCH c USING INDEX idx_career_format_player (format_id=?)",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 5",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR count(DISTINCT)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

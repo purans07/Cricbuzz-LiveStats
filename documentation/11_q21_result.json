@@ -1,0 +1,395 @@
+{
+  "question": "Q21",
+  "scope": "Complete-case latest career scores for one selected source; dense ranks per exact format; brief weights unchanged; no negative-score clamping",
+  "datasets": {
+    "sample": {
+      "parameters": {
+        "source_name": "Synthetic training fixture"
+      },
+      "row_count": 36,
+      "rows": [
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 1,
+          "player_name": "Sample Player 12",
+          "batting_points": 92.84,
+          "bowling_points": 200.66,
+          "fielding_points": 66.0,
+          "total_points": 359.5
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 2,
+          "player_name": "Sample Player 11",
+          "batting_points": 90.29,
+          "bowling_points": 194.61,
+          "fielding_points": 73.0,
+          "total_points": 357.9
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 3,
+          "player_name": "Sample Player 10",
+          "batting_points": 87.68,
+          "bowling_points": 188.56,
+          "fielding_points": 65.0,
+          "total_points": 341.24
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 4,
+          "player_name": "Sample Player 09",
+          "batting_points": 85.02,
+          "bowling_points": 182.49,
+          "fielding_points": 57.0,
+          "total_points": 324.51
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 5,
+          "player_name": "Sample Player 08",
+          "batting_points": 82.29,
+          "bowling_points": 176.42,
+          "fielding_points": 64.0,
+          "total_points": 322.71
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 6,
+          "player_name": "Sample Player 07",
+          "batting_points": 79.5,
+          "bowling_points": 170.34,
+          "fielding_points": 56.0,
+          "total_points": 305.84
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 7,
+          "player_name": "Sample Player 06",
+          "batting_points": 76.64,
+          "bowling_points": 164.25,
+          "fielding_points": 48.0,
+          "total_points": 288.9
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 8,
+          "player_name": "Sample Player 05",
+          "batting_points": 73.71,
+          "bowling_points": 158.15,
+          "fielding_points": 55.0,
+          "total_points": 286.86
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 9,
+          "player_name": "Sample Player 04",
+          "batting_points": 70.7,
+          "bowling_points": 152.04,
+          "fielding_points": 47.0,
+          "total_points": 269.74
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 10,
+          "player_name": "Sample Player 03",
+          "batting_points": 67.6,
+          "bowling_points": 145.91,
+          "fielding_points": 39.0,
+          "total_points": 252.51
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 11,
+          "player_name": "Sample Player 02",
+          "batting_points": 64.42,
+          "bowling_points": 139.76,
+          "fielding_points": 46.0,
+          "total_points": 250.18
+        },
+        {
+          "cricket_format": "ODI",
+          "performance_rank": 12,
+          "player_name": "Sample Player 01",
+          "batting_points": 61.14,
+          "bowling_points": 133.59,
+          "fielding_points": 38.0,
+          "total_points": 232.73
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 1,
+          "player_name": "Sample Player 12",
+          "batting_points": 92.84,
+          "bowling_points": 200.66,
+          "fielding_points": 66.0,
+          "total_points": 359.5
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 2,
+          "player_name": "Sample Player 11",
+          "batting_points": 90.29,
+          "bowling_points": 194.61,
+          "fielding_points": 73.0,
+          "total_points": 357.9
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 3,
+          "player_name": "Sample Player 10",
+          "batting_points": 87.68,
+          "bowling_points": 188.56,
+          "fielding_points": 65.0,
+          "total_points": 341.24
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 4,
+          "player_name": "Sample Player 09",
+          "batting_points": 85.02,
+          "bowling_points": 182.49,
+          "fielding_points": 57.0,
+          "total_points": 324.51
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 5,
+          "player_name": "Sample Player 08",
+          "batting_points": 82.29,
+          "bowling_points": 176.42,
+          "fielding_points": 64.0,
+          "total_points": 322.71
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 6,
+          "player_name": "Sample Player 07",
+          "batting_points": 79.5,
+          "bowling_points": 170.34,
+          "fielding_points": 56.0,
+          "total_points": 305.84
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 7,
+          "player_name": "Sample Player 06",
+          "batting_points": 76.64,
+          "bowling_points": 164.25,
+          "fielding_points": 48.0,
+          "total_points": 288.9
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 8,
+          "player_name": "Sample Player 05",
+          "batting_points": 73.71,
+          "bowling_points": 158.15,
+          "fielding_points": 55.0,
+          "total_points": 286.86
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 9,
+          "player_name": "Sample Player 04",
+          "batting_points": 70.7,
+          "bowling_points": 152.04,
+          "fielding_points": 47.0,
+          "total_points": 269.74
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 10,
+          "player_name": "Sample Player 03",
+          "batting_points": 67.6,
+          "bowling_points": 145.91,
+          "fielding_points": 39.0,
+          "total_points": 252.51
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 11,
+          "player_name": "Sample Player 02",
+          "batting_points": 64.42,
+          "bowling_points": 139.76,
+          "fielding_points": 46.0,
+          "total_points": 250.18
+        },
+        {
+          "cricket_format": "T20I",
+          "performance_rank": 12,
+          "player_name": "Sample Player 01",
+          "batting_points": 61.14,
+          "bowling_points": 133.59,
+          "fielding_points": 38.0,
+          "total_points": 232.73
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 1,
+          "player_name": "Sample Player 12",
+          "batting_points": 92.84,
+          "bowling_points": 200.66,
+          "fielding_points": 66.0,
+          "total_points": 359.5
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 2,
+          "player_name": "Sample Player 11",
+          "batting_points": 90.29,
+          "bowling_points": 194.61,
+          "fielding_points": 73.0,
+          "total_points": 357.9
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 3,
+          "player_name": "Sample Player 10",
+          "batting_points": 87.68,
+          "bowling_points": 188.56,
+          "fielding_points": 65.0,
+          "total_points": 341.24
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 4,
+          "player_name": "Sample Player 09",
+          "batting_points": 85.02,
+          "bowling_points": 182.49,
+          "fielding_points": 57.0,
+          "total_points": 324.51
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 5,
+          "player_name": "Sample Player 08",
+          "batting_points": 82.29,
+          "bowling_points": 176.42,
+          "fielding_points": 64.0,
+          "total_points": 322.71
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 6,
+          "player_name": "Sample Player 07",
+          "batting_points": 79.5,
+          "bowling_points": 170.34,
+          "fielding_points": 56.0,
+          "total_points": 305.84
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 7,
+          "player_name": "Sample Player 06",
+          "batting_points": 76.64,
+          "bowling_points": 164.25,
+          "fielding_points": 48.0,
+          "total_points": 288.9
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 8,
+          "player_name": "Sample Player 05",
+          "batting_points": 73.71,
+          "bowling_points": 158.15,
+          "fielding_points": 55.0,
+          "total_points": 286.86
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 9,
+          "player_name": "Sample Player 04",
+          "batting_points": 70.7,
+          "bowling_points": 152.04,
+          "fielding_points": 47.0,
+          "total_points": 269.74
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 10,
+          "player_name": "Sample Player 03",
+          "batting_points": 67.6,
+          "bowling_points": 145.91,
+          "fielding_points": 39.0,
+          "total_points": 252.51
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 11,
+          "player_name": "Sample Player 02",
+          "batting_points": 64.42,
+          "bowling_points": 139.76,
+          "fielding_points": 46.0,
+          "total_points": 250.18
+        },
+        {
+          "cricket_format": "TEST",
+          "performance_rank": 12,
+          "player_name": "Sample Player 01",
+          "batting_points": 61.14,
+          "bowling_points": 133.59,
+          "fielding_points": 38.0,
+          "total_points": 232.73
+        }
+      ],
+      "coverage": {
+        "latest_career_rows": 36,
+        "rows_missing_fielding": 0
+      },
+      "query_plan": [
+        "CO-ROUTINE ranked_players",
+        "CO-ROUTINE (subquery-9)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SCAN c USING INDEX idx_career_format_player",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 8",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR LAST TERM OF ORDER BY",
+        "SCAN (subquery-9)",
+        "SCAN r",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "parameters": {
+        "source_name": "cricketapilive-cricbuzz-cricket/v2/provider"
+      },
+      "row_count": 0,
+      "rows": [],
+      "coverage": {
+        "latest_career_rows": 3,
+        "rows_missing_fielding": 3
+      },
+      "query_plan": [
+        "CO-ROUTINE ranked_players",
+        "CO-ROUTINE (subquery-9)",
+        "SEARCH s USING COVERING INDEX sqlite_autoindex_sources_1 (name=?)",
+        "SCAN c USING INDEX idx_career_format_player",
+        "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)",
+        "CORRELATED SCALAR SUBQUERY 8",
+        "MULTI-INDEX OR",
+        "INDEX 1",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at>?)",
+        "INDEX 2",
+        "SEARCH nb USING INDEX idx_batches_source_time (source_id=? AND fetched_at=? AND rowid>?)",
+        "SEARCH newer USING COVERING INDEX sqlite_autoindex_career_stats_snapshots_1 (player_id=? AND format_id=? AND batch_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR LAST TERM OF ORDER BY",
+        "SCAN (subquery-9)",
+        "SCAN r",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

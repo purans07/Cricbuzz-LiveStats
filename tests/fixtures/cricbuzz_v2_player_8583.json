@@ -1,0 +1,365 @@
+[
+  {
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "version": "v2",
+    "operation": "player_profile",
+    "fetched_at": "2026-10-22T07:48:22Z",
+    "is_mock": false,
+    "quota": {
+      "x-ratelimit-requests-limit": "200",
+      "x-ratelimit-requests-remaining": "191",
+      "x-ratelimit-requests-reset": "2627429"
+    },
+    "data": {
+      "id": "8583",
+      "name": "Temba Bavuma",
+      "fullName": "Temba Bavuma",
+      "role": "Batsman",
+      "bat": "Right Handed Bat",
+      "bowl": "Right-arm medium",
+      "intlTeam": "South Africa"
+    }
+  },
+  {
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "version": "v2",
+    "operation": "player_batting",
+    "fetched_at": "2026-10-22T07:48:59Z",
+    "is_mock": false,
+    "quota": {
+      "x-ratelimit-requests-limit": "200",
+      "x-ratelimit-requests-remaining": "189",
+      "x-ratelimit-requests-reset": "2627392"
+    },
+    "data": {
+      "headers": [
+        "ROWHEADER",
+        "Test",
+        "ODI",
+        "T20",
+        "IPL"
+      ],
+      "values": [
+        {
+          "values": [
+            "Matches",
+            "68",
+            "57",
+            "36",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Innings",
+            "117",
+            "55",
+            "35",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Runs",
+            "3993",
+            "2168",
+            "670",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Balls",
+            "8173",
+            "2484",
+            "567",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Highest",
+            "179",
+            "144",
+            "72",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Average",
+            "38.77",
+            "43.36",
+            "20.94",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "SR",
+            "48.86",
+            "87.28",
+            "118.17",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Not Out",
+            "14",
+            "5",
+            "3",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Fours",
+            "451",
+            "217",
+            "62",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Sixes",
+            "17",
+            "29",
+            "16",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Ducks",
+            "10",
+            "2",
+            "6",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "50s",
+            "26",
+            "8",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "100s",
+            "5",
+            "6",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "200s",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "300s",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "400s",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "appIndex": {
+        "seoTitle": "Temba Bavuma Profile - Cricbuzz | Cricbuzz.com",
+        "webURL": "http://www.cricbuzz.com/profiles/8583/temba-bavuma"
+      },
+      "seriesSpinner": [
+        {
+          "seriesName": "Career"
+        },
+        {
+          "seriesId": 11595,
+          "seriesName": "Australia tour of South Africa, 2026"
+        }
+      ]
+    }
+  },
+  {
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "version": "v2",
+    "operation": "player_bowling",
+    "fetched_at": "2026-10-22T07:49:02Z",
+    "is_mock": false,
+    "quota": {
+      "x-ratelimit-requests-limit": "200",
+      "x-ratelimit-requests-remaining": "188",
+      "x-ratelimit-requests-reset": "2627389"
+    },
+    "data": {
+      "headers": [
+        "ROWHEADER",
+        "Test",
+        "ODI",
+        "T20",
+        "IPL"
+      ],
+      "values": [
+        {
+          "values": [
+            "Matches",
+            "68",
+            "57",
+            "36",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Innings",
+            "5",
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Balls",
+            "96",
+            "37",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Runs",
+            "61",
+            "22",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Maidens",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Wickets",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "Avg",
+            "61.0",
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        {
+          "values": [
+            "Eco",
+            "3.81",
+            "3.57",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "SR",
+            "96.0",
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        {
+          "values": [
+            "BBI",
+            "1/29",
+            "0/22",
+            "-/-",
+            "-/-"
+          ]
+        },
+        {
+          "values": [
+            "BBM",
+            "1/29",
+            "0/22",
+            "-/-",
+            "-/-"
+          ]
+        },
+        {
+          "values": [
+            "4w",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "5w",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "values": [
+            "10w",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "appIndex": {
+        "seoTitle": "Temba Bavuma Profile - Cricbuzz | Cricbuzz.com",
+        "webURL": "http://www.cricbuzz.com/profiles/8583/temba-bavuma"
+      },
+      "seriesSpinner": [
+        {
+          "seriesName": "Career"
+        },
+        {
+          "seriesId": 11595,
+          "seriesName": "Australia tour of South Africa, 2026"
+        }
+      ]
+    }
+  }
+]

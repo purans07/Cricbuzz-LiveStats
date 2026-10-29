@@ -1,0 +1,69 @@
+{
+  "question": "Q01",
+  "analysis_date": "2026-10-01",
+  "datasets": {
+    "sample": {
+      "rows": [
+        {
+          "full_name": "Sample Player 01",
+          "playing_role": "Batsman",
+          "batting_style": "Right-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "full_name": "Sample Player 02",
+          "playing_role": "Bowler",
+          "batting_style": "Left-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "full_name": "Sample Player 03",
+          "playing_role": "All-rounder",
+          "batting_style": "Right-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "full_name": "Sample Player 04",
+          "playing_role": "Wicket-keeper",
+          "batting_style": "Left-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "full_name": "Sample Player 05",
+          "playing_role": "Batsman",
+          "batting_style": "Right-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "full_name": "Sample Player 06",
+          "playing_role": "Bowler",
+          "batting_style": "Left-hand bat",
+          "bowling_style": "Right-arm medium"
+        }
+      ],
+      "query_plan": [
+        "SCAN players",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH c USING COVERING INDEX sqlite_autoindex_countries_1 (name=?)",
+        "SEARCH pm USING INDEX idx_memberships_player_dates (player_id=? AND valid_from<?)",
+        "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH r USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ],
+      "membership_rows": 12
+    },
+    "live": {
+      "rows": [],
+      "query_plan": [
+        "SCAN players",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH c USING COVERING INDEX sqlite_autoindex_countries_1 (name=?)",
+        "SEARCH pm USING INDEX idx_memberships_player_dates (player_id=? AND valid_from<?)",
+        "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH r USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ],
+      "membership_rows": 0
+    }
+  }
+}

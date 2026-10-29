@@ -1,0 +1,20 @@
+{
+  "evidence": "User-supplied regular scorecard response; not a new local HTTP verification",
+  "match_id": "147931",
+  "import": {
+    "status": "committed",
+    "batch_id": 2,
+    "inserted": 90,
+    "updated": 3,
+    "skipped": 0
+  },
+  "replay": "duplicate",
+  "counts": {
+    "players": 22,
+    "batting_performances": 27,
+    "bowling_performances": 19
+  },
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "network_requests": 0
+}

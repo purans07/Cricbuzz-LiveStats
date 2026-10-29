@@ -1,0 +1,385 @@
+{
+  "question": "Q16",
+  "definition": "UTC start years since 2020; >=5 evidenced player-match appearances per year, per-match runs and arithmetic mean of defined per-match strike rates with completeness checks",
+  "datasets": {
+    "sample": {
+      "row_count": 48,
+      "rows": [
+        {
+          "player_name": "Sample Player 01",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 73.0,
+          "average_strike_rate": 138.61
+        },
+        {
+          "player_name": "Sample Player 01",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 90.5,
+          "average_strike_rate": 140.91
+        },
+        {
+          "player_name": "Sample Player 01",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 87.0,
+          "average_strike_rate": 142.32
+        },
+        {
+          "player_name": "Sample Player 01",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 96.33,
+          "average_strike_rate": 143.95
+        },
+        {
+          "player_name": "Sample Player 02",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 87.67,
+          "average_strike_rate": 147.96
+        },
+        {
+          "player_name": "Sample Player 02",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 92.04,
+          "average_strike_rate": 138.76
+        },
+        {
+          "player_name": "Sample Player 02",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 97.29,
+          "average_strike_rate": 146.63
+        },
+        {
+          "player_name": "Sample Player 02",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 93.5,
+          "average_strike_rate": 139.01
+        },
+        {
+          "player_name": "Sample Player 03",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 102.33,
+          "average_strike_rate": 152.28
+        },
+        {
+          "player_name": "Sample Player 03",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 84.83,
+          "average_strike_rate": 138.56
+        },
+        {
+          "player_name": "Sample Player 03",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 98.83,
+          "average_strike_rate": 147.48
+        },
+        {
+          "player_name": "Sample Player 03",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 79.0,
+          "average_strike_rate": 134.48
+        },
+        {
+          "player_name": "Sample Player 04",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 117.0,
+          "average_strike_rate": 158.45
+        },
+        {
+          "player_name": "Sample Player 04",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 82.0,
+          "average_strike_rate": 136.27
+        },
+        {
+          "player_name": "Sample Player 04",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 96.0,
+          "average_strike_rate": 142.82
+        },
+        {
+          "player_name": "Sample Player 04",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 82.0,
+          "average_strike_rate": 135.79
+        },
+        {
+          "player_name": "Sample Player 05",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 131.67,
+          "average_strike_rate": 160.92
+        },
+        {
+          "player_name": "Sample Player 05",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 79.17,
+          "average_strike_rate": 137.44
+        },
+        {
+          "player_name": "Sample Player 05",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 93.17,
+          "average_strike_rate": 142.62
+        },
+        {
+          "player_name": "Sample Player 05",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 85.0,
+          "average_strike_rate": 140.4
+        },
+        {
+          "player_name": "Sample Player 06",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 111.33,
+          "average_strike_rate": 150.41
+        },
+        {
+          "player_name": "Sample Player 06",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 85.08,
+          "average_strike_rate": 139.42
+        },
+        {
+          "player_name": "Sample Player 06",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 90.33,
+          "average_strike_rate": 139.74
+        },
+        {
+          "player_name": "Sample Player 06",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 88.0,
+          "average_strike_rate": 143.65
+        },
+        {
+          "player_name": "Sample Player 07",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 91.0,
+          "average_strike_rate": 135.49
+        },
+        {
+          "player_name": "Sample Player 07",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 91.0,
+          "average_strike_rate": 144.8
+        },
+        {
+          "player_name": "Sample Player 07",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 87.5,
+          "average_strike_rate": 139.97
+        },
+        {
+          "player_name": "Sample Player 07",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 91.0,
+          "average_strike_rate": 143.8
+        },
+        {
+          "player_name": "Sample Player 08",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 53.17,
+          "average_strike_rate": 117.23
+        },
+        {
+          "player_name": "Sample Player 08",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 96.92,
+          "average_strike_rate": 144.99
+        },
+        {
+          "player_name": "Sample Player 08",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 80.29,
+          "average_strike_rate": 134.83
+        },
+        {
+          "player_name": "Sample Player 08",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 88.17,
+          "average_strike_rate": 141.64
+        },
+        {
+          "player_name": "Sample Player 09",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 50.33,
+          "average_strike_rate": 121.33
+        },
+        {
+          "player_name": "Sample Player 09",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 98.46,
+          "average_strike_rate": 145.65
+        },
+        {
+          "player_name": "Sample Player 09",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 77.46,
+          "average_strike_rate": 135.26
+        },
+        {
+          "player_name": "Sample Player 09",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 97.0,
+          "average_strike_rate": 146.0
+        },
+        {
+          "player_name": "Sample Player 10",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 65.0,
+          "average_strike_rate": 135.48
+        },
+        {
+          "player_name": "Sample Player 10",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 91.25,
+          "average_strike_rate": 140.68
+        },
+        {
+          "player_name": "Sample Player 10",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 83.38,
+          "average_strike_rate": 140.24
+        },
+        {
+          "player_name": "Sample Player 10",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 94.17,
+          "average_strike_rate": 144.12
+        },
+        {
+          "player_name": "Sample Player 11",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 79.67,
+          "average_strike_rate": 142.54
+        },
+        {
+          "player_name": "Sample Player 11",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 92.79,
+          "average_strike_rate": 141.28
+        },
+        {
+          "player_name": "Sample Player 11",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 93.67,
+          "average_strike_rate": 146.19
+        },
+        {
+          "player_name": "Sample Player 11",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 97.17,
+          "average_strike_rate": 142.45
+        },
+        {
+          "player_name": "Sample Player 12",
+          "match_year": 2023,
+          "matches_played": 6,
+          "average_runs_per_match": 94.33,
+          "average_strike_rate": 150.91
+        },
+        {
+          "player_name": "Sample Player 12",
+          "match_year": 2024,
+          "matches_played": 24,
+          "average_runs_per_match": 85.58,
+          "average_strike_rate": 137.91
+        },
+        {
+          "player_name": "Sample Player 12",
+          "match_year": 2025,
+          "matches_played": 24,
+          "average_runs_per_match": 95.21,
+          "average_strike_rate": 145.57
+        },
+        {
+          "player_name": "Sample Player 12",
+          "match_year": 2026,
+          "matches_played": 18,
+          "average_runs_per_match": 82.67,
+          "average_strike_rate": 136.47
+        }
+      ],
+      "matches_with_active_participation": 72,
+      "query_plan": [
+        "MATERIALIZE match_batting",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)",
+        "SEARCH mp USING INDEX sqlite_autoindex_match_players_2 (match_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "BLOOM FILTER ON mb (player_id=? AND match_id=?)",
+        "SEARCH mb USING AUTOMATIC COVERING INDEX (player_id=? AND match_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 0,
+      "rows": [],
+      "matches_with_active_participation": 1,
+      "query_plan": [
+        "MATERIALIZE match_batting",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INDEX idx_matches_status_date (status=?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "SEARCH i USING INDEX sqlite_autoindex_innings_1 (match_id=?)",
+        "SEARCH mp USING INDEX sqlite_autoindex_match_players_2 (match_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "BLOOM FILTER ON mb (player_id=? AND match_id=?)",
+        "SEARCH mb USING AUTOMATIC COVERING INDEX (player_id=? AND match_id=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

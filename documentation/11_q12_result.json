@@ -1,0 +1,68 @@
+{
+  "question": "Q12",
+  "scope": "Stored completed wins for teams marked international; country-ID equality defines home and known inequality defines away, including neutral countries",
+  "datasets": {
+    "sample": {
+      "rows": [
+        {
+          "team_name": "Sample Australia XI",
+          "home_wins": 17,
+          "away_wins": 18,
+          "unclassified_wins": 0
+        },
+        {
+          "team_name": "Sample India XI",
+          "home_wins": 18,
+          "away_wins": 19,
+          "unclassified_wins": 0
+        }
+      ],
+      "row_count": 2,
+      "international_teams_without_country": 0,
+      "completed_matches_with_unresolved_results": 0,
+      "query_plan": [
+        "SCAN t",
+        "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "rows": [
+        {
+          "team_name": "Australia",
+          "home_wins": 0,
+          "away_wins": 0,
+          "unclassified_wins": 0
+        },
+        {
+          "team_name": "Bangladesh Cricket Board XI",
+          "home_wins": 0,
+          "away_wins": 0,
+          "unclassified_wins": 0
+        },
+        {
+          "team_name": "South Africa",
+          "home_wins": 0,
+          "away_wins": 0,
+          "unclassified_wins": 0
+        },
+        {
+          "team_name": "West Indies",
+          "home_wins": 0,
+          "away_wins": 0,
+          "unclassified_wins": 0
+        }
+      ],
+      "row_count": 4,
+      "international_teams_without_country": 4,
+      "completed_matches_with_unresolved_results": 1,
+      "query_plan": [
+        "SCAN t",
+        "SEARCH m USING INDEX idx_matches_winner (winner_team_id=?) LEFT-JOIN",
+        "SEARCH v USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

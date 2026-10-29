@@ -1,0 +1,220 @@
+{
+  "question": "Q19",
+  "definition": "Population standard deviation of known active ordinary-innings scores, >=10 balls faced, UTC match starts since 2022",
+  "sqlite_version": "3.50.2",
+  "sqrt_verified": true,
+  "datasets": {
+    "sample": {
+      "row_count": 12,
+      "rows": [
+        {
+          "player_name": "Sample Player 09",
+          "eligible_innings": 96,
+          "average_runs": 65.31,
+          "standard_deviation_runs": 29.35
+        },
+        {
+          "player_name": "Sample Player 10",
+          "eligible_innings": 96,
+          "average_runs": 65.38,
+          "standard_deviation_runs": 29.41
+        },
+        {
+          "player_name": "Sample Player 01",
+          "eligible_innings": 96,
+          "average_runs": 67.0,
+          "standard_deviation_runs": 29.53
+        },
+        {
+          "player_name": "Sample Player 11",
+          "eligible_innings": 96,
+          "average_runs": 69.81,
+          "standard_deviation_runs": 29.61
+        },
+        {
+          "player_name": "Sample Player 02",
+          "eligible_innings": 96,
+          "average_runs": 70.34,
+          "standard_deviation_runs": 30.17
+        },
+        {
+          "player_name": "Sample Player 08",
+          "eligible_innings": 96,
+          "average_runs": 64.16,
+          "standard_deviation_runs": 30.25
+        },
+        {
+          "player_name": "Sample Player 03",
+          "eligible_innings": 96,
+          "average_runs": 67.13,
+          "standard_deviation_runs": 30.37
+        },
+        {
+          "player_name": "Sample Player 12",
+          "eligible_innings": 96,
+          "average_runs": 66.59,
+          "standard_deviation_runs": 30.48
+        },
+        {
+          "player_name": "Sample Player 07",
+          "eligible_innings": 96,
+          "average_runs": 67.38,
+          "standard_deviation_runs": 30.5
+        },
+        {
+          "player_name": "Sample Player 05",
+          "eligible_innings": 96,
+          "average_runs": 67.25,
+          "standard_deviation_runs": 30.79
+        },
+        {
+          "player_name": "Sample Player 04",
+          "eligible_innings": 96,
+          "average_runs": 67.19,
+          "standard_deviation_runs": 31.0
+        },
+        {
+          "player_name": "Sample Player 06",
+          "eligible_innings": 96,
+          "average_runs": 67.31,
+          "standard_deviation_runs": 31.04
+        }
+      ],
+      "query_plan": [
+        "CO-ROUTINE player_variances",
+        "CO-ROUTINE player_means",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN a",
+        "SEARCH b USING INDEX idx_batting_player_match (player_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN v",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 16,
+      "rows": [
+        {
+          "player_name": "Temba Bavuma",
+          "eligible_innings": 1,
+          "average_runs": 179.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Marco Jansen",
+          "eligible_innings": 1,
+          "average_runs": 85.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Simon Harmer",
+          "eligible_innings": 1,
+          "average_runs": 82.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Ryan Rickelton",
+          "eligible_innings": 1,
+          "average_runs": 31.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Steven Smith",
+          "eligible_innings": 1,
+          "average_runs": 28.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Wiaan Mulder",
+          "eligible_innings": 1,
+          "average_runs": 13.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Aiden Markram",
+          "eligible_innings": 1,
+          "average_runs": 11.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Nic Maddinson",
+          "eligible_innings": 1,
+          "average_runs": 8.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Pat Cummins",
+          "eligible_innings": 1,
+          "average_runs": 7.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Marques Ackerman",
+          "eligible_innings": 1,
+          "average_runs": 6.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Matthew Breetzke",
+          "eligible_innings": 1,
+          "average_runs": 4.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Scott Boland",
+          "eligible_innings": 2,
+          "average_runs": 2.0,
+          "standard_deviation_runs": 0.0
+        },
+        {
+          "player_name": "Matt Renshaw",
+          "eligible_innings": 2,
+          "average_runs": 11.5,
+          "standard_deviation_runs": 0.5
+        },
+        {
+          "player_name": "Beau Webster",
+          "eligible_innings": 2,
+          "average_runs": 10.5,
+          "standard_deviation_runs": 2.5
+        },
+        {
+          "player_name": "Marnus Labuschagne",
+          "eligible_innings": 2,
+          "average_runs": 26.5,
+          "standard_deviation_runs": 12.5
+        },
+        {
+          "player_name": "Travis Head",
+          "eligible_innings": 2,
+          "average_runs": 50.5,
+          "standard_deviation_runs": 36.5
+        }
+      ],
+      "query_plan": [
+        "CO-ROUTINE player_variances",
+        "CO-ROUTINE player_means",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN a",
+        "SEARCH b USING INDEX idx_batting_player_match (player_id=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN v",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

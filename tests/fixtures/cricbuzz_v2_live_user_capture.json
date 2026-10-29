@@ -1,0 +1,591 @@
+{
+  "typeMatches": [
+    {
+      "matchType": "International",
+      "seriesMatches": [
+        {
+          "seriesAdWrapper": {
+            "seriesId": 11595,
+            "seriesName": "Australia tour of South Africa, 2026",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 147931,
+                  "seriesId": 11595,
+                  "seriesName": "Australia tour of South Africa, 2026",
+                  "matchDesc": "2nd Test",
+                  "matchFormat": "TEST",
+                  "startDate": "1792310400000",
+                  "endDate": "1792681200000",
+                  "state": "Stumps",
+                  "status": "Day 4: Stumps - Australia trail by 170 runs",
+                  "team1": {
+                    "teamId": 11,
+                    "teamName": "South Africa",
+                    "teamSName": "RSA",
+                    "imageId": 776287
+                  },
+                  "team2": {
+                    "teamId": 4,
+                    "teamName": "Australia",
+                    "teamSName": "AUS",
+                    "imageId": 776202
+                  },
+                  "venueInfo": {
+                    "id": 73,
+                    "ground": "St George's Park",
+                    "city": "Gqeberha",
+                    "timezone": "+02:00",
+                    "latitude": "-33.966545",
+                    "longitude": "25.610332"
+                  },
+                  "currBatTeamId": 4,
+                  "seriesStartDt": "1790208000000",
+                  "seriesEndDt": "1793577600000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Stumps",
+                  "hideScoreStatus": "Day 4 : Stumps"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 425,
+                      "wickets": 9,
+                      "overs": 127.1,
+                      "isDeclared": true
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 99,
+                      "wickets": 10,
+                      "overs": 42.3
+                    },
+                    "inngs2": {
+                      "inningsId": 3,
+                      "runs": 156,
+                      "wickets": 4,
+                      "overs": 53.6,
+                      "isFollowOn": true
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "seriesAdWrapper": {
+            "seriesId": 13267,
+            "seriesName": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C 2026",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 173973,
+                  "seriesId": 13267,
+                  "seriesName": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C 2026",
+                  "matchDesc": "6th Match",
+                  "matchFormat": "T20",
+                  "startDate": "1792587600000",
+                  "endDate": "1792600200000",
+                  "state": "Toss",
+                  "status": "Zambia opt to bat",
+                  "team1": {
+                    "teamId": 2001,
+                    "teamName": "Zambia",
+                    "teamSName": "ZMB",
+                    "imageId": 506188
+                  },
+                  "team2": {
+                    "teamId": 536,
+                    "teamName": "Nigeria",
+                    "teamSName": "NGA",
+                    "imageId": 248436
+                  },
+                  "venueInfo": {
+                    "id": 1438217,
+                    "ground": "Nigeria Cricket Federation Oval 1",
+                    "city": "Abuja",
+                    "timezone": "+01:00",
+                    "latitude": "9.0242193",
+                    "longitude": "7.2850552"
+                  },
+                  "seriesStartDt": "1792454400000",
+                  "seriesEndDt": "1793059200000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Toss",
+                  "hideScoreStatus": "Toss in Progress"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "seriesAdWrapper": {
+            "seriesId": 13197,
+            "seriesName": "ODI Tri-Nation Series in UAE, 2026",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 172681,
+                  "seriesId": 13197,
+                  "seriesName": "ODI Tri-Nation Series in UAE, 2026",
+                  "matchDesc": "3rd Match",
+                  "matchFormat": "ODI",
+                  "startDate": "1792582200000",
+                  "endDate": "1792611000000",
+                  "state": "In Progress",
+                  "status": "Afghanistan need 34 runs",
+                  "team1": {
+                    "teamId": 6,
+                    "teamName": "Bangladesh",
+                    "teamSName": "BAN",
+                    "imageId": 776210
+                  },
+                  "team2": {
+                    "teamId": 96,
+                    "teamName": "Afghanistan",
+                    "teamSName": "AFG",
+                    "imageId": 776177
+                  },
+                  "venueInfo": {
+                    "id": 140,
+                    "ground": "Sharjah Cricket Stadium",
+                    "city": "Sharjah",
+                    "timezone": "+04:00",
+                    "latitude": "25.33095",
+                    "longitude": "55.420902"
+                  },
+                  "currBatTeamId": 96,
+                  "seriesStartDt": "1792195200000",
+                  "seriesEndDt": "1792886400000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "In Progress",
+                  "hideScoreStatus": "Match in progress"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 160,
+                      "wickets": 10,
+                      "overs": 41.2
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 127,
+                      "wickets": 3,
+                      "overs": 28.6
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ad": {
+            "name": "native_matches",
+            "layout": "native_large",
+            "position": 3
+          }
+        }
+      ]
+    },
+    {
+      "matchType": "League",
+      "seriesMatches": [
+        {
+          "seriesAdWrapper": {
+            "seriesId": 13180,
+            "seriesName": "CSA T20 Challenge 2026",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 173421,
+                  "seriesId": 13180,
+                  "seriesName": "CSA T20 Challenge 2026",
+                  "matchDesc": "Pool A",
+                  "matchFormat": "T20",
+                  "startDate": "1792598400000",
+                  "endDate": "1792611000000",
+                  "state": "Toss",
+                  "status": "North West - Eastvaal Renault Dragons opt to bowl",
+                  "team1": {
+                    "teamId": 912,
+                    "teamName": "Limpopo",
+                    "teamSName": "LIMPO",
+                    "imageId": 248430
+                  },
+                  "team2": {
+                    "teamId": 922,
+                    "teamName": "North West - Eastvaal Renault Dragons",
+                    "teamSName": "NWEST",
+                    "imageId": 248439
+                  },
+                  "venueInfo": {
+                    "id": 102,
+                    "ground": "Senwes Park",
+                    "city": "Potchefstroom",
+                    "timezone": "+02:00",
+                    "latitude": "-26.695565",
+                    "longitude": "27.100691"
+                  },
+                  "seriesStartDt": "1790294400000",
+                  "seriesEndDt": "1794787200000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Toss",
+                  "hideScoreStatus": "Toss in Progress"
+                }
+              },
+              {
+                "matchInfo": {
+                  "matchId": 173427,
+                  "seriesId": 13180,
+                  "seriesName": "CSA T20 Challenge 2026",
+                  "matchDesc": "Pool A",
+                  "matchFormat": "T20",
+                  "startDate": "1792580400000",
+                  "endDate": "1792593000000",
+                  "state": "Toss",
+                  "status": "Northern Cape opt to bat",
+                  "team1": {
+                    "teamId": 923,
+                    "teamName": "Northern Cape",
+                    "teamSName": "NCAPE",
+                    "imageId": 248438
+                  },
+                  "team2": {
+                    "teamId": 1768,
+                    "teamName": "South Western Districts",
+                    "teamSName": "SWD",
+                    "imageId": 349609
+                  },
+                  "venueInfo": {
+                    "id": 148,
+                    "ground": "Diamond Oval",
+                    "city": "Kimberley",
+                    "timezone": "+02:00",
+                    "latitude": "-28.742487",
+                    "longitude": "24.742101"
+                  },
+                  "seriesStartDt": "1790294400000",
+                  "seriesEndDt": "1794787200000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Toss",
+                  "hideScoreStatus": "Toss in Progress"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "matchType": "Domestic",
+      "seriesMatches": [
+        {
+          "seriesAdWrapper": {
+            "seriesId": 12398,
+            "seriesName": "Ranji Trophy Elite 2026-27",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 163701,
+                  "seriesId": 12398,
+                  "seriesName": "Ranji Trophy Elite 2026-27",
+                  "matchDesc": "Elite Group C",
+                  "matchFormat": "TEST",
+                  "startDate": "1792296000000",
+                  "endDate": "1792580400000",
+                  "state": "Complete",
+                  "status": "Match drawn",
+                  "team1": {
+                    "teamId": 243,
+                    "teamName": "Jharkhand",
+                    "teamSName": "JHKD",
+                    "imageId": 172296
+                  },
+                  "team2": {
+                    "teamId": 254,
+                    "teamName": "Maharashtra",
+                    "teamSName": "MAH",
+                    "imageId": 172307
+                  },
+                  "venueInfo": {
+                    "id": 287,
+                    "ground": "Maharashtra Cricket Association Stadium",
+                    "city": "Pune",
+                    "timezone": "+05:30",
+                    "latitude": "18.674498",
+                    "longitude": "73.706516"
+                  },
+                  "seriesStartDt": "1791676800000",
+                  "seriesEndDt": "1804118400000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Complete",
+                  "hideScoreStatus": "Match completed"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 169,
+                      "wickets": 10,
+                      "overs": 58.2
+                    },
+                    "inngs2": {
+                      "inningsId": 3,
+                      "runs": 344,
+                      "wickets": 8,
+                      "overs": 135.6
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 527,
+                      "wickets": 5,
+                      "overs": 149.6,
+                      "isDeclared": true
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "seriesAdWrapper": {
+            "seriesId": 8993,
+            "seriesName": "ICC CWC Challenge League A, 2024-26",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 175490,
+                  "seriesId": 8993,
+                  "seriesName": "ICC CWC Challenge League A, 2024-26",
+                  "matchDesc": "31st Match",
+                  "matchFormat": "ODI",
+                  "startDate": "1792564200000",
+                  "endDate": "1792593000000",
+                  "state": "Complete",
+                  "status": "Kenya won by 103 runs",
+                  "team1": {
+                    "teamId": 14,
+                    "teamName": "Kenya",
+                    "teamSName": "KEN",
+                    "imageId": 776303
+                  },
+                  "team2": {
+                    "teamId": 185,
+                    "teamName": "Denmark",
+                    "teamSName": "DEN",
+                    "imageId": 776232
+                  },
+                  "venueInfo": {
+                    "id": 97,
+                    "ground": "Gymkhana Club Ground",
+                    "city": "Nairobi",
+                    "timezone": "+03:00",
+                    "latitude": "-1.269828",
+                    "longitude": "36.827494"
+                  },
+                  "currBatTeamId": 14,
+                  "seriesStartDt": "1727222400000",
+                  "seriesEndDt": "1798761600000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Complete",
+                  "hideScoreStatus": "Match completed"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 324,
+                      "wickets": 7,
+                      "overs": 49.6
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 221,
+                      "wickets": 10,
+                      "overs": 44.1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "seriesAdWrapper": {
+            "seriesId": 12717,
+            "seriesName": "Sheffield Shield 2026-27",
+            "matches": [
+              {
+                "matchInfo": {
+                  "matchId": 166620,
+                  "seriesId": 12717,
+                  "seriesName": "Sheffield Shield 2026-27",
+                  "matchDesc": "6th Match",
+                  "matchFormat": "TEST",
+                  "startDate": "1792377000000",
+                  "endDate": "1792661400000",
+                  "state": "Stumps",
+                  "status": "Day 3: Stumps - Western Australia need 334 runs",
+                  "team1": {
+                    "teamId": 104,
+                    "teamName": "New South Wales",
+                    "teamSName": "NSW",
+                    "imageId": 172196
+                  },
+                  "team2": {
+                    "teamId": 87,
+                    "teamName": "Western Australia",
+                    "teamSName": "WA",
+                    "imageId": 172180
+                  },
+                  "venueInfo": {
+                    "id": 38,
+                    "ground": "W.A.C.A. Ground",
+                    "city": "Perth",
+                    "timezone": "+08:00",
+                    "latitude": "-31.959806",
+                    "longitude": "115.879585"
+                  },
+                  "currBatTeamId": 87,
+                  "seriesStartDt": "1791331200000",
+                  "seriesEndDt": "1806451200000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Stumps",
+                  "hideScoreStatus": "Day 3 : Stumps"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 440,
+                      "wickets": 6,
+                      "overs": 109.6,
+                      "isDeclared": true
+                    },
+                    "inngs2": {
+                      "inningsId": 3,
+                      "runs": 262,
+                      "wickets": 5,
+                      "overs": 51.3,
+                      "isDeclared": true
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 339,
+                      "wickets": 10,
+                      "overs": 105.1
+                    },
+                    "inngs2": {
+                      "inningsId": 4,
+                      "runs": 30,
+                      "wickets": 3,
+                      "overs": 14.6
+                    }
+                  }
+                }
+              },
+              {
+                "matchInfo": {
+                  "matchId": 166607,
+                  "seriesId": 12717,
+                  "seriesName": "Sheffield Shield 2026-27",
+                  "matchDesc": "4th Match",
+                  "matchFormat": "TEST",
+                  "startDate": "1792366200000",
+                  "endDate": "1792650600000",
+                  "state": "Stumps",
+                  "status": "Day 3: Stumps - Victoria need 173 runs",
+                  "team1": {
+                    "teamId": 166,
+                    "teamName": "Tasmania",
+                    "teamSName": "TAS",
+                    "imageId": 172235
+                  },
+                  "team2": {
+                    "teamId": 52,
+                    "teamName": "Victoria",
+                    "teamSName": "VIC",
+                    "imageId": 172153
+                  },
+                  "venueInfo": {
+                    "id": 39,
+                    "ground": "Bellerive Oval",
+                    "city": "Hobart",
+                    "timezone": "+11:00",
+                    "latitude": "-42.877296",
+                    "longitude": "147.374013"
+                  },
+                  "currBatTeamId": 52,
+                  "seriesStartDt": "1791331200000",
+                  "seriesEndDt": "1806451200000",
+                  "isTimeAnnounced": true,
+                  "stateTitle": "Stumps",
+                  "hideScoreStatus": "Day 3 : Stumps"
+                },
+                "matchScore": {
+                  "team1Score": {
+                    "inngs1": {
+                      "inningsId": 1,
+                      "runs": 241,
+                      "wickets": 10,
+                      "overs": 89.2
+                    },
+                    "inngs2": {
+                      "inningsId": 3,
+                      "runs": 236,
+                      "wickets": 10,
+                      "overs": 85.3
+                    }
+                  },
+                  "team2Score": {
+                    "inngs1": {
+                      "inningsId": 2,
+                      "runs": 207,
+                      "wickets": 10,
+                      "overs": 61.1
+                    },
+                    "inngs2": {
+                      "inningsId": 4,
+                      "runs": 98,
+                      "wickets": 5,
+                      "overs": 35.6
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "filters": {
+    "matchType": [
+      "International",
+      "League",
+      "Domestic",
+      "Women"
+    ]
+  },
+  "appIndex": {
+    "seoTitle": "Live Cricket Score - Scorecard and Match Results",
+    "webURL": "www.cricbuzz.com/live-cricket-scores/"
+  },
+  "responseLastUpdated": "1792604400"
+}

@@ -1,0 +1,11 @@
+# Professional navy, emerald and white palette. No secrets belong here.
+[theme]
+base = "light"
+primaryColor = "#087F6B"
+backgroundColor = "#F3F6FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#172B44"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

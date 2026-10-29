@@ -1,0 +1,45 @@
+{
+  "operation": "live_matches",
+  "request_attempts_limit": 1,
+  "credential_displayed": false,
+  "http_status": 200,
+  "fetched_at": "2026-10-22T06:30:44Z",
+  "is_mock": false,
+  "quota": {
+    "x-ratelimit-requests-limit": "200",
+    "x-ratelimit-requests-remaining": "195",
+    "x-ratelimit-requests-reset": "2632087"
+  },
+  "raw_capture_saved_privately": true,
+  "normalized_counts": {
+    "formats": 3,
+    "teams": 8,
+    "venues": 4,
+    "series": 3,
+    "series_formats": 3,
+    "matches": 4,
+    "match_teams": 8,
+    "innings": 12
+  },
+  "import": {
+    "status": "committed",
+    "batch_id": 1,
+    "inserted": 45,
+    "updated": 0,
+    "skipped": 0
+  },
+  "database": {
+    "mode": "live",
+    "revision": 1,
+    "tables": 21,
+    "views": 6,
+    "indexes": 19,
+    "players": 0,
+    "matches": 4,
+    "innings": 12,
+    "career_stats_snapshots": 0,
+    "foreign_keys": 1,
+    "integrity": "ok"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,14 @@
+services:
+  cricbuzz-demo:
+    build: .
+    ports:
+      - "127.0.0.1:8502:8501"
+    environment:
+      DATA_MODE: sample
+      APP_ACCESS_MODE: public_readonly
+      DATABASE_URL: sqlite:////app/data/runtime/public-demo.db
+    volumes:
+      - demo-data:/app/data/runtime
+    restart: unless-stopped
+volumes:
+  demo-data:

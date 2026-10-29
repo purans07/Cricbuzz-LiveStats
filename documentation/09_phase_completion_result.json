@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "player_id": "8583",
+  "profile_and_career_import": {
+    "status": "committed",
+    "batch_id": 3,
+    "inserted": 6,
+    "updated": 1,
+    "skipped": 1
+  },
+  "career_replay": "duplicate",
+  "authenticated_scorecard_import": {
+    "status": "committed",
+    "batch_id": 4,
+    "inserted": 0,
+    "updated": 70,
+    "skipped": 1
+  },
+  "series_coverage": {
+    "series_id": "11595",
+    "returned_matches": 7,
+    "formats": [
+      "ODI",
+      "TEST"
+    ],
+    "history_completeness": "One series verified; no global archive completeness claim",
+    "persisted": false
+  },
+  "counts": {
+    "players": 22,
+    "matches": 4,
+    "innings": 12,
+    "batting_performances": 27,
+    "bowling_performances": 19,
+    "career_stats_snapshots": 3
+  },
+  "career": [
+    {
+      "full_name": "Temba Bavuma",
+      "code": "TEST",
+      "matches_played": 68,
+      "runs": 3993,
+      "wickets": 1,
+      "dismissals": 103
+    },
+    {
+      "full_name": "Temba Bavuma",
+      "code": "ODI",
+      "matches_played": 57,
+      "runs": 2168,
+      "wickets": 0,
+      "dismissals": 50
+    },
+    {
+      "full_name": "Temba Bavuma",
+      "code": "INTERNATIONAL_T20",
+      "matches_played": 36,
+      "runs": 670,
+      "wickets": 0,
+      "dismissals": 32
+    }
+  ],
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "requests_this_completion": 6,
+  "last_quota": {
+    "x-ratelimit-requests-limit": "200",
+    "x-ratelimit-requests-remaining": "186",
+    "x-ratelimit-requests-reset": "2627205"
+  },
+  "subrequests": [
+    {
+      "operation": "player_profile",
+      "fetched_at": "2026-10-22T07:48:22Z",
+      "is_mock": false
+    },
+    {
+      "operation": "player_career",
+      "fetched_at": "2026-10-22T07:48:57Z",
+      "is_mock": false
+    },
+    {
+      "operation": "player_batting",
+      "fetched_at": "2026-10-22T07:48:59Z",
+      "is_mock": false
+    },
+    {
+      "operation": "player_bowling",
+      "fetched_at": "2026-10-22T07:49:02Z",
+      "is_mock": false
+    },
+    {
+      "operation": "match_scorecard",
+      "fetched_at": "2026-10-22T07:52:04Z",
+      "is_mock": false
+    },
+    {
+      "operation": "series_matches",
+      "fetched_at": "2026-10-22T07:52:06Z",
+      "is_mock": false
+    }
+  ],
+  "remaining_data_limits": [
+    "Only one player profile/career has been fetched.",
+    "Career catches and stumpings are absent from the tested responses.",
+    "Venue capacities, historical depth, global player completeness and structured toss/results require later data enrichment."
+  ],
+  "validation": {
+    "tests_passed": 188,
+    "ruff_lint": "passed",
+    "ruff_format": "passed"
+  }
+}

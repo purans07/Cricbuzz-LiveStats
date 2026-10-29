@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "provider": "synthetic-training",
+    "provider_version": "normalized-v1",
+    "capability": "match_scorecard",
+    "resource_key": "match-alpha",
+    "fetched_at": "2026-10-21T10:00:00Z",
+    "upstream_updated_at": "2026-10-21T09:59:00Z",
+    "completeness": "partial"
+  },
+  "tables": [
+    {
+      "table": "countries",
+      "rows": [
+        {
+          "name": "Synthetic Country",
+          "code": "SYN"
+        }
+      ]
+    },
+    {
+      "table": "formats",
+      "rows": [
+        {
+          "code": "ODI",
+          "family": "ODI",
+          "level": "international"
+        }
+      ]
+    },
+    {
+      "table": "playing_roles",
+      "rows": [
+        {
+          "name": "All-rounder"
+        }
+      ]
+    },
+    {
+      "table": "teams",
+      "rows": [
+        {
+          "external_id": "team-alpha",
+          "name": "Synthetic Alpha",
+          "country_id": {
+            "table": "countries",
+            "name": "Synthetic Country"
+          },
+          "is_international": 1
+        },
+        {
+          "external_id": "team-beta",
+          "name": "Synthetic Beta",
+          "country_id": {
+            "table": "countries",
+            "name": "Synthetic Country"
+          },
+          "is_international": 1
+        }
+      ]
+    },
+    {
+      "table": "venues",
+      "rows": [
+        {
+          "external_id": "venue-alpha",
+          "name": "Synthetic Ground",
+          "city": "Synthetic City",
+          "country_id": {
+            "table": "countries",
+            "name": "Synthetic Country"
+          },
+          "capacity": 51000
+        }
+      ]
+    },
+    {
+      "table": "series",
+      "rows": [
+        {
+          "external_id": "series-alpha",
+          "name": "Synthetic API training series",
+          "start_date": "2026-10-01",
+          "end_date": "2026-10-31",
+          "planned_matches": 1
+        }
+      ]
+    },
+    {
+      "table": "series_hosts",
+      "rows": [
+        {
+          "series_id": {
+            "table": "series",
+            "external_id": "series-alpha"
+          },
+          "country_id": {
+            "table": "countries",
+            "name": "Synthetic Country"
+          }
+        }
+      ]
+    },
+    {
+      "table": "series_formats",
+      "rows": [
+        {
+          "series_id": {
+            "table": "series",
+            "external_id": "series-alpha"
+          },
+          "format_id": {
+            "table": "formats",
+            "code": "ODI"
+          }
+        }
+      ]
+    },
+    {
+      "table": "players",
+      "rows": [
+        {
+          "external_id": "player-alpha",
+          "full_name": "Synthetic Alpha Player",
+          "role_id": {
+            "table": "playing_roles",
+            "name": "All-rounder"
+          },
+          "batting_style": "Right-hand bat",
+          "bowling_style": "Right-arm medium"
+        },
+        {
+          "external_id": "player-beta",
+          "full_name": "Synthetic Beta Player",
+          "role_id": {
+            "table": "playing_roles",
+            "name": "All-rounder"
+          },
+          "batting_style": "Left-hand bat",
+          "bowling_style": null
+        }
+      ]
+    },
+    {
+      "table": "player_team_memberships",
+      "rows": [
+        {
+          "player_id": {
+            "table": "players",
+            "external_id": "player-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "valid_from": "2026-10-21"
+        },
+        {
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "valid_from": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "table": "matches",
+      "rows": [
+        {
+          "external_id": "match-alpha",
+          "description": "Synthetic API fixture match",
+          "series_id": {
+            "table": "series",
+            "external_id": "series-alpha"
+          },
+          "format_id": {
+            "table": "formats",
+            "code": "ODI"
+          },
+          "venue_id": {
+            "table": "venues",
+            "external_id": "venue-alpha"
+          },
+          "starts_at": "2026-10-21T08:00:00Z",
+          "status": "live",
+          "status_text": "Synthetic snapshot; not live cricket",
+          "toss_winner_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "toss_decision": "bat"
+        }
+      ]
+    },
+    {
+      "table": "match_teams",
+      "rows": [
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "slot": 1
+        },
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "table": "match_players",
+      "rows": [
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "participation": "observed"
+        },
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "participation": "observed"
+        }
+      ]
+    },
+    {
+      "table": "innings",
+      "rows": [
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "innings_number": 1,
+          "batting_team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "bowling_team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "total_runs": 60,
+          "wickets": 1,
+          "legal_balls": 26
+        },
+        {
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "innings_number": 2,
+          "batting_team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "bowling_team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "total_runs": 10,
+          "wickets": 0,
+          "legal_balls": 12
+        }
+      ]
+    },
+    {
+      "table": "batting_performances",
+      "rows": [
+        {
+          "innings_id": {
+            "table": "innings",
+            "match_external_id": "match-alpha",
+            "innings_number": 1
+          },
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "batting_position": 1,
+          "runs": 60,
+          "balls_faced": 26,
+          "is_dismissed": 1
+        },
+        {
+          "innings_id": {
+            "table": "innings",
+            "match_external_id": "match-alpha",
+            "innings_number": 2
+          },
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "batting_position": 1,
+          "runs": 10,
+          "balls_faced": 12,
+          "is_dismissed": 0
+        }
+      ]
+    },
+    {
+      "table": "bowling_performances",
+      "rows": [
+        {
+          "innings_id": {
+            "table": "innings",
+            "match_external_id": "match-alpha",
+            "innings_number": 1
+          },
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "legal_balls": 26,
+          "runs_conceded": 60,
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "table": "innings",
+            "match_external_id": "match-alpha",
+            "innings_number": 2
+          },
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-alpha"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-alpha"
+          },
+          "legal_balls": 12,
+          "runs_conceded": 10,
+          "wickets": 0
+        }
+      ]
+    },
+    {
+      "table": "fielding_performances",
+      "rows": [
+        {
+          "innings_id": {
+            "table": "innings",
+            "match_external_id": "match-alpha",
+            "innings_number": 1
+          },
+          "match_id": {
+            "table": "matches",
+            "external_id": "match-alpha"
+          },
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "team_id": {
+            "table": "teams",
+            "external_id": "team-beta"
+          },
+          "catches": 1,
+          "stumpings": 0
+        }
+      ]
+    },
+    {
+      "table": "career_stats_snapshots",
+      "rows": [
+        {
+          "player_id": {
+            "table": "players",
+            "external_id": "player-alpha"
+          },
+          "format_id": {
+            "table": "formats",
+            "code": "ODI"
+          },
+          "scope": "career",
+          "matches_played": 40,
+          "runs": 1500,
+          "dismissals": 30,
+          "wickets": 60,
+          "legal_balls_bowled": 2000,
+          "runs_conceded": 1800,
+          "catches": 20,
+          "stumpings": 0
+        },
+        {
+          "player_id": {
+            "table": "players",
+            "external_id": "player-beta"
+          },
+          "format_id": {
+            "table": "formats",
+            "code": "ODI"
+          },
+          "scope": "career",
+          "matches_played": 40,
+          "runs": 1500,
+          "dismissals": 30,
+          "wickets": 60,
+          "legal_balls_bowled": 2000,
+          "runs_conceded": 1800,
+          "catches": 20,
+          "stumpings": 0
+        }
+      ]
+    }
+  ]
+}

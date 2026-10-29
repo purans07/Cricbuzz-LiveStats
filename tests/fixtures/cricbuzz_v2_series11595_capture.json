@@ -1,0 +1,471 @@
+{
+  "matchDetails": [
+    {
+      "matchDetailsMap": {
+        "key": "Thu, 24 Sep 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147895,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "1st ODI",
+              "matchFormat": "ODI",
+              "startDate": "1790236800000",
+              "endDate": "1790265600000",
+              "state": "Complete",
+              "status": "South Africa won by 67 runs",
+              "team1": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "team2": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "venueInfo": {
+                "id": 74,
+                "ground": "Kingsmead",
+                "city": "Durban",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 11,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 297,
+                  "wickets": 8,
+                  "overs": 50.0
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 230,
+                  "wickets": 10,
+                  "overs": 41.2
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "adDetail": {
+        "name": "native_news_index_random_1",
+        "layout": "native_large",
+        "position": 1
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Sun, 27 Sep 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147898,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "2nd ODI",
+              "matchFormat": "ODI",
+              "startDate": "1790496000000",
+              "endDate": "1790524800000",
+              "state": "Complete",
+              "status": "South Africa won by 32 runs",
+              "team1": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "team2": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "venueInfo": {
+                "id": 88,
+                "ground": "The Wanderers Stadium",
+                "city": "Johannesburg",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 11,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 365,
+                  "wickets": 9,
+                  "overs": 50.0
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 333,
+                  "wickets": 10,
+                  "overs": 49.5
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Wed, 30 Sep 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147909,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "3rd ODI",
+              "matchFormat": "ODI",
+              "startDate": "1790767800000",
+              "endDate": "1790796600000",
+              "state": "Complete",
+              "status": "Australia won by 45 runs (DLS Method due to rain)",
+              "team1": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "team2": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "venueInfo": {
+                "id": 102,
+                "ground": "Senwes Park",
+                "city": "Potchefstroom",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 4,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 322,
+                  "wickets": 9,
+                  "overs": 50.0
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 145,
+                  "wickets": 4,
+                  "overs": 28.0
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Sat, 03 Oct 2026 - Sun, 04 Oct 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 174923,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "2 Days Warm-Up Match",
+              "matchFormat": "TEST",
+              "startDate": "1791012600000",
+              "endDate": "1791124200000",
+              "state": "Complete",
+              "status": "Match drawn",
+              "team1": {
+                "teamId": 267,
+                "teamName": "Cricket South Africa Invitation XI",
+                "teamSName": "CSA Inv XI",
+                "imageId": 776294
+              },
+              "team2": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "venueInfo": {
+                "id": 102,
+                "ground": "Senwes Park",
+                "city": "Potchefstroom",
+                "timezone": "+02:00"
+              },
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 318,
+                  "wickets": 7,
+                  "overs": 90.0,
+                  "isDeclared": true
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 368,
+                  "wickets": 5,
+                  "overs": 74.0
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Fri, 09 Oct 2026 - Tue, 13 Oct 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147920,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "1st Test",
+              "matchFormat": "TEST",
+              "startDate": "1791531000000",
+              "endDate": "1791901800000",
+              "state": "Complete",
+              "status": "Australia won by 214 runs",
+              "team1": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "team2": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "venueInfo": {
+                "id": 74,
+                "ground": "Kingsmead",
+                "city": "Durban",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 4,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 390,
+                  "wickets": 10,
+                  "overs": 137.2
+                },
+                "inngs2": {
+                  "inningsId": 3,
+                  "runs": 314,
+                  "wickets": 6,
+                  "overs": 58.0,
+                  "isDeclared": true
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 284,
+                  "wickets": 10,
+                  "overs": 78.0
+                },
+                "inngs2": {
+                  "inningsId": 4,
+                  "runs": 206,
+                  "wickets": 10,
+                  "overs": 86.5
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Sun, 18 Oct 2026 - Thu, 22 Oct 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147931,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "2nd Test",
+              "matchFormat": "TEST",
+              "startDate": "1792310400000",
+              "endDate": "1792681200000",
+              "state": "Complete",
+              "status": "South Africa won by an innings and 31 runs",
+              "team1": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "team2": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "venueInfo": {
+                "id": 73,
+                "ground": "St George's Park",
+                "city": "Gqeberha",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 11,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Match completed"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 425,
+                  "wickets": 9,
+                  "overs": 127.1,
+                  "isDeclared": true
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 99,
+                  "wickets": 10,
+                  "overs": 42.3
+                },
+                "inngs2": {
+                  "inningsId": 3,
+                  "runs": 295,
+                  "wickets": 10,
+                  "overs": 107.1,
+                  "isFollowOn": true
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    },
+    {
+      "matchDetailsMap": {
+        "key": "Tue, 27 Oct 2026 - Sat, 31 Oct 2026",
+        "match": [
+          {
+            "matchInfo": {
+              "matchId": 147942,
+              "seriesId": 11595,
+              "seriesName": "Australia tour of South Africa, 2026",
+              "matchDesc": "3rd Test",
+              "matchFormat": "TEST",
+              "startDate": "1793089800000",
+              "endDate": "1793460600000",
+              "state": "Stumps",
+              "status": "Day 2: Stumps - Australia lead by 1 run",
+              "team1": {
+                "teamId": 11,
+                "teamName": "South Africa",
+                "teamSName": "RSA",
+                "imageId": 776287
+              },
+              "team2": {
+                "teamId": 4,
+                "teamName": "Australia",
+                "teamSName": "AUS",
+                "imageId": 776202
+              },
+              "venueInfo": {
+                "id": 52,
+                "ground": "Newlands",
+                "city": "Cape Town",
+                "timezone": "+02:00"
+              },
+              "currBatTeamId": 4,
+              "seriesStartDt": "1790208000000",
+              "seriesEndDt": "1793577600000",
+              "isTimeAnnounced": true,
+              "hideScoreStatus": "Day 2 : Stumps"
+            },
+            "matchScore": {
+              "team1Score": {
+                "inngs1": {
+                  "inningsId": 1,
+                  "runs": 329,
+                  "wickets": 10,
+                  "overs": 82.3
+                }
+              },
+              "team2Score": {
+                "inngs1": {
+                  "inningsId": 2,
+                  "runs": 330,
+                  "wickets": 4,
+                  "overs": 90.0
+                }
+              }
+            }
+          }
+        ],
+        "seriesId": 11595
+      }
+    }
+  ],
+  "landingPosition": 12,
+  "appIndex": {
+    "seoTitle": "Australia tour of South Africa, 2026 live scores, schedule and results - Cricbuzz | Cricbuzz.com",
+    "webURL": "www.cricbuzz.com/cricket-series/"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "provider": "cricketapilive-cricbuzz-cricket",
+  "version": "v2",
+  "documentation_url": "https://rapidapi.com/cricketapilive/api/cricbuzz-cricket",
+  "verified": true,
+  "verification_scope": "Authenticated live-list, regular scorecard, player profile/career/batting/bowling and series-match requests verified on 2026-10-22; only enabled adapters import their supported data. Recent matches and series mapping verified on 2026-10-29; series scope is explicitly selected and historical coverage remains bounded.",
+  "base_url": "https://cricbuzz-cricket.p.rapidapi.com",
+  "auth_header": "x-rapidapi-key",
+  "static_headers": {
+    "x-rapidapi-host": "cricbuzz-cricket.p.rapidapi.com",
+    "CB-Loc": "IN",
+    "CB-TZ": "+0530"
+  },
+  "endpoints": {
+    "live_matches": {
+      "path": "/matches/v1/live",
+      "required_query": [],
+      "optional_query": []
+    },
+    "match_scorecard": {
+      "path": "/mcenter/v1/{matchId}/scard",
+      "required_query": [],
+      "optional_query": []
+    },
+    "player_profile": {
+      "path": "/stats/v1/player/{playerId}",
+      "required_query": [],
+      "optional_query": []
+    },
+    "player_career": {
+      "path": "/stats/v1/player/{playerId}/career",
+      "required_query": [],
+      "optional_query": []
+    },
+    "player_batting": {
+      "path": "/stats/v1/player/{playerId}/batting",
+      "required_query": [],
+      "optional_query": []
+    },
+    "player_bowling": {
+      "path": "/stats/v1/player/{playerId}/bowling",
+      "required_query": [],
+      "optional_query": []
+    },
+    "series_matches": {
+      "path": "/series/v1/{seriesId}",
+      "required_query": [],
+      "optional_query": []
+    },
+    "recent_matches": {
+      "path": "/matches/v1/recent",
+      "required_query": [],
+      "optional_query": []
+    }
+  },
+  "http_policy": {
+    "connect_timeout": 3,
+    "read_timeout": 10,
+    "max_attempts": 1,
+    "retry_delay": 0.25,
+    "max_retry_wait": 2,
+    "operation_budget": 20,
+    "max_bytes": 2000000,
+    "min_interval": 2
+  }
+}

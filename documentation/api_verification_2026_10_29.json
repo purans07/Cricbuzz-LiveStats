@@ -1,0 +1,190 @@
+{
+  "verification_date": "2026-10-29",
+  "provider": "cricketapilive-cricbuzz-cricket",
+  "version": "v2",
+  "requests": [
+    {
+      "operation": "live_matches",
+      "fetched_at": "2026-10-29T07:04:01Z",
+      "success": true,
+      "quota": {
+        "x-ratelimit-requests-limit": "200",
+        "x-ratelimit-requests-remaining": "182",
+        "x-ratelimit-requests-reset": "2025290"
+      },
+      "top_level_fields": [
+        "typeMatches",
+        "filters",
+        "appIndex",
+        "responseLastUpdated"
+      ],
+      "normalized_counts": {
+        "formats": 5,
+        "teams": 46,
+        "venues": 23,
+        "series": 8,
+        "series_formats": 8,
+        "matches": 23,
+        "match_teams": 46,
+        "innings": 63
+      }
+    },
+    {
+      "operation": "recent_matches",
+      "fetched_at": "2026-10-29T07:04:04Z",
+      "success": true,
+      "quota": {
+        "x-ratelimit-requests-limit": "200",
+        "x-ratelimit-requests-remaining": "181",
+        "x-ratelimit-requests-reset": "2025287"
+      },
+      "top_level_fields": [
+        "typeMatches",
+        "filters",
+        "appIndex",
+        "responseLastUpdated"
+      ],
+      "normalized_counts": {
+        "formats": 9,
+        "teams": 72,
+        "venues": 37,
+        "series": 19,
+        "series_formats": 19,
+        "matches": 64,
+        "match_teams": 128,
+        "innings": 138
+      }
+    },
+    {
+      "operation": "series_matches",
+      "fetched_at": "2026-10-29T07:04:06Z",
+      "success": true,
+      "quota": {
+        "x-ratelimit-requests-limit": "200",
+        "x-ratelimit-requests-remaining": "180",
+        "x-ratelimit-requests-reset": "2025285"
+      },
+      "top_level_fields": [
+        "matchDetails",
+        "landingPosition",
+        "appIndex"
+      ]
+    }
+  ],
+  "player_verification": [
+    {
+      "player_id": "9582",
+      "normalization": "passed",
+      "counts": {
+        "formats": 4,
+        "playing_roles": 1,
+        "players": 1,
+        "career_stats_snapshots": 4
+      },
+      "requests": [
+        {
+          "operation": "player_profile",
+          "fetched_at": "2026-10-29T11:26:37Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "179",
+            "x-ratelimit-requests-reset": "2009534"
+          }
+        },
+        {
+          "operation": "player_batting",
+          "fetched_at": "2026-10-29T11:26:39Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "178",
+            "x-ratelimit-requests-reset": "2009532"
+          }
+        },
+        {
+          "operation": "player_bowling",
+          "fetched_at": "2026-10-29T11:26:42Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "177",
+            "x-ratelimit-requests-reset": "2009529"
+          }
+        }
+      ]
+    },
+    {
+      "player_id": "7710",
+      "normalization": "passed",
+      "counts": {
+        "formats": 4,
+        "playing_roles": 1,
+        "players": 1,
+        "career_stats_snapshots": 4
+      },
+      "requests": [
+        {
+          "operation": "player_profile",
+          "fetched_at": "2026-10-29T11:26:44Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "176",
+            "x-ratelimit-requests-reset": "2009527"
+          }
+        },
+        {
+          "operation": "player_batting",
+          "fetched_at": "2026-10-29T11:26:46Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "175",
+            "x-ratelimit-requests-reset": "2009525"
+          }
+        },
+        {
+          "operation": "player_bowling",
+          "fetched_at": "2026-10-29T11:26:49Z",
+          "quota": {
+            "x-ratelimit-requests-limit": "200",
+            "x-ratelimit-requests-remaining": "174",
+            "x-ratelimit-requests-reset": "2009522"
+          }
+        }
+      ]
+    }
+  ],
+  "history_imports": [
+    {
+      "operation": "recent_matches",
+      "status": "committed",
+      "batch_id": 7,
+      "inserted": 385,
+      "updated": 68,
+      "skipped": 8
+    },
+    {
+      "operation": "series_matches",
+      "status": "committed",
+      "batch_id": 8,
+      "inserted": 30,
+      "updated": 15,
+      "skipped": 3
+    }
+  ],
+  "player_imports": [
+    {
+      "player_id": "9582",
+      "status": "committed",
+      "batch_id": 9,
+      "inserted": 5,
+      "updated": 1,
+      "skipped": 4
+    },
+    {
+      "player_id": "7710",
+      "status": "committed",
+      "batch_id": 10,
+      "inserted": 5,
+      "updated": 1,
+      "skipped": 4
+    }
+  ]
+}

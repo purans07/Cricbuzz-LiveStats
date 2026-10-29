@@ -1,0 +1,129 @@
+{
+  "question": "Q18",
+  "definition": "Pooled ordinary-innings bowling across ODI/T20 families; >=10 evidenced bowling matches and mean >=12 legal balls per match; rank unrounded economy, missing rates last",
+  "datasets": {
+    "sample": {
+      "row_count": 12,
+      "rows": [
+        {
+          "player_name": "Sample Player 03",
+          "overall_economy_rate": 8.93,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.53
+        },
+        {
+          "player_name": "Sample Player 01",
+          "overall_economy_rate": 8.96,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.57
+        },
+        {
+          "player_name": "Sample Player 06",
+          "overall_economy_rate": 8.99,
+          "total_wickets": 0,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.43
+        },
+        {
+          "player_name": "Sample Player 02",
+          "overall_economy_rate": 8.99,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.54
+        },
+        {
+          "player_name": "Sample Player 09",
+          "overall_economy_rate": 8.99,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.68
+        },
+        {
+          "player_name": "Sample Player 04",
+          "overall_economy_rate": 9.0,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.48
+        },
+        {
+          "player_name": "Sample Player 07",
+          "overall_economy_rate": 9.01,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.73
+        },
+        {
+          "player_name": "Sample Player 05",
+          "overall_economy_rate": 9.01,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.47
+        },
+        {
+          "player_name": "Sample Player 08",
+          "overall_economy_rate": 9.04,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.7
+        },
+        {
+          "player_name": "Sample Player 12",
+          "overall_economy_rate": 9.04,
+          "total_wickets": 0,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.59
+        },
+        {
+          "player_name": "Sample Player 10",
+          "overall_economy_rate": 9.07,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.62
+        },
+        {
+          "player_name": "Sample Player 11",
+          "overall_economy_rate": 9.08,
+          "total_wickets": 48,
+          "matches_bowled": 48,
+          "average_overs_per_match": 7.61
+        }
+      ],
+      "limited_overs_matches_with_bowling_rows": 48,
+      "query_plan": [
+        "CO-ROUTINE qualified_bowlers",
+        "CO-ROUTINE match_bowling",
+        "SCAN b USING INDEX idx_bowling_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN match_bowling",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 0,
+      "rows": [],
+      "limited_overs_matches_with_bowling_rows": 0,
+      "query_plan": [
+        "CO-ROUTINE qualified_bowlers",
+        "CO-ROUTINE match_bowling",
+        "SCAN b USING INDEX idx_bowling_player_match",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "SCAN match_bowling",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "question": "Q08",
+  "scope": "Stored series starting in calendar 2024, one row per identity; ordered host/format display lists",
+  "datasets": {
+    "sample": {
+      "rows": [
+        {
+          "series_name": "Synthetic series 2024 Q1",
+          "host_country": "India",
+          "match_type": "ODI, T20I, TEST",
+          "start_date": "2024-01-01",
+          "total_matches_planned": 6
+        },
+        {
+          "series_name": "Synthetic series 2024 Q2",
+          "host_country": "Australia",
+          "match_type": "ODI, T20I, TEST",
+          "start_date": "2024-04-01",
+          "total_matches_planned": 6
+        },
+        {
+          "series_name": "Synthetic series 2024 Q3",
+          "host_country": "India",
+          "match_type": "ODI, T20I, TEST",
+          "start_date": "2024-07-01",
+          "total_matches_planned": 6
+        },
+        {
+          "series_name": "Synthetic series 2024 Q4",
+          "host_country": "Australia",
+          "match_type": "ODI, T20I, TEST",
+          "start_date": "2024-10-01",
+          "total_matches_planned": 6
+        }
+      ],
+      "row_count": 4,
+      "stored_series_count": 12,
+      "query_plan": [
+        "SEARCH s USING INDEX idx_series_start (start_date>? AND start_date<?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "CO-ROUTINE h",
+        "SEARCH sh USING COVERING INDEX sqlite_autoindex_series_hosts_1 (series_id=?)",
+        "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY",
+        "SCAN h",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "CO-ROUTINE ft",
+        "SEARCH sf USING COVERING INDEX sqlite_autoindex_series_formats_1 (series_id=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY",
+        "SCAN ft"
+      ]
+    },
+    "live": {
+      "rows": [],
+      "row_count": 0,
+      "stored_series_count": 3,
+      "query_plan": [
+        "SEARCH s USING INDEX idx_series_start (start_date>? AND start_date<?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "CO-ROUTINE h",
+        "SEARCH sh USING COVERING INDEX sqlite_autoindex_series_hosts_1 (series_id=?)",
+        "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY",
+        "SCAN h",
+        "CORRELATED SCALAR SUBQUERY 4",
+        "CO-ROUTINE ft",
+        "SEARCH sf USING COVERING INDEX sqlite_autoindex_series_formats_1 (series_id=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR ORDER BY",
+        "SCAN ft"
+      ]
+    }
+  }
+}

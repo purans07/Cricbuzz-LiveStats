@@ -1,0 +1,25 @@
+{
+  "phase": 16,
+  "scope": "Deployment preparation; public readonly sample",
+  "automated_startup_cases": 6,
+  "compose_syntax": "passed",
+  "docker_cli": "installed",
+  "docker_engine": "unavailable/not running",
+  "docker_build": "not run",
+  "container_runtime": "not run",
+  "hosted_publication": "not performed",
+  "credentials_or_working_databases_baked_into_image": "excluded by explicit copy/context policy; image build not yet verified",
+  "remaining_acceptance": [
+    "Docker build and Linux dependency installation",
+    "Container health and volume permission/restart check",
+    "Hosted account/repository, TLS and WebSocket acceptance"
+  ],
+  "validation": {
+    "tests_passed": 519,
+    "tests_failed": 0,
+    "ruff_check": "passed",
+    "ruff_format": "passed",
+    "git_diff_check": "passed",
+    "compose_config": "passed"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "question": "Q15",
+  "definition": "Completed wins by <50 runs OR <5 wickets; active batting only, average of per-match individual run totals",
+  "datasets": {
+    "sample": {
+      "row_count": 12,
+      "rows": [
+        {
+          "player_name": "Sample Player 03",
+          "average_runs": 150.89,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        },
+        {
+          "player_name": "Sample Player 04",
+          "average_runs": 144.67,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        },
+        {
+          "player_name": "Sample Player 12",
+          "average_runs": 143.56,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 02",
+          "average_runs": 133.78,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        },
+        {
+          "player_name": "Sample Player 11",
+          "average_runs": 126.44,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 01",
+          "average_runs": 116.67,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        },
+        {
+          "player_name": "Sample Player 10",
+          "average_runs": 109.33,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 08",
+          "average_runs": 98.44,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 09",
+          "average_runs": 92.22,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 07",
+          "average_runs": 81.33,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 2
+        },
+        {
+          "player_name": "Sample Player 06",
+          "average_runs": 62.22,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        },
+        {
+          "player_name": "Sample Player 05",
+          "average_runs": 45.11,
+          "total_close_matches_played": 9,
+          "team_wins_when_batted": 7
+        }
+      ],
+      "completed_matches_with_unresolved_result_or_win_margin": 0,
+      "query_plan": [
+        "CO-ROUTINE close_player_matches",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    },
+    "live": {
+      "row_count": 0,
+      "rows": [],
+      "completed_matches_with_unresolved_result_or_win_margin": 1,
+      "query_plan": [
+        "CO-ROUTINE close_player_matches",
+        "SCAN b USING INDEX idx_batting_player_match",
+        "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH players USING INTEGER PRIMARY KEY (rowid=?)",
+        "SEARCH i USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "SCAN q",
+        "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)",
+        "USE TEMP B-TREE FOR GROUP BY",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    }
+  }
+}
