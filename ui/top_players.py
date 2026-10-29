@@ -40,9 +40,6 @@ def _page(database):
         if sample
         else "SAVED PROVIDER DATA · Rankings cover only imported players, not all cricket players worldwide."
     )
-    st.caption(
-        "Opening this page and changing filters make no API requests. Career snapshots are not summed. Charts describe only these saved records."
-    )
     st.button(
         "Reload saved statistics",
         key="reload_top_players",
@@ -71,7 +68,6 @@ def _page(database):
         fmt = st.selectbox(
             "Cricket format", list(formats), format_func=formats.get, key="top_format"
         )
-    st.caption(f"Source: {sources[source]} · Exact stored format: {formats[fmt]}")
     if formats[fmt] == "INTERNATIONAL_T20":
         st.caption(
             "INTERNATIONAL_T20 is the provider's stored category; it has not been relabeled as official T20I."
@@ -90,23 +86,16 @@ def _page(database):
             step=1,
             key="top_minimum",
         )
-    with st.expander("How qualification works"):
-        st.caption(
-            "Minimum 0 applies no match-count filter, including players with an unknown match count. Positive minimums require a known count. No dismissals or wicket minimum is applied to rate rankings; inspect sample size before comparing."
-        )
     result = service.leaders(source, fmt, metric, limit=limit, minimum_matches=minimum)
     coverage = result["coverage"]
     cols = st.columns(3)
     for col, label, value in zip(
         cols,
-        ["Players after match filter", "Known ranking values", "Displayed players"],
+        ["Eligible players", "Ranked players", "Showing"],
         [coverage["eligible_players"], coverage["ranked_players"], len(result["rows"])],
         strict=True,
     ):
         col.metric(label, value)
-    st.caption(
-        f"Import range after match filter: {time_label(coverage['oldest_import'], settings.display_timezone)} to {time_label(coverage['newest_import'], settings.display_timezone)}. Different players may have different snapshot dates."
-    )
     if coverage["eligible_players"] < 10:
         st.warning(
             "Limited player coverage: this saved dataset is too small to represent a global leaderboard."
@@ -119,9 +108,7 @@ def _page(database):
         return
     order = "Lower is better" if METRICS[metric][1] == "ASC" else "Higher is better"
     st.subheader(metric)
-    st.caption(
-        f"{order} · Equal unrounded values share a rank. The display limit caps rows, so a tie group can be truncated. Player IDs stabilize display order."
-    )
+    st.caption(f"{formats[fmt]} · {sources[source]} · {order}")
     leaderboard_charts(
         rows,
         metric,
@@ -140,12 +127,18 @@ def _page(database):
     st.dataframe(
         pd.DataFrame(table).rename(columns=LABELS), hide_index=True, width="stretch"
     )
-    with st.expander("How missing statistics are handled"):
+    with st.expander("About these rankings"):
+        st.caption(
+            f"Imported: {time_label(coverage['oldest_import'], settings.display_timezone)} to {time_label(coverage['newest_import'], settings.display_timezone)}. Player snapshots may have different dates."
+        )
+        st.caption(
+            "Rankings use the latest saved career record per source and format. Equal values share a rank; the display limit can cut off a tie group. Minimum matches 0 includes unknown match counts. Rate rankings have no dismissal or wicket minimum; compare sample sizes."
+        )
         st.caption(
             "Blank cells mean unknown or undefined. Known zero totals remain zero. Ratios are calculated from known positive denominators; reported ratios are used only when the denominator is missing. A known zero denominator stays undefined."
         )
     selected = st.selectbox(
-        "Inspect a displayed player",
+        "Player profile",
         [r["player_id"] for r in rows],
         format_func=lambda pid: next(
             f"{r['player_name']} · #{pid}" for r in rows if r["player_id"] == pid
@@ -177,16 +170,16 @@ def _page(database):
 
 def render_top_players():
     """Render exact-source/format career rankings from the selected saved dataset."""
-    st.caption("CRICBUZZ LIVESTATS / PLAYER STATISTICS")
     st.title("Top Players")
-    st.write("Compare saved career totals and rates, one source and format at a time.")
+    st.write("Compare batting and bowling performance across cricket formats.")
     try:
         settings = apply_preferences(load_settings())
-        choice = st.selectbox(
-            "Dataset",
-            ["Configured dataset", "Saved sample", "Saved provider"],
-            key="top_dataset",
-        )
+        with st.expander("Data options"):
+            choice = st.selectbox(
+                "Dataset",
+                ["Configured dataset", "Saved sample", "Saved provider"],
+                key="top_dataset",
+            )
         if choice != "Configured dataset":
             mode = "sample" if choice == "Saved sample" else "live"
             settings = replace(
@@ -202,8 +195,8 @@ def render_top_players():
         finally:
             database.close()
     except ConfigurationError:
-        st.error("Data settings need attention. Review the setup guide on Home.")
+        st.error("Data settings need attention. Check the data connection in Settings.")
     except (DatabaseError, SQLAlchemyError, OSError):
         st.warning(
-            "The selected saved database is unavailable or incompatible. Review the setup guide on Home. No automatic setup or repair is attempted."
+            "The selected saved database is unavailable or incompatible. Check the data connection in Settings. No automatic setup or repair is attempted."
         )

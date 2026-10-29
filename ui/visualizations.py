@@ -19,9 +19,7 @@ from utils.charts import (
 def leaderboard_charts(rows, metric, context):
     """Render source-scoped career ranking and optional separate-unit comparisons."""
     st.subheader("Career ranking chart")
-    st.caption(
-        "Bars make magnitudes easy to compare. The chart shows the first 20 displayed rows in table order; the table retains the full selected row cap. Lower is better for bowling average/economy. Hover for sample size and import time."
-    )
+    st.caption("Top 20 displayed players. Hover for details.")
     st.plotly_chart(
         ranking_bar(rows, metric, context), width="stretch", key="leaderboard_bar"
     )
@@ -44,7 +42,7 @@ def leaderboard_charts(rows, metric, context):
             return
         comparison = [r for r in rows if r["player_id"] in selected]
         st.caption(
-            "Comparisons use only the displayed source/format and selected latest snapshots. Runs and wickets have separate axes and are never added or normalized together. Missing values produce no bar."
+            "Selected players, same source and format. Missing values are left blank."
         )
         for field, title in [("runs", "Career runs"), ("wickets", "Career wickets")]:
             st.plotly_chart(
