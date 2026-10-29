@@ -3,12 +3,10 @@
 from dataclasses import replace
 from unittest.mock import patch
 
-import pytest
 from streamlit.testing.v1 import AppTest
 
 from config import PROJECT_ROOT, ConfigurationError
 from services.overview import OverviewService
-from ui.home import guide_preview, read_guide
 
 
 def app(settings, monkeypatch):
@@ -52,7 +50,7 @@ def test_home_renders_and_reload_makes_no_http_calls(settings, monkeypatch):
         assert not at.exception
         assert [m.value for m in at.metric] == ["72", "12", "2", "2"]
         assert any("SAMPLE DATA" in x.value for x in at.info)
-        assert len(at.expander) == 5
+        assert len(at.expander) == 0
         at.button(key="reload_overview").click().run()
         assert not at.exception
         assert not network.called
@@ -78,18 +76,18 @@ def test_live_label_does_not_claim_current_fetch(settings, database, monkeypatch
     assert not any("SAMPLE DATA" in x.value for x in at.info)
 
 
-def test_missing_database_keeps_guides_and_does_not_create_file(
+def test_missing_database_keeps_navigation_and_does_not_create_file(
     settings, monkeypatch, tmp_path
 ):
     path = tmp_path / "not_initialized.db"
     at = app(replace(settings, database_path=path), monkeypatch)
     assert not at.exception and at.warning
     assert not at.metric
-    assert len(at.expander) == 5
+    assert len(at.expander) == 0
     assert not path.exists()
 
 
-def test_configuration_error_is_redacted_and_guides_remain(monkeypatch):
+def test_configuration_error_is_redacted_and_navigation_remains(monkeypatch):
     def fail():
         raise ConfigurationError("private-marker-must-not-appear")
 
@@ -97,23 +95,10 @@ def test_configuration_error_is_redacted_and_guides_remain(monkeypatch):
     at = AppTest.from_file(str(PROJECT_ROOT / "main.py"), default_timeout=15).run()
     assert not at.exception and at.error
     assert "private-marker" not in at.error[0].value
-    assert len(at.expander) == 5
+    assert len(at.expander) == 0
 
 
 def test_public_readonly_home_works(settings, monkeypatch):
     at = app(replace(settings, access_mode="public_readonly"), monkeypatch)
     assert not at.exception
-    assert any("Access: Read only" in c.value for c in at.caption)
-
-
-def test_guides_are_allowlisted():
-    assert "# Cricbuzz LiveStats" in read_guide("Project guide")
-    with pytest.raises(KeyError):
-        read_guide("../.env")
-
-
-def test_guide_preview_removes_source_paths_but_keeps_external_links():
-    assert (
-        guide_preview("[Setup](documentation/setup.md) [Official](https://example.org)")
-        == "Setup [Official](https://example.org)"
-    )
+    assert any("SAMPLE DATA" in message.value for message in at.info)

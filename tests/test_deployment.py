@@ -60,7 +60,7 @@ def test_cloud_entry_renders_readonly_home_and_other_routes(tmp_path, monkeypatc
         monkeypatch.setenv(key, value)
     at = AppTest.from_file(str(PROJECT_ROOT / "cloud_app.py"), default_timeout=20).run()
     assert not at.exception and at.metric[0].value == "72"
-    assert any("Access: Read only" in x.value for x in at.caption)
+    assert any("SAMPLE DATA" in x.value for x in at.info)
     at.switch_page("pages/05_CRUD.py").run()
     assert not at.exception and not at.form
     at.switch_page("pages/04_Analytics.py").run()
