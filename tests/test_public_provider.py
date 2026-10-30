@@ -81,3 +81,54 @@ def test_captured_public_scorecard_has_batting_and_bowling_details(tmp_path):
         assert sum(len(inning["bowling"]) for inning in innings) == 10
     finally:
         db.close()
+
+
+def test_latest_list_rotation_keeps_existing_scorecard_match(tmp_path):
+    import json
+    import shutil
+    from datetime import UTC, datetime, timedelta
+
+    from sqlalchemy import text
+
+    from api.adapter import decode_snapshot
+    from deployment.public_provider import PUBLIC_DATA, publish_snapshot
+
+    for source in PUBLIC_DATA.glob("*.json"):
+        shutil.copy2(source, tmp_path / source.name)
+    payload = json.loads((tmp_path / "90-latest-matches.json").read_text())
+    metadata = payload["metadata"]
+    metadata["fetched_at"] = (
+        (
+            datetime.fromisoformat(metadata["fetched_at"].replace("Z", "+00:00"))
+            + timedelta(days=1)
+        )
+        .astimezone(UTC)
+        .strftime("%Y-%m-%dT%H:%M:%SZ")
+    )
+    for group in payload["tables"]:
+        if group["table"] == "matches":
+            group["rows"] = [
+                row for row in group["rows"] if row["external_id"] != "175081"
+            ]
+        elif group["table"] in {"match_teams", "innings"}:
+            group["rows"] = [
+                row
+                for row in group["rows"]
+                if row["match_id"]["external_id"] != "175081"
+            ]
+    publish_snapshot(
+        decode_snapshot(payload, origin="provider"), "90-latest-matches.json", tmp_path
+    )
+    settings = prepare_public_provider(tmp_path, tmp_path / "cold-start.db")
+    db = Database(settings)
+    try:
+        with db.transaction() as connection:
+            assert (
+                connection.execute(
+                    text("SELECT COUNT(*) FROM matches WHERE external_id='175081'")
+                ).scalar_one()
+                == 1
+            )
+        assert list(tmp_path.glob("20-match-history-*.json"))
+    finally:
+        db.close()

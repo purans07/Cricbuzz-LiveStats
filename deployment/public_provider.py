@@ -145,13 +145,25 @@ def publish_snapshot(snapshot, filename, directory=PUBLIC_DATA):
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
     payload = snapshot_payload(snapshot)
+    archive_name = None
+    old_payload = None
+    target = directory / filename
+    if filename == "90-latest-matches.json" and target.exists():
+        old_payload = json.loads(target.read_text())
+        old_snapshot = decode_snapshot(old_payload, origin="provider")
+        if old_snapshot.digest != snapshot.digest:
+            stamp = old_snapshot.fetched_at.replace(":", "").replace("-", "")
+            archive_name = f"20-match-history-{stamp}.json"
     with tempfile.TemporaryDirectory() as folder:
         trial = Path(folder)
         for existing in directory.glob("*.json"):
             shutil.copy2(existing, trial / existing.name)
+        if archive_name:
+            (trial / archive_name).write_text(json.dumps(old_payload))
         (trial / filename).write_text(json.dumps(payload))
         prepare_public_provider(trial, trial / "validation.db")
-    target = directory / filename
+    if archive_name and not (directory / archive_name).exists():
+        (directory / archive_name).write_text(json.dumps(old_payload, indent=2) + "\n")
     temporary = target.with_suffix(".tmp")
     temporary.write_text(json.dumps(payload, indent=2) + "\n")
     temporary.replace(target)
