@@ -15,7 +15,7 @@ from utils.db_connection import DatabaseError
 def main():
     """Prepare an isolated readonly sample and launch the shared dashboard."""
     try:
-        mode = os.environ.get("PUBLIC_DATA_MODE", os.environ.get("DATA_MODE", "live"))
+        mode = os.environ.get("PUBLIC_DATA_MODE", "live")
         if mode not in {"sample", "live"}:
             raise ConfigurationError("Unsupported public data mode.")
         settings = (

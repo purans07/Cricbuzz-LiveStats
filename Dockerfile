@@ -20,7 +20,7 @@ COPY --chown=10001:10001 README.md ./
 COPY --chown=10001:10001 .streamlit/config.toml ./.streamlit/config.toml
 RUN mkdir -p /app/data/runtime && chown 10001:10001 /app/data/runtime
 USER appuser
-ENV DATA_MODE=sample APP_ACCESS_MODE=public_readonly \
+ENV PUBLIC_DATA_MODE=sample DATA_MODE=sample APP_ACCESS_MODE=public_readonly \
     DATABASE_URL=sqlite:////app/data/runtime/public-demo.db
 EXPOSE 8501
 HEALTHCHECK --interval=30s --timeout=5s --start-period=45s --retries=3 \

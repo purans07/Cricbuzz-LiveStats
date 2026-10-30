@@ -16,6 +16,7 @@ def env(path, **extra):
     return {
         "DATABASE_URL": "sqlite:///" + str(path),
         "DATA_MODE": "sample",
+        "PUBLIC_DATA_MODE": "sample",
         "APP_ACCESS_MODE": "public_readonly",
         **extra,
     }

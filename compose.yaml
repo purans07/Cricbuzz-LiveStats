@@ -4,6 +4,7 @@ services:
     ports:
       - "127.0.0.1:8502:8501"
     environment:
+      PUBLIC_DATA_MODE: sample
       DATA_MODE: sample
       APP_ACCESS_MODE: public_readonly
       DATABASE_URL: sqlite:////app/data/runtime/public-demo.db
