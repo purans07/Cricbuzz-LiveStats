@@ -28,6 +28,8 @@
 !data/
 !data/sample/
 !data/sample/**
+!data/public_provider/
+!data/public_provider/**
 !documentation/
 !documentation/**
 !.streamlit/

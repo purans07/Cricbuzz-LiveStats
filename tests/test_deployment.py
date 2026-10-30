@@ -70,7 +70,7 @@ def test_cloud_entry_renders_readonly_home_and_other_routes(tmp_path, monkeypatc
 
 def test_cloud_entry_stops_with_safe_message_for_wrong_mode(tmp_path, monkeypatch):
     path = tmp_path / "refused.db"
-    for key, value in env(path, DATA_MODE="live").items():
+    for key, value in env(path, PUBLIC_DATA_MODE="invalid").items():
         monkeypatch.setenv(key, value)
     at = AppTest.from_file(str(PROJECT_ROOT / "cloud_app.py"), default_timeout=20).run()
     assert not at.exception and at.error and not path.exists()

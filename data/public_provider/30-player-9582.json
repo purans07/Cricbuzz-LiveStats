@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "provider_version": "v2",
+    "capability": "player_career",
+    "resource_key": "9582",
+    "fetched_at": "2026-10-29T11:26:42Z",
+    "upstream_updated_at": null,
+    "completeness": "partial"
+  },
+  "tables": [
+    {
+      "rows": [
+        {
+          "code": "TEST",
+          "family": "TEST",
+          "level": "international"
+        },
+        {
+          "code": "ODI",
+          "family": "ODI",
+          "level": "international"
+        },
+        {
+          "code": "INTERNATIONAL_T20",
+          "family": "T20",
+          "level": "international"
+        },
+        {
+          "code": "IPL",
+          "family": "T20",
+          "level": "domestic"
+        }
+      ],
+      "table": "formats"
+    },
+    {
+      "rows": [
+        {
+          "name": "Batsman"
+        }
+      ],
+      "table": "playing_roles"
+    },
+    {
+      "rows": [
+        {
+          "batting_style": "Right Handed Bat",
+          "bowling_style": "Right-arm offbreak",
+          "external_id": "9582",
+          "full_name": "Aiden Kyle Markram",
+          "role_id": {
+            "name": "Batsman",
+            "table": "playing_roles"
+          }
+        }
+      ],
+      "table": "players"
+    },
+    {
+      "rows": [
+        {
+          "balls_faced": 5880,
+          "batting_innings": 96,
+          "bowling_innings": 32,
+          "centuries": 8,
+          "dismissals": 94,
+          "format_id": {
+            "code": "TEST",
+            "table": "formats"
+          },
+          "highest_score": 152,
+          "legal_balls_bowled": 711,
+          "matches_played": 53,
+          "player_id": {
+            "external_id": "9582",
+            "table": "players"
+          },
+          "reported_batting_average": 36.1,
+          "reported_bowling_average": 58.33,
+          "reported_economy": 2.95,
+          "reported_strike_rate": 57.7,
+          "runs": 3393,
+          "runs_conceded": 350,
+          "scope": "career",
+          "wickets": 6
+        },
+        {
+          "balls_faced": 2783,
+          "batting_innings": 84,
+          "bowling_innings": 45,
+          "centuries": 4,
+          "dismissals": 75,
+          "format_id": {
+            "code": "ODI",
+            "table": "formats"
+          },
+          "highest_score": 175,
+          "legal_balls_bowled": 1360,
+          "matches_played": 88,
+          "player_id": {
+            "external_id": "9582",
+            "table": "players"
+          },
+          "reported_batting_average": 36.31,
+          "reported_bowling_average": 63.05,
+          "reported_economy": 5.84,
+          "reported_strike_rate": 97.85,
+          "runs": 2723,
+          "runs_conceded": 1324,
+          "scope": "career",
+          "wickets": 21
+        },
+        {
+          "balls_faced": 1332,
+          "batting_innings": 73,
+          "bowling_innings": 39,
+          "centuries": 0,
+          "dismissals": 62,
+          "format_id": {
+            "code": "INTERNATIONAL_T20",
+            "table": "formats"
+          },
+          "highest_score": 86,
+          "legal_balls_bowled": 408,
+          "matches_played": 77,
+          "player_id": {
+            "external_id": "9582",
+            "table": "players"
+          },
+          "reported_batting_average": 31.71,
+          "reported_bowling_average": 37.69,
+          "reported_economy": 8.87,
+          "reported_strike_rate": 147.6,
+          "runs": 1966,
+          "runs_conceded": 603,
+          "scope": "career",
+          "wickets": 16
+        },
+        {
+          "balls_faced": 1233,
+          "batting_innings": 66,
+          "bowling_innings": 24,
+          "centuries": 0,
+          "dismissals": 55,
+          "format_id": {
+            "code": "IPL",
+            "table": "formats"
+          },
+          "highest_score": 68,
+          "legal_balls_bowled": 223,
+          "matches_played": 69,
+          "player_id": {
+            "external_id": "9582",
+            "table": "players"
+          },
+          "reported_batting_average": 30.38,
+          "reported_bowling_average": 59.5,
+          "reported_economy": 9.61,
+          "reported_strike_rate": 135.53,
+          "runs": 1671,
+          "runs_conceded": 357,
+          "scope": "career",
+          "wickets": 6
+        }
+      ],
+      "table": "career_stats_snapshots"
+    }
+  ]
+}

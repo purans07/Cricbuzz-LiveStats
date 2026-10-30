@@ -112,6 +112,17 @@ def render_settings():
         st.caption(
             "Access policy comes from trusted deployment configuration and cannot be changed here. Local mode enables administrative forms and restricted custom SQL; public read-only mode disables them and provider refresh writes."
         )
+    if configured and configured.access_mode == "public_readonly":
+        st.subheader("Data updates")
+        st.info(
+            "Provider records are refreshed by a scheduled backend job. Check import times for freshness; this is not continuous live scoring."
+            if configured.data_mode == "live"
+            else "Sample demo—live API access is disabled."
+        )
+        st.caption(
+            "Administrative edits and visitor-triggered API requests are disabled."
+        )
+        return
     st.subheader("API configuration readiness")
     api = api_readiness()
     if api["configured"]:
