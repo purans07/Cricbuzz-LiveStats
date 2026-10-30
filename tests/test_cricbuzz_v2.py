@@ -196,3 +196,23 @@ def test_warmup_does_not_enter_official_test_format(response):
         if row["code"] == "INTERNATIONAL_WARMUP_TEST"
     )
     assert format_row["family"] == "OTHER" and format_row["level"] == "other"
+
+
+def test_national_team_in_league_wrapper_retains_international_identity(response):
+    from copy import deepcopy
+
+    duplicate = deepcopy(response.data["typeMatches"][0])
+    duplicate["matchType"] = "League"
+    for wrapper in duplicate["seriesMatches"]:
+        for match in wrapper.get("seriesAdWrapper", {}).get("matches", []):
+            match["matchInfo"]["matchId"] += 1000000
+    data = deepcopy(response.data)
+    data["typeMatches"].append(duplicate)
+    before = group(CricbuzzV2MatchListNormalizer().normalize(response), "teams")
+    after = group(
+        CricbuzzV2MatchListNormalizer().normalize(replace(response, data=data)), "teams"
+    )
+    expected = {row["external_id"] for row in before if row["is_international"]}
+    assert all(
+        row["is_international"] == 1 for row in after if row["external_id"] in expected
+    )

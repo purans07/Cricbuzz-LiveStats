@@ -159,8 +159,15 @@ class CricbuzzV2MatchListNormalizer:
                                 "name": team["teamName"],
                                 "is_international": int(scope == "International"),
                             }
-                            if existing and existing != row:
-                                raise ValueError
+                            if existing:
+                                if existing["name"] != row["name"]:
+                                    raise ValueError
+                                # The same national side can also appear in a league
+                                # wrapper; observed international identity takes precedence.
+                                row["is_international"] = max(
+                                    existing["is_international"],
+                                    row["is_international"],
+                                )
                             records["teams"][tid] = row
                             records["match_teams"][(mid, tid)] = {
                                 "match_id": _reference("matches", mid),
