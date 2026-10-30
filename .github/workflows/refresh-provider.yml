@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.13'
       - run: python -m pip install -r requirements-lock.txt
-      - name: Fetch and validate one provider response
+      - name: Fetch list and up to two detailed scorecards
         env:
           CRICBUZZ_API_KEY: ${{ secrets.CRICBUZZ_API_KEY }}
           CRICBUZZ_CONTRACT_FILE: api/contracts/cricketapilive_v2.json
@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/public_provider/90-latest-matches.json
+          git add data/public_provider/*.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh verified public cricket snapshot'
             git push

@@ -16,7 +16,7 @@ def test_provider_bootstrap_preserves_records_and_blocks_public_writes(tmp_path)
     try:
         first = OverviewService(db).read()
         assert first["mode"] == "live" and first["matches"] >= 64
-        assert first["players"] == 2
+        assert first["players"] >= 2
         with pytest.raises(DatabaseError):
             with db.transaction(write=True):
                 pass
@@ -49,3 +49,35 @@ def test_public_provider_cloud_routes_have_real_labels_and_no_admin_forms(
     assert any("SAVED PROVIDER DATA" in x.value for x in at.info)
     at.switch_page("pages/05_CRUD.py").run()
     assert not at.exception and not at.form
+
+
+def test_scorecard_budget_and_completed_cache():
+    from deployment.public_provider import PUBLIC_DATA, scorecard_candidates
+
+    selected = scorecard_candidates(PUBLIC_DATA)
+    assert len(selected) <= 2
+    assert "175081" not in {mid for mid, _ in selected}
+    assert scorecard_candidates(PUBLIC_DATA, limit=0) == []
+    with pytest.raises(ValueError):
+        scorecard_candidates(PUBLIC_DATA, limit=3)
+
+
+def test_captured_public_scorecard_has_batting_and_bowling_details(tmp_path):
+    from sqlalchemy import text
+
+    from services.live_matches import LiveMatchService
+
+    settings = prepare_public_provider(database_path=tmp_path / "details.db")
+    db = Database(settings)
+    try:
+        with db.transaction() as connection:
+            mid = connection.execute(
+                text("SELECT match_id FROM matches WHERE external_id='175081'")
+            ).scalar_one()
+        innings = LiveMatchService(db).scorecard(mid)
+        assert len(innings) == 2
+        assert all(inning["batting"] and inning["bowling"] for inning in innings)
+        assert sum(len(inning["batting"]) for inning in innings) == 10
+        assert sum(len(inning["bowling"]) for inning in innings) == 10
+    finally:
+        db.close()
