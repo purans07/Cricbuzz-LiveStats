@@ -1,0 +1,23 @@
+{
+  "url": "https://cricbuzz-livestats-web.streamlit.app/Live_Matches",
+  "match_provider_id": "175081",
+  "match": "Bangladesh vs Scotland",
+  "batting_rows": 10,
+  "bowling_rows": 10,
+  "innings": 2,
+  "hosted_tables_observed": 4,
+  "hosted_missing_detail_messages_for_selected_match": 0,
+  "workflow_run": "https://github.com/purans07/Cricbuzz-LiveStats/actions/runs/41001775072",
+  "workflow_conclusion": "success",
+  "additional_published_scorecards": [
+    "175100",
+    "166633"
+  ],
+  "daily_maximum_requests": 3,
+  "full_regression": {
+    "passed": 599,
+    "skipped_opt_in_servers": 64
+  },
+  "additional_history_retention_tests_passed": 6,
+  "scope": "Selected verified scorecards, progressive coverage; scheduled rather than continuous updates"
+}
