@@ -9,6 +9,9 @@ def apply_style():
         """
         <style>
         :root {--ink:#172b44; --muted:#596b80; --line:#dce4ed; --accent:#087f6b;}
+        /* Hide Streamlit hosting actions while keeping the sidebar toggle available. */
+        [data-testid="stToolbar"], [data-testid="stAppDeployButton"],
+        [data-testid="stMainMenu"], #MainMenu {display:none !important;}
         .stApp {background:#f3f6fa; color:var(--ink);}
         .stMainBlockContainer {padding:3.3rem 2.5rem 3rem; max-width:1440px;}
         [data-testid="stVerticalBlock"] {gap:.85rem;}
