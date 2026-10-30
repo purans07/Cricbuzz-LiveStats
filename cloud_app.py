@@ -1,4 +1,4 @@
-"""Public sample-demo entry point; local administration continues through main.py."""
+"""Public readonly entry point for provider data or an explicit sample demo."""
 
 import os
 import runpy
@@ -13,7 +13,7 @@ from utils.db_connection import DatabaseError
 
 
 def main():
-    """Prepare an isolated readonly sample and launch the shared dashboard."""
+    """Prepare the selected public dataset and launch the shared readonly dashboard."""
     try:
         mode = os.environ.get("PUBLIC_DATA_MODE", "live")
         if mode not in {"sample", "live"}:

@@ -1,4 +1,6 @@
-# Live refresh and public demo
+# Live refresh and public modes
+
+The deployed site now defaults to API-backed saved provider records with a daily GitHub Actions match-list refresh. It is read-only and makes no visitor-triggered API calls. PUBLIC_DATA_MODE=sample selects the optional fictional demo. The sample column below describes that explicit sample mode; see [provider deployment](public_provider_deployment.md) for the current public feed.
 
 ## Two deliberately different modes
 

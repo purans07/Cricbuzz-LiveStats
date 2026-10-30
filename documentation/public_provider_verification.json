@@ -78,5 +78,18 @@
     "passed": 597,
     "skipped_server_checks": 64
   },
-  "scope": "Real saved provider records, limited career coverage, daily match-list refresh; no continuous scoring or public administration"
+  "scope": "Real saved provider records, limited career coverage, daily match-list refresh; no continuous scoring or public administration",
+  "final_hosted_counts": [
+    "76",
+    "2",
+    "77",
+    "41"
+  ],
+  "final_settings_verified": {
+    "dataset": "live",
+    "schema": 2,
+    "access": "public_readonly",
+    "scheduled_update_notice": true
+  },
+  "analytics_note": "Hosted Q01 executed successfully with zero qualifying rows; Q26 selection was not completed by browser automation. No nonempty Q26 hosted result is claimed."
 }
