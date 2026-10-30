@@ -1,6 +1,8 @@
 # Documentation index
 
-Current verification: SQLite, PostgreSQL 14.21 and MySQL 9.5.0 are supported and tested. Fresh API verification expanded saved history; the latest observed quota was 174/200 remaining. The assignment deadline remains unknown. See [completion report](remaining_requirements_completion.md).
+Start with the [final submission guide](../SUBMISSION.md), which supersedes older readiness statements and test counts.
+
+Current verification: SQLite, PostgreSQL 14.21 and MySQL 9.5.0 are supported and tested. API quota figures in dated reports are historical observations, not a current balance. The assignment deadline remains unknown. See [completion report](remaining_requirements_completion.md).
 
 Use the operational guides below for the current implementation. Numbered lessons and result reports record decisions and acceptance at their original phase; earlier statements about pending work may be historical.
 

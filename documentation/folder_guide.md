@@ -3,7 +3,7 @@
 | Path | Responsibility |
 | --- | --- |
 | main.py | Trusted local Streamlit navigation |
-| cloud_app.py | Synthetic public-readonly demo entry |
+| cloud_app.py | Public read-only provider/sample entry |
 | config.py | Validated mode, path, timezone and access settings |
 | pages/ | Six navigation page entry points |
 | ui/ | Page presentation, preferences, error boundaries and visualizations |
@@ -18,7 +18,7 @@
 | data/raw/ | Ignored private capture workspace; never publish credentials |
 | tests/ | Unit, integration and Streamlit acceptance checks with fixtures |
 | documentation/ | Current operational guides and historical phase evidence |
-| deployment/ | Safe synthetic demo bootstrap |
+| deployment/ | Public provider snapshot import and optional sample bootstrap |
 | .streamlit/ | Theme and example settings; private secrets stay ignored |
 | Dockerfile, .dockerignore, compose.yaml | Reviewed demo packaging and loopback launch |
 | requirements*.txt | Runtime, development and resolved dependency lists |

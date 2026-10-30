@@ -1,0 +1,1802 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 650,
+    "sha256": "a10521c0ee31757717b00642aaa904e9dcd64d52c966ac2aefc9a055b583106c",
+    "matches_release": true
+  },
+  {
+    "path": ".github/workflows/refresh-provider.yml",
+    "bytes": 1111,
+    "sha256": "7d71d3165fb78c7ffd6315e5ef7abef3a97844433771f35c08c48e971484bde7",
+    "matches_release": true
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 730,
+    "sha256": "e2730b3bd4c0dae4310c5ca2a64022a27b70cbc19ca6b0e235a18a98387ce7a4",
+    "matches_release": false
+  },
+  {
+    "path": ".streamlit/config.toml",
+    "bytes": 263,
+    "sha256": "2c32ca7991f5033d7da06a99d40385fea64d8e1f331427f568c8a2cb882219e0",
+    "matches_release": true
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 1466,
+    "sha256": "626ece7bcda987e43a29e395b3974c889affb24bb5e2c2fe976f12ed20616fbf",
+    "matches_release": true
+  },
+  {
+    "path": "README.md",
+    "bytes": 5324,
+    "sha256": "d2091b31938fa88fd51b00c6e44c2b7868bb1db93fccef731215acc81a1cfd1d",
+    "matches_release": true
+  },
+  {
+    "path": "api/__init__.py",
+    "bytes": 38,
+    "sha256": "d3e3b4c311715e9fb7aad78e51de159ecf9a9ff0c386a529cde1c64e90e95f31",
+    "matches_release": true
+  },
+  {
+    "path": "api/adapter.py",
+    "bytes": 6367,
+    "sha256": "ca4b8155560d7dcb70f9f6d49fb8fd6e269dec2de20e1335b150031c05b42566",
+    "matches_release": true
+  },
+  {
+    "path": "api/cli.py",
+    "bytes": 10898,
+    "sha256": "65acfee3f1a341abdd393494753f11069b6ee51e53111747354261abc75167ab",
+    "matches_release": true
+  },
+  {
+    "path": "api/client.py",
+    "bytes": 19758,
+    "sha256": "1d332532bbb3af41254ac16ea4d345049dd9bcef23bf572ec4de29a80e6370f0",
+    "matches_release": true
+  },
+  {
+    "path": "api/configuration.py",
+    "bytes": 2739,
+    "sha256": "94f64fe5a32e023eae579e6b905d748db6683f5f07cbd569c67784346adeaa7d",
+    "matches_release": true
+  },
+  {
+    "path": "api/contracts/README.md",
+    "bytes": 1238,
+    "sha256": "493ed1fbab1ffbbe18314331aaac52621d33ccae1fa098a6efba53e6c92ef5bd",
+    "matches_release": true
+  },
+  {
+    "path": "api/contracts/cricketapilive_v2.json",
+    "bytes": 2024,
+    "sha256": "fdb83f90aed911a19be0e322da24f1544ee8ffdf468412b7d9fa0dc25098dc1b",
+    "matches_release": true
+  },
+  {
+    "path": "api/cricbuzz_v2.py",
+    "bytes": 13569,
+    "sha256": "46bc1969bac07067992274ffe3c55d9f4f8390ec21a8db7da54ce1ed02d6ae56",
+    "matches_release": true
+  },
+  {
+    "path": "api/players.py",
+    "bytes": 8554,
+    "sha256": "8e487e59bd0357ef11d5fc1913d97ac771adf855f9018f0d658434a7577eb388",
+    "matches_release": true
+  },
+  {
+    "path": "api/scorecard.py",
+    "bytes": 9338,
+    "sha256": "8895bd9b61abaa364fdd4a37e45377ed4629f553c588aad1ec7147c5852b6848",
+    "matches_release": true
+  },
+  {
+    "path": "api/series.py",
+    "bytes": 3445,
+    "sha256": "26549fe8c2e8004c262a395e8404115cc69908f94372ed0df68c37679cbd6eb7",
+    "matches_release": true
+  },
+  {
+    "path": "cloud_app.py",
+    "bytes": 1399,
+    "sha256": "5347ccc4ee4133a69083d50d0e487fa61caee1ed551d5028d0bdfadfff68c938",
+    "matches_release": true
+  },
+  {
+    "path": "compose.yaml",
+    "bytes": 354,
+    "sha256": "b5cd873d12f861074679eeb1959736c0e61867d50aec51d4ca8f6ad9a1cd1207",
+    "matches_release": true
+  },
+  {
+    "path": "config.py",
+    "bytes": 5333,
+    "sha256": "29860d177f3f21756c1dca1f94967b22f0107c18996ec69b4dd4b398788d79e5",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/10-recent_matches.json",
+    "bytes": 150628,
+    "sha256": "79536ecb0c0c6d319666aefe908d302c8aa6a34e96126f9fbbdda9242ba0a6cd",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/11-series_matches.json",
+    "bytes": 17821,
+    "sha256": "95d7f2a28035548fd6edc4354219535f5a8ffe3507310cef43951c2460bbc2b0",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/20-match-history-20261030T031554Z.json",
+    "bytes": 18278,
+    "sha256": "7848cb4f90a5fcd59874500d2f1c5e6221a021f812ea7a1dacc9b5704f51578b",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/30-player-7710.json",
+    "bytes": 4382,
+    "sha256": "718f8708ffad9bc31092acf5979146d19a208899d0c00fe583b0f0267b394fb1",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/30-player-9582.json",
+    "bytes": 4382,
+    "sha256": "5330fac8f55a857fcc548dc48f36f75c6bd770da1dfe212d4a2717bf6a27e235",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/90-latest-matches.json",
+    "bytes": 20304,
+    "sha256": "05374e5d705e480d9c1bdf66408c8565eaf77b5b93c01237bc312b012de683dc",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/95-scorecard-166633.json",
+    "bytes": 14702,
+    "sha256": "0b94d5f30cb748931e93ea19409474a7a6154ec93d00e2f14a8f733eb87260f8",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/95-scorecard-175081.json",
+    "bytes": 19767,
+    "sha256": "818226d475df7bda9a871f19692a6fbe5e1f05b07d4d64f31426e09da4a91f27",
+    "matches_release": true
+  },
+  {
+    "path": "data/public_provider/95-scorecard-175100.json",
+    "bytes": 12188,
+    "sha256": "d37943efd0feb0f8b5eb9c7fc784e54816e0483fd4b6e0c7b977456fbaa1ee02",
+    "matches_release": true
+  },
+  {
+    "path": "data/sample/README.md",
+    "bytes": 901,
+    "sha256": "edade82b2fce9f12be241adf604f0c8da158c37bbadec77135af491a7b196b71",
+    "matches_release": true
+  },
+  {
+    "path": "data/sample/seed.json",
+    "bytes": 1522748,
+    "sha256": "27c1772a961d730db204c83eff8233e54b53175fb271a25926b8c9d0fabca2a5",
+    "matches_release": true
+  },
+  {
+    "path": "database/__init__.py",
+    "bytes": 43,
+    "sha256": "ac8888106438224dfa9bca89cb5fb4e0b4c4b82b971ac7440e3cf4132ba7cc0f",
+    "matches_release": true
+  },
+  {
+    "path": "database/initialize.py",
+    "bytes": 10721,
+    "sha256": "5eba9080bc415838df6e11570e9f7b768c2af1d6e31a706d3bcd73ec8478d8f8",
+    "matches_release": true
+  },
+  {
+    "path": "database/migrate.py",
+    "bytes": 3100,
+    "sha256": "846b33d0bcf615a4a2d5f888fd8867723ea9f4c2a894bce95e6a85ca12702a25",
+    "matches_release": true
+  },
+  {
+    "path": "database/repositories.py",
+    "bytes": 3390,
+    "sha256": "7166ffd6552b030c7354a1011812aabf8afa8cfce95a02ca6dd5eeb877d68b16",
+    "matches_release": true
+  },
+  {
+    "path": "database/server.py",
+    "bytes": 19145,
+    "sha256": "4e51baf781728c5fc60a4c24227529653c7f7a6910cfae1ef33ad10de26d1217",
+    "matches_release": true
+  },
+  {
+    "path": "deployment/__init__.py",
+    "bytes": 84,
+    "sha256": "e70d3e5c6d5558b094de965acb5383c3c860bf3ba089d60ae9eed18299898817",
+    "matches_release": true
+  },
+  {
+    "path": "deployment/public_demo.py",
+    "bytes": 1603,
+    "sha256": "b930325c4d4d271dcf58ce8311e5a5feb79d8050aa116ce515f315530f2e2b90",
+    "matches_release": true
+  },
+  {
+    "path": "deployment/public_provider.py",
+    "bytes": 8020,
+    "sha256": "c694cb3a4d1aa402125adc728683deaeaeb9f508fb384aef12a9733e81d60826",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/01_project_understanding.md",
+    "bytes": 15092,
+    "sha256": "f079abe9c7351eede670e4a551161b3c548af67174a0fc2b81c29b11c9b3d819",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/02_requirement_analysis.md",
+    "bytes": 46414,
+    "sha256": "f28269fe696396e2f8bd149404a76dd89d0bd6583b1061feac34e62f2c333460",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/03_system_design.md",
+    "bytes": 24677,
+    "sha256": "74845c2398ea3b3b88a538baaf2adfd8c94d29db3b1b8ef5664f514344e36169",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/04_database_design.md",
+    "bytes": 20984,
+    "sha256": "e5d6ae5e1c68f6f0e8b8f54cd7272c468e0ec4f4c4a27fd634ca9293cfd65c00",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/04_schema_validation.md",
+    "bytes": 1755,
+    "sha256": "21e2d274c597209a1b3b4912cc3f6c9a2b39ac43b2143ae696c4ec9dae2042ec",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/05_api_analysis.md",
+    "bytes": 21689,
+    "sha256": "b8161ddeeb8e8072addad009a3e840e0c9875e4dfb499099e924abe42852a33f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/06_project_structure.md",
+    "bytes": 9142,
+    "sha256": "3051a93c834f8513f92c607e4ba8238d437e8e158bbc5b6693b9608db52d44b7",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/07_implementation_milestones.md",
+    "bytes": 25704,
+    "sha256": "2b3c21d1227eab1f6c6e2a80aaffab29f58bb7331b92b823bb6e0d0762c4a117",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/08_database_implementation.md",
+    "bytes": 6520,
+    "sha256": "3231ddce0457d5a3c087446ab42e222718c2a32b2005f4fb24549be1f09e0def",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/08_validation_report.md",
+    "bytes": 2976,
+    "sha256": "174aec5f1c797de3a7e8eebee322488b38422c60f29f23c330af241692ff7fc3",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_api_implementation.md",
+    "bytes": 6179,
+    "sha256": "d99e1709dec0b772310a3252e3007cad1182418ab942d67701ae33dd09e6c463",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_captured_match_list.md",
+    "bytes": 4556,
+    "sha256": "08fe4614083f76d8756c2b6cdcfd288fbc98c4214f91a56f4e03aa39bf8033ab",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_live_smoke_result.json",
+    "bytes": 936,
+    "sha256": "4e5e512fe8c6c689fee26b6187846bada437c6f56223a01691fea3bacde366a7",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_live_verification.md",
+    "bytes": 2082,
+    "sha256": "47363c61beac2ca4becb456c35e48eda5edf79f19b00950e230a5269eb22bc43",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_phase_completion_result.json",
+    "bytes": 2643,
+    "sha256": "67ee212cb70fed79605265af158546ee2632fb8aa86af6fdab71d738693b4e77",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_private_request_comparison.json",
+    "bytes": 55,
+    "sha256": "05c015de0e8b98f1a2204f9e03c67b6a5de8a41e6c2ae5ad42d40d78d954d77d",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_scorecard_implementation.md",
+    "bytes": 2601,
+    "sha256": "dd363da1bb2c800eaf0160ecebd66ae03c99794253af8711f7c461c6c339a21e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_scorecard_import_result.json",
+    "bytes": 439,
+    "sha256": "b66adc3db93981b61782676dc6b77c06fafe1df7c4c1b0a2623f4ae5fb36dfc7",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/09_validation_report.md",
+    "bytes": 3332,
+    "sha256": "9357bbf1729b2e250fe8ce8ae09c8fc09c25d056bbb5766c36420c4cb3f96190",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/10_crud_guide.md",
+    "bytes": 7204,
+    "sha256": "4f231dfa1dd7fbfc419faee40e3b17c8ba2302cff25130d7b5c0341bd38dc0be",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q01_india_players.md",
+    "bytes": 7617,
+    "sha256": "4ce7c8dcd56338defb7e60dccb374aa4ee58db9253c34a755835b676ea9bf79c",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q01_result.json",
+    "bytes": 2231,
+    "sha256": "49baeffff29fdb8a8c3b6d85392ac7ba0c87b8bd28e2a9dab2c5fe21069a9bd6",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q02_recent_matches.md",
+    "bytes": 9249,
+    "sha256": "3a4430b21b1607b516747833bcb6293e3dae852dae4b65a596a2006c0620019e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q02_result.json",
+    "bytes": 4672,
+    "sha256": "caec0839b587e179739226ad290dc937e5a64b12f848cce13a066654a0afa2d8",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q03_result.json",
+    "bytes": 4007,
+    "sha256": "c7affcffb379c5ddf13e966a3e21db6388dfc1750d22c75b4d3cddba9e716911",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q03_top_odi_run_scorers.md",
+    "bytes": 8966,
+    "sha256": "3d6645bf92469a265908a521ee01689e2815d833268700cae5d2fe8fa16940e2",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q04_large_venues.md",
+    "bytes": 5582,
+    "sha256": "4cd552ffeca96d2622711792f3bf9dda65f9da99665f51b06cd6908197865bd2",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q04_result.json",
+    "bytes": 791,
+    "sha256": "b51f4b1b7f5af370ed306223f52bcfc39f4494a902d33da52fa06edc5d3fe6ec",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q05_result.json",
+    "bytes": 1606,
+    "sha256": "d35f5cbcacce139395bf3be286b1c57c1d511a345409f0864abf81ad45f831f9",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q05_team_wins.md",
+    "bytes": 6767,
+    "sha256": "7e7ee7d7d0e9fde7fad47f3ef2e07590d9f0b743b46dd1ff580608ee3c028bff",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q06_players_per_role.md",
+    "bytes": 6290,
+    "sha256": "a24ae30b5b9eb3ca4af4c246d6aa7d167005c66b7b2d3f388b687455dcf38dd4",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q06_result.json",
+    "bytes": 1160,
+    "sha256": "060ff3664527facc4581fd04d7c7186a7b98db6743decbdad76cbb2bf0b54533",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q07_highest_score_per_format.md",
+    "bytes": 8326,
+    "sha256": "f60a5df14deb0a3fa0f54f72880192870e47d4d70c49799466f5ce8e893b2370",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q07_result.json",
+    "bytes": 3182,
+    "sha256": "cf3a4bd67ec38f9cbab31a7d132c3f1c83bd40c40b4a26e6fc639cad7479980f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q08_result.json",
+    "bytes": 2558,
+    "sha256": "bb7fa69bea9011d1b17e91a37f68a2ea73d531a7df81b213aba871e9a335b4ca",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q08_series_started_2024.md",
+    "bytes": 8784,
+    "sha256": "0baad0b03b605c8783c2e94d84013d2cc1d0fe1c958a725135bc5e4dfcf43910",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q09_qualified_all_rounders.md",
+    "bytes": 8452,
+    "sha256": "6df20995f371122ee05963fe07810887f50b3cff4be195885016217110b95453",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q09_result.json",
+    "bytes": 3961,
+    "sha256": "30145088fd36c122f0d7b4805d8513d1fe54c7d4878fca6f996225d17318daff",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q10_last_completed_matches.md",
+    "bytes": 9162,
+    "sha256": "33d76a7c64abb7992348bfe72439b82e658e58812cdabad992cc3dcc11be030f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q10_result.json",
+    "bytes": 8399,
+    "sha256": "6e5fff668972e36598152d773f42e7a6e901aaf56d84ff38da555000456bf3b1",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q11_cross_format_batting.md",
+    "bytes": 10445,
+    "sha256": "67e5cd6033b178f0011d3cb63adef92eb25625054b1d5b5d4647436ca5955022",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q11_result.json",
+    "bytes": 5319,
+    "sha256": "8ce02272cb49206eea1be08b746e5eb365178b2b6bfea1ab33eaf6655b069087",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q12_home_away_wins.md",
+    "bytes": 9311,
+    "sha256": "16ccf6d54768c0ad10688353086d2c747e25976f900c9f0fad3ea32489cc010e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q12_result.json",
+    "bytes": 1909,
+    "sha256": "b7ee4cc6b1e3113fd964e5bd505722f4648a3e2b4ab1dbe8295649d21f89d90e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q13_adjacent_batting_pairs.md",
+    "bytes": 8241,
+    "sha256": "5029d7df028ade7d747af2c5879e0a8ff1a6bf32e5626e7d63fec6dc5ff75684",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q13_result.json",
+    "bytes": 161233,
+    "sha256": "4a4891434c9d5997d194a9238cbc21706421b2b5e23da918dc50114a779556cb",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q14_bowling_by_venue.md",
+    "bytes": 10377,
+    "sha256": "d4f7a58ed258fbcfa3906fb26a0900420f72b714087ac2a74e8484c01efa7f1b",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q14_result.json",
+    "bytes": 6614,
+    "sha256": "e8ef854fe757d5018e20a77f1c9bdab5f1a8ec23e3eda2730a520ad41f79770a",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q15_close_match_batting.md",
+    "bytes": 10371,
+    "sha256": "7f2a6ba1cc09dbd2180fda7762abadfdba4c300249b8f622d292cb09500ad763",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q15_result.json",
+    "bytes": 3579,
+    "sha256": "4e4871cf392f7457259a302ca43eebcf9e58282c7869a07484d2e6c6995d8b90",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q16_result.json",
+    "bytes": 12247,
+    "sha256": "9223165ef6750a6e047f7eb06898a569ccf97bd271d0944cfd51e201ff7708ce",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q16_yearly_batting.md",
+    "bytes": 12112,
+    "sha256": "3c7f19c48e2dd69cf409f68bf6dbb2110f46339e04960f9d44b162ea311181f6",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q17_result.json",
+    "bytes": 1511,
+    "sha256": "de4b80132818519ea5b0546b6fea074bfdb5dbd137ecb04f99eb53991f73a1e1",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q17_toss_decision_win_rate.md",
+    "bytes": 8482,
+    "sha256": "1bf130163cfec6804b5b8d457640a5c54b84297b2439d3bd8c9cb01a5b15a79f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q18_limited_overs_economy.md",
+    "bytes": 11173,
+    "sha256": "c636e604d57b8b494afc984ed8fde95eb5dcd44cecf4907bee6ef2fa40c51c04",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q18_result.json",
+    "bytes": 4143,
+    "sha256": "7755ac7d02d8ef61fbc124fbebfcb030371b35abbfbb46e6eee95329de722bb9",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q19_batting_consistency.md",
+    "bytes": 10327,
+    "sha256": "a7a1524f183d8c71d0d3c1d742d03ef05c7e81a9a62951693e8a7e1653859d75",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q19_result.json",
+    "bytes": 6682,
+    "sha256": "9e856343e7ccfd618778b1f5a0ab9de6e1aedd2c867f4f8197bf7dbfdca883ba",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q20_format_matches_and_averages.md",
+    "bytes": 11235,
+    "sha256": "1e9b55c9180d5061467c4c3037899646f55d00bf78078c12510018571ba0345e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q20_result.json",
+    "bytes": 6635,
+    "sha256": "d346b81a05ae97a16ccf21b8b8d5651612e9a8dfa84444f81dcc6ca3612b7be6",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q21_result.json",
+    "bytes": 12606,
+    "sha256": "3a119ada6e48cb7eb1b0a4c3e69e6be82fc0266d65756de899b9a4b25d943f8b",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q21_weighted_performance_rank.md",
+    "bytes": 13242,
+    "sha256": "7b8df566f4880311c1df0f7a2145f5c31be841ee9b1d4229bc15c5464b792bcc",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q22_head_to_head.md",
+    "bytes": 16950,
+    "sha256": "92079408013b343f7d71c1b9ff0becd66fc9e5b4d5b49857c1d00db17ef595d9",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q22_result.json",
+    "bytes": 24004,
+    "sha256": "c06c9ed420c342a919df736358d8d2a7f7252dd158d4861146b7717ebd5dde88",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q23_recent_player_form.md",
+    "bytes": 17433,
+    "sha256": "5ed410a0885cb98cc296dacb647f2c0c3c46008dfe1072d1ba2296b7f8828d49",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q23_result.json",
+    "bytes": 14366,
+    "sha256": "6200f7424126c62b406a9c69188b4bd52ed582ab8c143e8cc861fc1969be1ad1",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q24_result.json",
+    "bytes": 10937,
+    "sha256": "461b49c2ab4ad9dc5a571821eb45efedbab02684935057e8eee167a3e38664ba",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q24_successful_batting_pairs.md",
+    "bytes": 12161,
+    "sha256": "311712932c74170ce91be69543dcfd5f809ab063b6d2285afef1beb0e08bbc75",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q25_quarterly_player_evolution.md",
+    "bytes": 20428,
+    "sha256": "665644f78ed6626a67b99f97c3b643c07dbfca964be5be79766981d3fe05e659",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q25_result.json",
+    "bytes": 91452,
+    "sha256": "27d1e87928a605e41aee38330ab3f858e8d7c9204affdb32c11b641306d7cdb4",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/11_q26_match_coverage.md",
+    "bytes": 1746,
+    "sha256": "b3ab9038c4178f3f97255f86bf7c16592f3db6937322ec7f9f5502b82012e910",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_01_home.md",
+    "bytes": 9513,
+    "sha256": "28b3c701f20152e05c00b4cf310dd793ed78a899a7a54078f308a89219763ecf",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_01_home_result.json",
+    "bytes": 548,
+    "sha256": "409b322708ebdc07d1cc971c2574459514272192013e9a6b269ceb4d966d35bb",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_02_live_matches.md",
+    "bytes": 11275,
+    "sha256": "6ce4c1323a8845affa8b0b2a24f00d5c93e738f48afcfca6de8ed9fe479a6e90",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_02_live_matches_result.json",
+    "bytes": 6048,
+    "sha256": "35b8cff22e90d0424e2b6aad8fdd4148464cc5ab125b69490820dafbb414c822",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_03_top_players.md",
+    "bytes": 10742,
+    "sha256": "333337c4d92dd93aebb3ee7419d8e1644aab2f4bf2b94b5e607874fa08c4a77c",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_03_top_players_result.json",
+    "bytes": 74445,
+    "sha256": "ee7181ddfd52ba644a4be2ba65abc7dbade2ed1af38651abf016fd7b1804fbe6",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_04_analytics.md",
+    "bytes": 11591,
+    "sha256": "9f594ebec0653bc582d63c9bce110b4c3e92e00330cd4b65c037a1bab5e03940",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_04_analytics_result.json",
+    "bytes": 33534,
+    "sha256": "008491046d86b4214e77b33865c1aa6272bd8f3e3330818173d9cc461bdb795b",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_05_crud.md",
+    "bytes": 10060,
+    "sha256": "388d56cd9b2ca7d4aeaeb75a59d3fd050715ad96fbea412594c1d1cbdab1629d",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_06_settings.md",
+    "bytes": 9142,
+    "sha256": "d00d3b539456a21ae40d5e4cc3567538cd4702f134c282bac4d01d190f801500",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/12_06_settings_result.json",
+    "bytes": 720,
+    "sha256": "842d6d0fd1d1cc428899f1d42d44b657b29f253a2bac29bac2a8f53092edba42",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/13_visualization.md",
+    "bytes": 11841,
+    "sha256": "04b2a132f6c10215129f26c4756836f90855b09ba4fbdd11d8416ea6fc0da34f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/13_visualization_result.json",
+    "bytes": 3027,
+    "sha256": "b533c34f70499e894e96285b0082ce17c21165ebd39491b5912f5fdac4ca05c9",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/14_error_handling.md",
+    "bytes": 12851,
+    "sha256": "aad3d04f9c96964c5facd2586d56300bd9df9d625fc3b0848b8eedbc7a22de54",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/15_testing.md",
+    "bytes": 13289,
+    "sha256": "13ca9b8c0c6609c2b82271136ac22604b37032821f620d7956630f238cafcd87",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/15_validation_report.json",
+    "bytes": 5040,
+    "sha256": "462d8a8c584d8174cf6168dd6603f83968dbee82c649eb74ee5960af58c420d7",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/16_deployment.md",
+    "bytes": 15961,
+    "sha256": "9007bd8979f35b597d90c93b6ca7da0f023fe31527b9b79a35177b5cfe0a5a34",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/16_deployment_result.json",
+    "bytes": 849,
+    "sha256": "a8f1bf4e6f8dc10d52c9cf117190684d64ec7ab7d42e6e1887b7a3bbc361df6c",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/17_documentation.md",
+    "bytes": 1389,
+    "sha256": "f94e2f4038703efb3838948f8a157a0f0e4b5498a6ca180f732900801f42f022",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/18_interview_preparation.md",
+    "bytes": 29602,
+    "sha256": "80e60ac98266df4e905d8d54bfcb26fa3c7fa3da836638e81ecc9b975d7d413f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/README.md",
+    "bytes": 4731,
+    "sha256": "3aefb371cf423761e84c2eaafab9bc73c680225841398eb05b8e0807ef68829f",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/api_setup.md",
+    "bytes": 4948,
+    "sha256": "964e36642f1a1cb9ff70b48359e02ab11b72d304832a5acdc1535a3749511330",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/api_verification_2026_10_29.json",
+    "bytes": 4759,
+    "sha256": "1c2043fe768887b3f6094f0d6fba6fdcc81feae0e88a6e63c103a2b9a90857eb",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/cloud_verification.json",
+    "bytes": 3935,
+    "sha256": "94b2eea2d001074a1016fa2ee7041a2885d33a523db2a0cb28e09b6194968a50",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/community_cloud_deployment.md",
+    "bytes": 2582,
+    "sha256": "c15558cf6d25e1af75aa69ed8c4ac7bb1d703052409f1bf4b14b9575540d1892",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/database_compatibility.md",
+    "bytes": 2663,
+    "sha256": "22d3287995bf7e56a021337b802aae572080c2457985722a63d72fcf8d36e669",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/database_setup.md",
+    "bytes": 4416,
+    "sha256": "0764a570c705398f118edda7ddf0fce9e2387a261ef02bd7fe1dd51f93cb6b4a",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/demo/README.md",
+    "bytes": 1530,
+    "sha256": "dc1e2b41fd432e7a3c03c12e83faadf24ffc6def979fb6323134092c3fa0d097",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/demo/cricbuzz-walkthrough.mp4",
+    "bytes": 727834,
+    "sha256": "92b5345264dcd6fdd60736788cb59f94e908b3038de43e34cd74adaf5d27c246",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/demo/verification.json",
+    "bytes": 837,
+    "sha256": "f4cf169473e73e88dd18730530a55db436736a8d8b56fa51cdcf762474a47eeb",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/design/README.md",
+    "bytes": 1667,
+    "sha256": "ed63670af4513a115ada6f97880b19351ccfa8f9056fa1d4d6d45cae0a9a44f3",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/design/professional-concept.png",
+    "bytes": 1292741,
+    "sha256": "2d41b1a7317696e5f7a0a14bfa1c9f73dd7fda08900e26251f82d5f832d4642a",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/design/professional-desktop.png",
+    "bytes": 117214,
+    "sha256": "28a859b204656e7ab994818fbd52831682582f9384e2c859268f44c805949bca",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/design/professional-mobile.png",
+    "bytes": 49447,
+    "sha256": "a45b866d2f1a5959ebea98a507ac98db0de668f5df69a363899481d91e75a87b",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/environment_setup.md",
+    "bytes": 3044,
+    "sha256": "09c68beee8b13846eb9832d8fecec8315a2ad4312a04e7751a76bac698f070a1",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/folder_guide.md",
+    "bytes": 1807,
+    "sha256": "056c714729ef469bef515633f4519ef6e63c20f35bb8d50ac8641745bb1d60df",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/future_improvements.md",
+    "bytes": 1996,
+    "sha256": "086eb5939fce0debcdc0d5e922fc9da5ca5aa27fa88288ae88372863f543744a",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/live_refresh_and_demo.md",
+    "bytes": 2994,
+    "sha256": "0465450758e25ff2d2c99c5204f19b94f72ecd0e4a63cf021bfbdd3f65d837a4",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/public_provider_deployment.md",
+    "bytes": 3281,
+    "sha256": "7ecd87fd813996cb1c3a24dbfab4cf94d8547aa9cdbb20d8f302248143b76362",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/public_provider_verification.json",
+    "bytes": 4986,
+    "sha256": "c74a069d3b305f3165e64f735645483b84995e06293db7842fa1ac318596378c",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/remaining_requirements_completion.md",
+    "bytes": 2520,
+    "sha256": "2be571a6197f9d251e135e665ca59cbb0d883b3ff091616ad7c4ea2bf349641e",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/requirements_audit.md",
+    "bytes": 26077,
+    "sha256": "5c60e6a6182428c004ddc19afa32e7900fbb33b2ac6f736d265377c4da347472",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/requirements_audit_evidence.json",
+    "bytes": 43055,
+    "sha256": "78812e8b946209162d3d673c532dcecf417456e7836ea127a6b16d661006baff",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/scorecard_public_verification.json",
+    "bytes": 760,
+    "sha256": "62a228984ae7ec4767c6b6593fb7d7321bd4685432669d93dafa584dae4331c0",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/01-home.png",
+    "bytes": 126539,
+    "sha256": "cdc4e7a794e8a0b5d545ff2338bf306b08bff24eaedbad376ac7265dddaf0cad",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/02-live-matches.png",
+    "bytes": 116200,
+    "sha256": "7b39dd51dbc0241359f19b32abdcbe21b33fc921eb6c28515000f44ecacee109",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/03-top-players.png",
+    "bytes": 99779,
+    "sha256": "3daa4e8f141eff0e327e6aeb4b7a2f5e172744c63d6a0809f8b3f5b7cf803d0b",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/04-analytics.png",
+    "bytes": 118559,
+    "sha256": "1e23e5dc7ce4fad8f3412ac2fc9f271c7fd639081ea3571b66df4cc2f64c4f02",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/05-visualizations.png",
+    "bytes": 154331,
+    "sha256": "3a028b4077a3be897c8659f82b2a8f6015213556c7b08bf2bb702b97440c5efc",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/06-crud.png",
+    "bytes": 130216,
+    "sha256": "31367a1af72f8707b3fc18d04ceb8ef144750453a2fb14a73723c721fb1bcfbd",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/07-settings.png",
+    "bytes": 113829,
+    "sha256": "15b5680e47cfad5e126ee490756e1b474e97245c8a84419cc0819759cbc45feb",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/08-mobile.png",
+    "bytes": 37288,
+    "sha256": "868397f275233634d6af026c02bc282d1e2a4eb83c749afd68f94c643180ae26",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/09-public-detailed-scorecard.png",
+    "bytes": 143329,
+    "sha256": "73796515e7997e42944b2c8bacca476cf0d02b721bdc7fe2c615a1ff67e4f4ce",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/README.md",
+    "bytes": 1154,
+    "sha256": "af24e9bfa722dbf1ec4fb98f75f9b1d485238b129355a6090a8f1e4f70033e32",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/screenshots/ui-cleanup-mobile.png",
+    "bytes": 31095,
+    "sha256": "bf03b9837718bde35ce3ef54efe6e3adeda25168eb272553d195ecfbec4b4eea",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/server_validation_report.json",
+    "bytes": 1025,
+    "sha256": "3238d7584d341a71282bd2ce06223281457af30b42f388d06308e98e5a14e232",
+    "matches_release": true
+  },
+  {
+    "path": "documentation/user_guide.md",
+    "bytes": 3300,
+    "sha256": "f5b060dd7e4f78722a3c31e7521ba39a9bbd177fab42a6f8a9eeb184bb2114bf",
+    "matches_release": true
+  },
+  {
+    "path": "main.py",
+    "bytes": 1420,
+    "sha256": "ce345b4f000772a1e6ec15238eb097d7954e6719b4202aa652cf7326f5cff35d",
+    "matches_release": true
+  },
+  {
+    "path": "models/__init__.py",
+    "bytes": 41,
+    "sha256": "3cd7182f7c0f0e72f1d4e3ab3c1aeefa9a303782672bfdbe5501685df088b85a",
+    "matches_release": true
+  },
+  {
+    "path": "models/records.py",
+    "bytes": 1964,
+    "sha256": "6d26f6d63eaf66f789b946c4d83239f6fc8900bc651a2c838b7c9dbb345fe809",
+    "matches_release": true
+  },
+  {
+    "path": "pages/01_Home.py",
+    "bytes": 205,
+    "sha256": "43ace58745a521520396bf27a678a6783fcc35999e7c602d3e11c70273666a3b",
+    "matches_release": true
+  },
+  {
+    "path": "pages/02_Live_Matches.py",
+    "bytes": 186,
+    "sha256": "d02b6427f431700fbf15a8cbb16e7a3fb3dccf6b500b366b70f1dc1a215ac136",
+    "matches_release": true
+  },
+  {
+    "path": "pages/03_Top_Players.py",
+    "bytes": 181,
+    "sha256": "65356e73f7c1592ae50127884b29f3a064f5831529ec54f4b14fbfbcaca31741",
+    "matches_release": true
+  },
+  {
+    "path": "pages/04_Analytics.py",
+    "bytes": 171,
+    "sha256": "e22ed4744a37e2580826df1f2e0abf498358e542341591465679cf7f0e2c407b",
+    "matches_release": true
+  },
+  {
+    "path": "pages/05_CRUD.py",
+    "bytes": 146,
+    "sha256": "e4ff1be0da1760e5312d042cb481d855e0657f2418de43de2bca7af373227e33",
+    "matches_release": true
+  },
+  {
+    "path": "pages/06_Settings.py",
+    "bytes": 166,
+    "sha256": "32b49049c7ee62cf58d6b4303dd4b8019a5d1a101399b32ae8cc9058f899a443",
+    "matches_release": true
+  },
+  {
+    "path": "requirements-lock.txt",
+    "bytes": 829,
+    "sha256": "29a3b70b2b080d96f51ba5f394927980c20f359e3b665cdb9db66cbcbb6adf80",
+    "matches_release": true
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 299,
+    "sha256": "7a13af58a3054156b3e37c4169ff7cc2e8ea646f3eb604d59cb8221c08ced03b",
+    "matches_release": false
+  },
+  {
+    "path": "services/__init__.py",
+    "bytes": 43,
+    "sha256": "b316ec83f093735be74dd3fd21c7e2a8d12722b09d1d03f46474c5994f05207e",
+    "matches_release": true
+  },
+  {
+    "path": "services/_crud.py",
+    "bytes": 3983,
+    "sha256": "83d3d33da348cf1a1a6c1df9ea05f31f90e3276715c1433016d74b202959cd37",
+    "matches_release": true
+  },
+  {
+    "path": "services/analytics.py",
+    "bytes": 16530,
+    "sha256": "3b7c28d16c1b7bd4d151ced6701bcb218e4837aa01c19a5452734db887385431",
+    "matches_release": true
+  },
+  {
+    "path": "services/crud_catalog.py",
+    "bytes": 2475,
+    "sha256": "975460a13f6d4de01bd9ad6e842b334cd322a68a76f9e85ab1747d9a7391beb2",
+    "matches_release": true
+  },
+  {
+    "path": "services/ingestion.py",
+    "bytes": 18112,
+    "sha256": "f2f972bd435075dbfc41fa77e34de13f2b499eb430f908efe9b5ee7fdbdaaf48",
+    "matches_release": true
+  },
+  {
+    "path": "services/live_matches.py",
+    "bytes": 8933,
+    "sha256": "9bd089b93fbe697cfed8405141de2e8229cd94b3f96111f480eb1c3dffafb561",
+    "matches_release": true
+  },
+  {
+    "path": "services/match_stats.py",
+    "bytes": 8495,
+    "sha256": "074684173d755223f005bc0308b0c5381946e5cfdbb44cf764f90d33149576fd",
+    "matches_release": true
+  },
+  {
+    "path": "services/matches.py",
+    "bytes": 3282,
+    "sha256": "5932d5b811b9992bcfee0b3e38db15d16e45cd08abab2f04c4eb7220bab9fa85",
+    "matches_release": true
+  },
+  {
+    "path": "services/overview.py",
+    "bytes": 1204,
+    "sha256": "9395c6033e9f9b8b62f7ff4e93cdc1a714a93788f74ebbf5998e6e2a3dad925b",
+    "matches_release": true
+  },
+  {
+    "path": "services/player_stats.py",
+    "bytes": 3720,
+    "sha256": "42a5e907f3f7ed7468ac0abd7f3d30f7963c56ef476753fa54c9798b410bf4f8",
+    "matches_release": true
+  },
+  {
+    "path": "services/players.py",
+    "bytes": 4179,
+    "sha256": "1459f9df0b06e24d6e0d9b8b314719443cd445f85c4a7b629437591ee95f54f4",
+    "matches_release": true
+  },
+  {
+    "path": "services/settings_status.py",
+    "bytes": 1516,
+    "sha256": "3718618bde8d00be77a9e1fda30b83b53e7b49c3de7c94bd6fe8b302cddc5860",
+    "matches_release": true
+  },
+  {
+    "path": "services/top_players.py",
+    "bytes": 4380,
+    "sha256": "0f0fcbb2c4a8d7414a0e55fd4387b1bbe770817a3cc4bafd588c24b54ac0220b",
+    "matches_release": true
+  },
+  {
+    "path": "sql/migrations/002_ingestion_metadata.sql",
+    "bytes": 617,
+    "sha256": "6e544ef6f2ad5df4fd1bee5825f6508c7a37e1bf1211da9f1a013a36673116c2",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/README.md",
+    "bytes": 2820,
+    "sha256": "1a5a710a452c3cecc61a72cadedcaf1476af27ac5e80a773426f346041e71cc8",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/dataset_status.sql",
+    "bytes": 124,
+    "sha256": "b2df88f5d86f580dc68e8397fcbc6f54cb843b8070c698531ca5a1612ba53d13",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/player_by_id.sql",
+    "bytes": 229,
+    "sha256": "40c55eef341b754b962b7980e763bfc6c073d283a3301356bf84f464d70930ad",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q01_india_players.sql",
+    "bytes": 721,
+    "sha256": "41cb92ede05e0b442a71307871fb73e0275824b1d5e313d764a9bbc1a99b2672",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q02_recent_matches.sql",
+    "bytes": 934,
+    "sha256": "b74d0d586d0da8fa948aedf36975ff7f0c6d121e5770ad06068e4be02761abbe",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q03_top_odi_run_scorers.sql",
+    "bytes": 764,
+    "sha256": "7db0b4affe2087534c4959ecfd80be8ad19b20814a86418289cf56ebad5d6a80",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q04_large_venues.sql",
+    "bytes": 288,
+    "sha256": "358d9b09cb0486d7e9a0e6c47bc51e66d11e65d0395b93e2e6dd99842ef7326e",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q05_team_wins.sql",
+    "bytes": 353,
+    "sha256": "3d2cc7cdb14ad5587b20f0583ca2d6bb75fc632cf81a7d188f9e1a259e23842d",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q06_players_per_role.sql",
+    "bytes": 298,
+    "sha256": "736ca77ad0872228d4f8300ebc558a773f79b81f9675bb6d1e2f4a6bc0d65e3d",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q07_highest_score_per_format.sql",
+    "bytes": 626,
+    "sha256": "090d902431c4d4bbb7ba0453735de87872afcd0625911d8037f0fc8f171f632a",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q08_series_started_2024.sql",
+    "bytes": 930,
+    "sha256": "1a465c73ab2134a9f923fbb1aa81b595e7242fe266a98fb0b33acf6344ab66b7",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q09_qualified_all_rounders.sql",
+    "bytes": 681,
+    "sha256": "096b77fcd7ce0e77da4eb0ce2386054f3867aea516be68980cec3a729dca82c4",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q10_last_completed_matches.sql",
+    "bytes": 811,
+    "sha256": "3df2ebcbb08c20b9f0a4e21a7a6662fad227d6166606d0c70dba5b5a39828028",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q11_cross_format_batting.sql",
+    "bytes": 1089,
+    "sha256": "3ee642353daceddde37adebba541333eba45122ea2108c6a07191ce68e05e21d",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q12_home_away_wins.sql",
+    "bytes": 797,
+    "sha256": "258d6d0dd201b7fe80f4ffe821ca7bb0d08151fb0d390bf2d32d4c9c6b3af100",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q13_adjacent_batting_pairs.sql",
+    "bytes": 661,
+    "sha256": "4c36da4cbee0dc1ed9c8cc85e4f87d97c1219cdb83c6ee2bddba3ab1dd2e5c49",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q14_bowling_by_venue.sql",
+    "bytes": 1276,
+    "sha256": "a33af37e386fede7d0f8c8f32bbccbfad2ce19ad3426f480e615413de86a89ab",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q15_close_match_batting.sql",
+    "bytes": 1153,
+    "sha256": "5f49f083ffa94d75891acad9a12a710918e575f683d7ecd1093045e5df4c2182",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q16_yearly_batting.sql",
+    "bytes": 1733,
+    "sha256": "50a8dd9dc3fb935876dea4be93165ba60193d417a17ed9ec8c5b6259365a3719",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q17_toss_decision_win_rate.sql",
+    "bytes": 785,
+    "sha256": "43b6bcd297e55dfd3a4644be559287bfb0ae4024e362351d062bf8567b868c3a",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q18_limited_overs_economy.sql",
+    "bytes": 1658,
+    "sha256": "e40af527716d8de91db8b9eca49672e78cd025dbd97373f6f29ec168fb2e5db1",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q19_batting_consistency.sql",
+    "bytes": 1170,
+    "sha256": "72166354f5ee8eb2c6b5eb406fc885622c6069f3e20ff262c9a1f6667a0357b0",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q20_format_matches_and_averages.sql",
+    "bytes": 1686,
+    "sha256": "e20f94b7ef92d83ea4229a4105f5f85898fef416ccf5157327f3348497eb7f7e",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q21_weighted_performance_rank.sql",
+    "bytes": 2430,
+    "sha256": "7e16a8823b3eec56d497772a2376b2055ce21016ed2639f6ca66e5584f9f359a",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q22_head_to_head.sql",
+    "bytes": 2163,
+    "sha256": "762df791fe6a190b2fecefc81d8a4613424359d654f9ab2e206e7ea378f90dae",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q22_head_to_head_venues.sql",
+    "bytes": 1767,
+    "sha256": "db0ce15a2c02e3393a2f3181718b9301decb933ae5787df6ae9402c7abd85f05",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q23_recent_player_form.sql",
+    "bytes": 4011,
+    "sha256": "ebc684106f5ce7f8e32e32553ac741385e4f32f765793c1873c602422cbfe0f8",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q24_successful_batting_pairs.sql",
+    "bytes": 2144,
+    "sha256": "55756445af4943defbb0106c4b227a9d3754b159bc273954c9ea858aceaf7838",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q25_quarterly_player_evolution.sql",
+    "bytes": 4491,
+    "sha256": "894af0c82a4a27f4ca1e40a83050a6e57d7dc84fccb5c5fd90e43167d837656a",
+    "matches_release": true
+  },
+  {
+    "path": "sql/queries/q26_match_coverage.sql",
+    "bytes": 777,
+    "sha256": "b1074ec460cb396b8abd04665d4bc5f0a8797fd5d86ce5c76ffcbd6af000c801",
+    "matches_release": true
+  },
+  {
+    "path": "sql/schema.sql",
+    "bytes": 13738,
+    "sha256": "f9dd738b6fc71572744ff68c6c28ec68497c38a4d8e0d3295c18e1e19fa3a908",
+    "matches_release": true
+  },
+  {
+    "path": "sql/views.sql",
+    "bytes": 1667,
+    "sha256": "6a858015487e49d1210daf6e030c62a866476b0f4a438105f7cdc8f74782a1f7",
+    "matches_release": true
+  },
+  {
+    "path": "tests/README.md",
+    "bytes": 782,
+    "sha256": "8446a3e296c634f0513b33e08e2b9716d53db89baddd98dc847f33ab5bf01089",
+    "matches_release": true
+  },
+  {
+    "path": "tests/conftest.py",
+    "bytes": 1396,
+    "sha256": "a81864a79f92c077fbd7313624b7ab9562b693ba3d9c6dd0b028e786139b567b",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/README.md",
+    "bytes": 1330,
+    "sha256": "c88e28cb983e2e8a742f9570bddac55b7679400bcf0d1fffc085e226a5790545",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/cricbuzz_v2_live_user_capture.json",
+    "bytes": 20338,
+    "sha256": "5c357fa61b70e6a94b2a35bf0707bc26c0fbcc56c5478994bdba2dbbe7a80f26",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/cricbuzz_v2_player_8583.json",
+    "bytes": 6687,
+    "sha256": "7672d88a5bb72f5e7122203c20c932f160693351a39bf877cc34269437f56c1a",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/cricbuzz_v2_scorecard_user_capture.json",
+    "bytes": 61495,
+    "sha256": "dfae4e739da23c6804a21294bc29fe471ccf04edb1b60213036f1582b54e56b7",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/cricbuzz_v2_series11595_capture.json",
+    "bytes": 14137,
+    "sha256": "489b89e8bd7ebf760e030787794225ea4ad8baa2372ac8739939e37b30d865f1",
+    "matches_release": true
+  },
+  {
+    "path": "tests/fixtures/normalized_match.json",
+    "bytes": 11249,
+    "sha256": "9cfbf19e5087e48b5e68e0a1aab1e43e18d2cf3b6bb318d834dfb5f7a5f7ce05",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_acceptance_journeys.py",
+    "bytes": 4869,
+    "sha256": "02b4b9a8cfb72a97a65cdc23aab965d948bfaa780476aae73ac4528049931296",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_adapter.py",
+    "bytes": 3280,
+    "sha256": "0a4fcc6240d263dd6578afea7725a1f4b78e12445f4730fb9b12b1b6aed6e6ee",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_analytics_page.py",
+    "bytes": 6398,
+    "sha256": "9d70733ac833473c02262f3ca0804e18fab69dae0384a933bf8b265aa87bc83e",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_api_client.py",
+    "bytes": 7736,
+    "sha256": "86231d3d5aa4ae4d941de153d4636632b5741cc4530de76e4b83b6bd7f0cf367",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_cricbuzz_v2.py",
+    "bytes": 7919,
+    "sha256": "ab091a0bceafce37041275f053cfd5afde4cc19514296775c37978ab2ef07dca",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_crud_page.py",
+    "bytes": 6296,
+    "sha256": "478082f3e6d455357064514d17903d15b42ef06cbefb7caced125aecde054025",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_database.py",
+    "bytes": 12165,
+    "sha256": "03f78506f8c9756cadd36793799175f2cb3ddae02175d8ca31da2ec0b9383dc7",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_deployment.py",
+    "bytes": 2883,
+    "sha256": "b7e5396d227e7c64150990f0645e61d5e5913f2a235879384bb066b3af0aeec8",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_error_handling.py",
+    "bytes": 5252,
+    "sha256": "1b81fb454b4e44c430306e5cbc3eb7f0b78eb2f5463a0c23e1dbadca6485b560",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_home.py",
+    "bytes": 3809,
+    "sha256": "2be3887d91a2a364a8103b42da27b8f92ef5660de3e8404fe73d2b29d46019c8",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_ingestion.py",
+    "bytes": 11160,
+    "sha256": "1b0beaacf14ca0fd65c947df1b0018b08dcbfa20b9875ef0079e45d7c01c3427",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_live_matches_page.py",
+    "bytes": 7999,
+    "sha256": "b4c9aa1fd3433bb7dbf68b54c58ef242721f032534b258c1a70b27ed01fd3bcb",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_live_sync.py",
+    "bytes": 2656,
+    "sha256": "6bd1e96f5eda13e01a7e903e589f44ba89d8c49c7ebb1051bf70794ac8c1a728",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_match_stats_crud.py",
+    "bytes": 8698,
+    "sha256": "de5653a4a0163785784eb9f4aaebf6d53e64f076b21f09e51f1d193628bdcc26",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_migration.py",
+    "bytes": 2833,
+    "sha256": "9d3f34c6f23598394ecf9afee0579e3df2cb91f583d2182522d511974ef90945",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_player_api.py",
+    "bytes": 6185,
+    "sha256": "c662433ecad9a3901fe16d34c767abab5a46be0654d0600a8af2e6210f730a5e",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_player_crud.py",
+    "bytes": 3375,
+    "sha256": "de4c7d1fadbfc6968284587fb10221c8ca57ee51017c8493193eff513e75f14a",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_public_provider.py",
+    "bytes": 4956,
+    "sha256": "55766b7be1bb54c966f5b89e81160af1f5d2e222677ad0b27e25708741da1700",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q01.py",
+    "bytes": 2957,
+    "sha256": "59e0f76f2351482b90d2b24e67aa2c6249101cf7fbaae880bd8b612f5c16d235",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q02.py",
+    "bytes": 3297,
+    "sha256": "f9ab43fd7481293141a1e62b17004c06b4dd555a383d4c7a0f09763461d2a511",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q03.py",
+    "bytes": 5404,
+    "sha256": "50658f1a0aae02b389f58a6f38d9379785b0f96959e9ff93859dcff254fa7349",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q04.py",
+    "bytes": 2139,
+    "sha256": "f3d5417a33122a058c51647d47b626c69b79380f1405d65ded5967e59123fb42",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q05.py",
+    "bytes": 2909,
+    "sha256": "adf7733109e146a88d0b59e953b7621aeec193b0b5975c020ddedf2b8b4c7bb8",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q06.py",
+    "bytes": 2362,
+    "sha256": "f01ab803eb12f2629aea0643b77d6f21036f23f11697d7611a23e5d9b28a4d43",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q07.py",
+    "bytes": 3278,
+    "sha256": "2c546d9e6f2908606b1112712a44979c7302f0d43871b65796859b8bdc5a329a",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q08.py",
+    "bytes": 3006,
+    "sha256": "cb53da5743094d91b422c8d0ecd39c9791029ad39efada03bcd52ab887e1bcb7",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q09.py",
+    "bytes": 3282,
+    "sha256": "b3e5c83c1752b5a5ce9c5a12d42126d946324ecb434799d0803bf157f8153fb6",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q10.py",
+    "bytes": 5086,
+    "sha256": "ec664f8d351ce07fdb23fd248ae57efa072b516d7f5b607737eecd8b817ecf86",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q11.py",
+    "bytes": 3709,
+    "sha256": "40952615ce3725668e76aa0f5b48bd6e8bdc6b2cd2f82862c544dab923d850e7",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q12.py",
+    "bytes": 4268,
+    "sha256": "4d5ac90f738931d6eea13f5f0ca05ec9b11a40d2f217208f1a0c4e4537f496e1",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q13.py",
+    "bytes": 3990,
+    "sha256": "b41ef5436aaa3480829cbc060ba8239a31dd34c2d1bbe7eeea812d855ee1cfff",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q14.py",
+    "bytes": 4958,
+    "sha256": "14596bab4cdd3361e889a290097538f3b2eacca68e9ed82e33942b49795c41eb",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q15.py",
+    "bytes": 5192,
+    "sha256": "910d65bc6983e870361d6d712570002b4dee7e5444bd7ef8100dd3303475d731",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q16.py",
+    "bytes": 5755,
+    "sha256": "52c9e645464219a472c07fc0ccb10f43b2949eae956b3fce03ff46830ca5905b",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q17.py",
+    "bytes": 3657,
+    "sha256": "b10d18ece9bf96028a28af0446c6d1f900c811700538d0aa20f96c186c013dcb",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q18.py",
+    "bytes": 5671,
+    "sha256": "662f2e3a19cca9de3e2df5db81e5f4216206d9d5a96fcff46836cfd036418e14",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q19.py",
+    "bytes": 4708,
+    "sha256": "91b1e9d7f176e001c988edce5efb29ced0b52939261bb2e1c606dfb646dadbe0",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q20.py",
+    "bytes": 4843,
+    "sha256": "7c8b8555832e9baf72b30b94136408b5aa90b9182604bb08198b6187d05c7bba",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q21.py",
+    "bytes": 5762,
+    "sha256": "c4273c298d1160039cb75aef11744853dd829299b0ec0c958b6317ddb5e8f1f1",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q22.py",
+    "bytes": 3898,
+    "sha256": "39bb95d7e76801ee35d4f54c3b1784b3684bb3aa23447017f273766b1c729f2d",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q23.py",
+    "bytes": 5609,
+    "sha256": "c65614c231a2effa5d11cdd30d38639ce1028cbe456cd2a85588deffc56a34d3",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q24.py",
+    "bytes": 5107,
+    "sha256": "e3aa4a562a070a92f4cefd414c4df32f090f7ef402e50441d585dcc27eb45d1c",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_q25.py",
+    "bytes": 7324,
+    "sha256": "b5688b5130e7a75d57fd01c282eef119fc3f7b22956c5d8c25eea9a87a6a2e5f",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_scorecard.py",
+    "bytes": 4626,
+    "sha256": "272a426b59dbc9427cc0901baa25a0c3e92a7940e19ec05cd6716ff1bb935b3b",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_series_api.py",
+    "bytes": 3068,
+    "sha256": "3c6817a830dc0e23abec69202848001dafd11706f2869d435fe18958a76bd25d",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_server_integration.py",
+    "bytes": 8898,
+    "sha256": "901c8fd62e213118e15cb334a98d1b52c9d04ea2cf1fe2cf326420ac6b7eaa1a",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_server_support.py",
+    "bytes": 2358,
+    "sha256": "d936b361a710c500854e9ecb4c803488cee65dc4c5c2ea89f07452751b68a153",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_settings_page.py",
+    "bytes": 5496,
+    "sha256": "bae9be0afe7fc8f646f6348d6ba82cff1828f52d8ae2ed1ed0f39b954a354fb9",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_top_players.py",
+    "bytes": 7746,
+    "sha256": "bbeec93624be0d8888b04d1f15e3a260dd97bd02ed85dd119a0eb31bd914ebe0",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_validation.py",
+    "bytes": 3705,
+    "sha256": "908bd471911c1e899d6e86344aef2e824212c60396db1bfdbd150a784fa44ead",
+    "matches_release": true
+  },
+  {
+    "path": "tests/test_visualizations.py",
+    "bytes": 5994,
+    "sha256": "7a0edc1cc3fb573d9e4a404839d0ec3e2da2bfbf073793f218648237595edff2",
+    "matches_release": true
+  },
+  {
+    "path": "ui/__init__.py",
+    "bytes": 76,
+    "sha256": "e8af19038d5b681ad469d60a17f60925d868e8bd99d4b305a71d2d47a7957faf",
+    "matches_release": true
+  },
+  {
+    "path": "ui/analytics.py",
+    "bytes": 8165,
+    "sha256": "92ee5cd5d8892d79ce0165bb90a2c7c68f00aa5605f35f3774f2cb3ffbf0a02c",
+    "matches_release": true
+  },
+  {
+    "path": "ui/crud.py",
+    "bytes": 11058,
+    "sha256": "4082276a5f2d71385a02a6a86ac69e6dd49a3fa3ac737cf61cef6e0401e0c904",
+    "matches_release": true
+  },
+  {
+    "path": "ui/errors.py",
+    "bytes": 1547,
+    "sha256": "5dc7541f17a3cd71ec1871a99663580d7660b8f16aab63d3140fcc0f12d087a3",
+    "matches_release": true
+  },
+  {
+    "path": "ui/home.py",
+    "bytes": 5035,
+    "sha256": "c7b31f912dacd6f974394cc48b911d2dc12dfdb2af4436b25358421f6b3c0427",
+    "matches_release": true
+  },
+  {
+    "path": "ui/live_matches.py",
+    "bytes": 11459,
+    "sha256": "bbf21f5c910a009912397d820813b0905a2f34e23d963f9985be6682ea32dd9f",
+    "matches_release": true
+  },
+  {
+    "path": "ui/preferences.py",
+    "bytes": 605,
+    "sha256": "ced18e165d754cdbf9f9e37e7d61bc72b6699e582e7fa79729f820fefc502548",
+    "matches_release": true
+  },
+  {
+    "path": "ui/settings.py",
+    "bytes": 7068,
+    "sha256": "58443b0af44e3ffc1291c764f8f04d034f2353fe081dceb0433cdc45ce280201",
+    "matches_release": true
+  },
+  {
+    "path": "ui/style.py",
+    "bytes": 4248,
+    "sha256": "4053d62c1ce277ef82ee4ce680e2f631c1ec59ce00ac15009557c72bbc950f10",
+    "matches_release": true
+  },
+  {
+    "path": "ui/top_players.py",
+    "bytes": 8221,
+    "sha256": "9c721022913cdb81b520b895853d9c0573394a278edeeaf49ce297811481102d",
+    "matches_release": true
+  },
+  {
+    "path": "ui/visualizations.py",
+    "bytes": 7159,
+    "sha256": "372581b61293d6050cbd15dffffa4d374fc20316c0a88f67e27580f510134d5a",
+    "matches_release": true
+  },
+  {
+    "path": "utils/__init__.py",
+    "bytes": 40,
+    "sha256": "f562b5436cb19a466ce5ee3e501a10830c6f546ad8a694c4fb40ea8475ca862a",
+    "matches_release": true
+  },
+  {
+    "path": "utils/charts.py",
+    "bytes": 6963,
+    "sha256": "e6fca0c4759076908663b039c458b83eaf06cfb0ca9ef835546bd9a65a449fae",
+    "matches_release": true
+  },
+  {
+    "path": "utils/cricket.py",
+    "bytes": 854,
+    "sha256": "50fd8bbd08925dd4b8adc7acdcdfb1c4b56905d487891755dbba7d12ab03b96e",
+    "matches_release": true
+  },
+  {
+    "path": "utils/dates.py",
+    "bytes": 1220,
+    "sha256": "81ea4ea6331e06c7f23f95c904c59afe362154d895150c06d691e4e4db3456e4",
+    "matches_release": true
+  },
+  {
+    "path": "utils/db_connection.py",
+    "bytes": 5545,
+    "sha256": "b9a4094423de7d8db2134d3b7654a48f3ea86346211b91cede331fb23e8f9d30",
+    "matches_release": true
+  },
+  {
+    "path": "utils/logging_config.py",
+    "bytes": 1803,
+    "sha256": "22a9b06d571838b2160a5e24b341518665fd920f19376d75a086fd5ab5bf3b26",
+    "matches_release": true
+  }
+]

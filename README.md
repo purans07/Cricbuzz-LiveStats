@@ -2,7 +2,7 @@
 
 [Public API-backed website](https://cricbuzz-livestats-web.streamlit.app/). The public view now uses verified provider records and a daily backend match-list refresh. It remains read-only; imported coverage is limited and updates are not continuous live scoring. [Deployment details](documentation/public_provider_deployment.md).
 
-Current verification: SQLite, PostgreSQL 14.21 and MySQL 9.5.0 are supported and tested. Fresh API verification expanded saved history; the latest observed quota was 174/200 remaining. The assignment deadline remains unknown. See [completion report](documentation/remaining_requirements_completion.md).
+Current verification: SQLite, PostgreSQL 14.21 and MySQL 9.5.0 are supported and tested. Dated API verification expanded saved history; account quota is historical evidence, not a current balance. The assignment deadline remains unknown. See [completion report](documentation/remaining_requirements_completion.md).
 
 A Python, SQLite and Streamlit dashboard for saved cricket scores, player statistics, 26 SQL analyses and validated administrative CRUD. Interactive Plotly charts explain ranking, consistency, venue performance and quarterly trends.
 
@@ -30,7 +30,7 @@ Initialize only a fresh target: the initializer refuses to overwrite existing da
 | CRUD | Validated player and batting/bowling/fielding fact editing |
 | Settings | Read-only diagnostics and session display timezone |
 
-Browsing and filtering use saved data. Provider calls require explicit refresh. `main.py` is for trusted local operators; `cloud_app.py` is the synthetic public-readonly demonstration. Access mode is an application policy, not user authentication.
+Browsing and filtering use saved data. Provider calls run through explicit local refreshes or the scheduled backend job. `main.py` is for trusted local operators; `cloud_app.py` serves the public read-only provider-backed website (or an explicitly selected fictional sample). Access mode is an application policy, not user authentication.
 
 ## Documentation
 
@@ -50,7 +50,7 @@ The fictional sample has 12 players, 72 matches, 192 innings and 12 quarters; it
 
 Saved provider data was expanded on 2026-10-29. It contains 87 matches, 199 innings, partial scorecards and career enrichment for three players. It is neither a complete historical database nor a global leaderboard. Missing values remain unknown. Current-world scores require a successful explicit refresh. The selected integration is RapidAPI cricketapilive/cricbuzz-cricket v2; reviewed routes include v1 URLs.
 
-All 18 teaching phases now have their requested material. The earlier server-inclusive suite passed 659 tests. After the UI simplification, the latest default regression passed 593 tests with 64 opt-in server tests skipped. The Linux Docker image builds successfully; container health, all six pages and restart persistence were verified. The public sample is deployed at https://cricbuzz-livestats-web.streamlit.app/ and passed hosted page, dataset, SQL, chart and read-only checks. Screenshot captures and a silent walkthrough recording are now available. [Phase 18 provides 50 interview questions and answers](documentation/18_interview_preparation.md). PostgreSQL/MySQL support is accepted on the tested versions.
+All 18 teaching phases are documented. Final validation on 30 October 2026: **664 tests passed**, including SQLite, PostgreSQL and MySQL integration checks; lint and formatting passed. All six hosted pages rendered without application exceptions. The public site uses saved provider data with daily backend updates and deliberately disables writes and visitor API calls. See [the final submission guide](SUBMISSION.md) for deliverables, evidence and limitations.
 
 ## Verify locally
 
@@ -62,6 +62,6 @@ All 18 teaching phases now have their requested material. The earlier server-inc
 
 Tests use temporary databases and mocked HTTP; no credentials are needed. Historical validation reports retain their original test counts. Keep private .env, raw responses, runtime databases and credentials out of Git and public deployment packages.
 
-## Current requirements audit
+## Requirements and submission
 
-[Requirement-by-requirement audit](documentation/requirements_audit.md) · [Screenshots](documentation/screenshots/README.md) · [Walkthrough video](documentation/demo/README.md). The original 25 SQL questions plus Q26 coverage analysis are available. PostgreSQL/MySQL runtime support and dated quota/history verification are completed within the observed scope. The assignment deadline remains unverified.
+[Current submission assessment](SUBMISSION.md) · [Dated requirement audit](documentation/requirements_audit.md) · [Screenshots](documentation/screenshots/README.md) · [Walkthrough video](documentation/demo/README.md). The original 25 SQL questions plus Q26 coverage analysis are available. PostgreSQL/MySQL runtime support and dated quota/history verification are completed within the observed scope. The assignment deadline remains unverified.

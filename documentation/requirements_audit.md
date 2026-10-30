@@ -1,3 +1,5 @@
+> Historical checkpoint. For the current deployment, resolved gaps, validation and submission limitations, see [SUBMISSION.md](../SUBMISSION.md).
+
 # Requirements audit — 29 October 2026
 
 > Current status (2026-10-29): PostgreSQL/MySQL support and fresh quota/history verification are completed within the tested scope. See [remaining requirements completion](remaining_requirements_completion.md). Older phase checkpoints below are historical; the assignment deadline remains unverified.

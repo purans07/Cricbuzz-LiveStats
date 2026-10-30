@@ -1,3 +1,5 @@
+> Historical checkpoint. For the current deployment, resolved gaps, validation and submission limitations, see [SUBMISSION.md](../SUBMISSION.md).
+
 # Remaining requirements — 2026-10-29
 
 ## 1. Database support completed

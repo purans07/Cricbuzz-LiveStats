@@ -13,6 +13,6 @@ Recorded 29 October 2026 after the navy/emerald theme and simplified Home/Top Pl
 - Player creation in a disposable fictional sample.
 - Settings database status and mobile Top Players.
 
-All six pages rendered without browser page errors or Streamlit exceptions. The recording uses an isolated schema-2 sample database under /tmp and a separate local operator server on port 8505. The working sample/live databases were not edited. Only the disposable sample received the player creation. This demonstrates the full local mode; the public sample intentionally disables administrative writes, custom SQL and provider refreshes.
+All six pages rendered without browser page errors or Streamlit exceptions. The recording uses an isolated schema-2 sample database under /tmp and a separate local operator server on port 8505. The working sample/live databases were not edited. Only the disposable sample received the player creation. This demonstrates the full local mode; the public website intentionally disables administrative writes, custom SQL and provider refreshes.
 
 [Verification metadata](verification.json) · [Local/public mode comparison](../live_refresh_and_demo.md). API refresh behaviour has separate tests and dated authenticated evidence; this fictional-data walkthrough does not prove current provider availability. Tests also cover updates, deletes, restore and failure paths not all visually demonstrated in this short recording.

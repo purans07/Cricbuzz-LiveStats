@@ -1,0 +1,69 @@
+{
+  "url": "https://cricbuzz-livestats-web.streamlit.app/",
+  "pages": [
+    {
+      "name": "Home",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "LIVE DATA SOURCE · Saved provider records. Opening Home does not fetch current scores."
+      ],
+      "counts": [
+        "77",
+        "43",
+        "77",
+        "41"
+      ],
+      "sample": false
+    },
+    {
+      "name": "Live Matches",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA · Updated by a scheduled backend job. Check import times for freshness."
+      ],
+      "refreshDisabled": true
+    },
+    {
+      "name": "Top Players",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA · Rankings cover only imported players, not all cricket players worldwide.",
+        "Limited player coverage: this saved dataset is too small to represent a global leaderboard."
+      ]
+    },
+    {
+      "name": "Analytics",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA · Results describe imported records, not complete global cricket history."
+      ],
+      "queryResult": false,
+      "afterRun": "Skip to main content\n🏠\n\nHome\n\n🏏\n\nLive Matches\n\n⭐\n\nTop Players\n\n📊\n\nAnalytics\n\n✏️\n\nCRUD\n\n⚙️\n\nSettings\n\n🏏 Cricbuzz LiveStats\n\nCricket insights & SQL analytics\n\nSAVED CRICKET INSIGHTS\n\nMatches · Players · Analytics\n\nCheck the dataset label and import time for coverage.\n\nFork\n\nCRICBUZZ LIVESTATS / SQL WORKSPACE\n\nAnalytics\n\nExplore the 26 saved SQL analyses or investigate saved data with a read-only query.\n\nDataset\n\nSAVED PROVIDER DATA · Results describe imported records, not complete global cricket history.\n\nNo API requests are made. Results reflect the last submitted form. Form edits take effect when Run is pressed; switching questions or workspaces clears the result. Each run reads one committed database snapshot.\n\nWorkspace\n\nSaved questions\n\nCustom SQL\n\nVisualizations\n\nSQL question\n\nQ01 · India players\n\nEach lesson documents definitions, missing-data rules, limitations and optimization. Some SQL has fixed historical scope; only named parameters below change with the analysis date.\n\nkeyboard_arrow_right\n\nLesson and interpretation\n\nkeyboard_arrow_right\n\nSQL to execute\n\nAnalysis date (UTC)\n\n2026\n/\n10\n/\n01\n\nDates bind midnight UTC. Q02 uses the preceding 30 days; Q22 the preceding three calendar years; Q25 the preceding twelve completed quarters. See the lesson for exact inclusivity.\n\nMaximum displayed rows\n\nRun saved question\n\nSample lessons use 2026-10-01 for reproducible results. Live snapshots may be old or incomplete; choosing today does not fetch new records.\n\nBound parameters\n\n{\n\"as_of_date\":\"2026-10-01\"\n}\n\n0 displayed rows · Dataset revision 9\n\nNo rows returned. This can mean no qualifying records or insufficient saved coverage; it is not proof of no real-world cricket history."
+    },
+    {
+      "name": "CRUD",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "PROVIDER DATA · Local corrections and deletions are protected by ownership rules.",
+        "Read-only mode: administrative forms are unavailable."
+      ],
+      "forms": 0
+    },
+    {
+      "name": "Settings",
+      "heading": "🏏 Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "Database is readable and its schema and dataset mode are supported.",
+        "Provider records are refreshed by a scheduled backend job. Check import times for freshness; this is not continuous live scoring."
+      ],
+      "readOnly": true
+    }
+  ],
+  "status": "checked"
+}
