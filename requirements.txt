@@ -1,2 +1,4 @@
 # Tested dependency set used by the public portfolio deployment.
 -r requirements-lock.txt
+
+# Public provider feed release: reload application modules with the existing tested dependency lock.

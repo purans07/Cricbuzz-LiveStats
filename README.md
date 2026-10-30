@@ -1,5 +1,7 @@
 # Cricbuzz LiveStats
 
+[Public API-backed website](https://cricbuzz-livestats-web.streamlit.app/). The public view now uses verified provider records and a daily backend match-list refresh. It remains read-only; imported coverage is limited and updates are not continuous live scoring. [Deployment details](documentation/public_provider_deployment.md).
+
 Current verification: SQLite, PostgreSQL 14.21 and MySQL 9.5.0 are supported and tested. Fresh API verification expanded saved history; the latest observed quota was 174/200 remaining. The assignment deadline remains unknown. See [completion report](documentation/remaining_requirements_completion.md).
 
 A Python, SQLite and Streamlit dashboard for saved cricket scores, player statistics, 26 SQL analyses and validated administrative CRUD. Interactive Plotly charts explain ranking, consistency, venue performance and quarterly trends.

@@ -1,0 +1,82 @@
+{
+  "url": "https://cricbuzz-livestats-web.streamlit.app/",
+  "pages": [
+    {
+      "name": "Home",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "LIVE DATA SOURCE \u00b7 Saved provider records. Opening Home does not fetch current scores."
+      ],
+      "counts": [
+        "76",
+        "2",
+        "77",
+        "41"
+      ],
+      "sample": false
+    },
+    {
+      "name": "Live Matches",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA \u00b7 These snapshots may be out of date. Use an explicit refresh for a new provider response.",
+        "No detailed batting records saved for this innings.",
+        "No detailed bowling records saved for this innings."
+      ],
+      "refreshDisabled": true
+    },
+    {
+      "name": "Top Players",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA \u00b7 Rankings cover only imported players, not all cricket players worldwide.",
+        "Limited player coverage: this saved dataset is too small to represent a global leaderboard."
+      ]
+    },
+    {
+      "name": "Analytics",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "SAVED PROVIDER DATA \u00b7 Results describe imported records, not complete global cricket history."
+      ],
+      "queryResult": false,
+      "afterRun": "Skip to main content\n\ud83c\udfe0\n\nHome\n\n\ud83c\udfcf\n\nLive Matches\n\n\u2b50\n\nTop Players\n\n\ud83d\udcca\n\nAnalytics\n\n\u270f\ufe0f\n\nCRUD\n\n\u2699\ufe0f\n\nSettings\n\n\ud83c\udfcf Cricbuzz LiveStats\n\nCricket insights & SQL analytics\n\nSAVED CRICKET INSIGHTS\n\nMatches \u00b7 Players \u00b7 Analytics\n\nCheck the dataset label and import time for coverage.\n\nFork\n\nCRICBUZZ LIVESTATS / SQL WORKSPACE\n\nAnalytics\n\nExplore the 26 saved SQL analyses or investigate saved data with a read-only query.\n\nDataset\n\nSAVED PROVIDER DATA \u00b7 Results describe imported records, not complete global cricket history.\n\nNo API requests are made. Results reflect the last submitted form. Form edits take effect when Run is pressed; switching questions or workspaces clears the result. Each run reads one committed database snapshot.\n\nWorkspace\n\nSaved questions\n\nCustom SQL\n\nVisualizations\n\nSQL question\n\nQ01 \u00b7 India players\n\nEach lesson documents definitions, missing-data rules, limitations and optimization. Some SQL has fixed historical scope; only named parameters below change with the analysis date.\n\nkeyboard_arrow_right\n\nLesson and interpretation\n\nkeyboard_arrow_right\n\nSQL to execute\n\nAnalysis date (UTC)\n\n2026\n/\n10\n/\n01\n\nDates bind midnight UTC. Q02 uses the preceding 30 days; Q22 the preceding three calendar years; Q25 the preceding twelve completed quarters. See the lesson for exact inclusivity.\n\nMaximum displayed rows\n\nRun saved question\n\nSample lessons use 2026-10-01 for reproducible results. Live snapshots may be old or incomplete; choosing today does not fetch new records.\n\nBound parameters\n\n{\n\"as_of_date\":\"2026-10-01\"\n}\n\n0 displayed rows \u00b7 Dataset revision 5\n\nNo rows returned. This can mean no qualifying records or insufficient saved coverage; it is not proof of no real-world cricket history."
+    },
+    {
+      "name": "CRUD",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "PROVIDER DATA \u00b7 Local corrections and deletions are protected by ownership rules.",
+        "Read-only mode: administrative forms are unavailable."
+      ],
+      "forms": 0
+    },
+    {
+      "name": "Settings",
+      "heading": "\ud83c\udfcf Cricbuzz LiveStats",
+      "exceptions": 0,
+      "warnings": [
+        "Database is readable and its schema and dataset mode are supported.",
+        "API configuration is incomplete or invalid. Sample browsing and SQL lessons do not require API access. Configure the key privately using the API setup guide on Home."
+      ],
+      "readOnly": true
+    }
+  ],
+  "status": "checked",
+  "scheduled_refresh": {
+    "run": "https://github.com/purans07/Cricbuzz-LiveStats/actions/runs/40996331942",
+    "conclusion": "success",
+    "frequency": "daily",
+    "requests_per_scheduled_run": 1
+  },
+  "tests": {
+    "passed": 597,
+    "skipped_server_checks": 64
+  },
+  "scope": "Real saved provider records, limited career coverage, daily match-list refresh; no continuous scoring or public administration"
+}

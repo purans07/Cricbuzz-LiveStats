@@ -153,7 +153,11 @@ def _page(database):
     st.info(
         "SAMPLE DATA · Fictional training scorecards."
         if sample
-        else "SAVED PROVIDER DATA · These snapshots may be out of date. Use an explicit refresh for a new provider response."
+        else (
+            "SAVED PROVIDER DATA · Updated by a scheduled backend job. Check import times for freshness."
+            if settings.access_mode == "public_readonly"
+            else "SAVED PROVIDER DATA · These snapshots may be out of date. Use an explicit refresh for a new provider response."
+        )
     )
     st.caption(
         "Changing filters or matches only reads saved data. Missing statistics stay unknown; individual rows may have different import times."
