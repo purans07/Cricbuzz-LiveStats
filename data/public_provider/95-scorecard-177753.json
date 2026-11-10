@@ -1,0 +1,764 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "provider_version": "v2",
+    "capability": "match_scorecard",
+    "resource_key": "177753",
+    "fetched_at": "2026-11-10T13:30:57Z",
+    "upstream_updated_at": "2026-11-10T13:04:58Z",
+    "completeness": "partial"
+  },
+  "tables": [
+    {
+      "rows": [
+        {
+          "external_id": "10400",
+          "full_name": "Saif Zaib"
+        },
+        {
+          "external_id": "9961",
+          "full_name": "Binod Bhandari"
+        },
+        {
+          "external_id": "31911",
+          "full_name": "Brandon McMullen"
+        },
+        {
+          "external_id": "11165",
+          "full_name": "Ishan Pandey"
+        },
+        {
+          "external_id": "11155",
+          "full_name": "Dipendra Singh Airee"
+        },
+        {
+          "external_id": "18515",
+          "full_name": "Tharindu Ratnayake"
+        },
+        {
+          "external_id": "10126",
+          "full_name": "Aarif Sheikh"
+        },
+        {
+          "external_id": "9511",
+          "full_name": "Scott Kuggeleijn"
+        },
+        {
+          "external_id": "1481717",
+          "full_name": "Anil Kharel"
+        },
+        {
+          "external_id": "52579",
+          "full_name": "Hemant Dhami"
+        },
+        {
+          "external_id": "14556",
+          "full_name": "Abinash Bohara"
+        },
+        {
+          "external_id": "13626",
+          "full_name": "Lalit Rajbanshi"
+        },
+        {
+          "external_id": "11130",
+          "full_name": "Harry Tector"
+        },
+        {
+          "external_id": "1481831",
+          "full_name": "Rahul Yadav"
+        },
+        {
+          "external_id": "8426",
+          "full_name": "Harmeet Singh"
+        },
+        {
+          "external_id": "8454",
+          "full_name": "Ryan Burl"
+        },
+        {
+          "external_id": "1465654",
+          "full_name": "Aaditya Mahata"
+        },
+        {
+          "external_id": "1448009",
+          "full_name": "Abhisekh Tiwari"
+        }
+      ],
+      "table": "players"
+    },
+    {
+      "rows": [
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "10400",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "9961",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "31911",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "11165",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "11155",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "18515",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "10126",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "9511",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1481717",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "13626",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "11130",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1481831",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "8426",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "8454",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1465654",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1448009",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "match_players"
+    },
+    {
+      "rows": [
+        {
+          "batting_team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 100,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "total_runs": 100,
+          "wickets": 7
+        }
+      ],
+      "table": "innings"
+    },
+    {
+      "rows": [
+        {
+          "balls_faced": 19,
+          "batting_position": 1,
+          "dismissal_text": "b Rahul Yadav",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "10400",
+            "table": "players"
+          },
+          "runs": 10,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 10,
+          "batting_position": 2,
+          "dismissal_text": "run out (Lalit Rajbanshi)",
+          "fours": 2,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "9961",
+            "table": "players"
+          },
+          "runs": 10,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 23,
+          "batting_position": 3,
+          "dismissal_text": "b Harry Tector",
+          "fours": 2,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "31911",
+            "table": "players"
+          },
+          "runs": 33,
+          "sixes": 2,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 8,
+          "batting_position": 4,
+          "dismissal_text": "b Harmeet Singh",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "11165",
+            "table": "players"
+          },
+          "runs": 3,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 3,
+          "batting_position": 5,
+          "dismissal_text": "c and b Aaditya Mahata",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "11155",
+            "table": "players"
+          },
+          "runs": 1,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 17,
+          "batting_position": 6,
+          "dismissal_text": "batting",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "18515",
+            "table": "players"
+          },
+          "runs": 12,
+          "sixes": 1,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 16,
+          "batting_position": 7,
+          "dismissal_text": "c Anil Sah b Abhisekh Tiwari",
+          "fours": 2,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "10126",
+            "table": "players"
+          },
+          "runs": 11,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 3,
+          "batting_position": 8,
+          "dismissal_text": "c Bishal Shusling b Harmeet Singh",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "9511",
+            "table": "players"
+          },
+          "runs": 6,
+          "sixes": 1,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 1,
+          "batting_position": 9,
+          "dismissal_text": "batting",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1481717",
+            "table": "players"
+          },
+          "runs": 1,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "2960",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "batting_performances"
+    },
+    {
+      "rows": [
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "13626",
+            "table": "players"
+          },
+          "runs_conceded": 24,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 0
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 24,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "11130",
+            "table": "players"
+          },
+          "runs_conceded": 9,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 12,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1481831",
+            "table": "players"
+          },
+          "runs_conceded": 13,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 16,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "8426",
+            "table": "players"
+          },
+          "runs_conceded": 8,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 2
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 6,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "8454",
+            "table": "players"
+          },
+          "runs_conceded": 15,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 0
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1465654",
+            "table": "players"
+          },
+          "runs_conceded": 19,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "177753",
+            "table": "innings"
+          },
+          "legal_balls": 6,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "177753",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1448009",
+            "table": "players"
+          },
+          "runs_conceded": 7,
+          "team_id": {
+            "external_id": "2918",
+            "table": "teams"
+          },
+          "wickets": 1
+        }
+      ],
+      "table": "bowling_performances"
+    }
+  ]
+}
