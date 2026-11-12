@@ -5,22 +5,27 @@
     "provider_version": "v2",
     "capability": "live_matches",
     "resource_key": "list",
-    "fetched_at": "2026-11-11T12:45:56Z",
-    "upstream_updated_at": "2026-11-11T12:39:59Z",
+    "fetched_at": "2026-11-12T13:49:24Z",
+    "upstream_updated_at": "2026-11-12T13:39:59Z",
     "completeness": "partial"
   },
   "tables": [
     {
       "rows": [
         {
-          "code": "ODI",
-          "family": "ODI",
-          "level": "international"
-        },
-        {
           "code": "TEST",
           "family": "TEST",
           "level": "international"
+        },
+        {
+          "code": "LEAGUE_T20",
+          "family": "T20",
+          "level": "domestic"
+        },
+        {
+          "code": "DOMESTIC_ODI",
+          "family": "ODI",
+          "level": "domestic"
         },
         {
           "code": "DOMESTIC_TEST",
@@ -38,16 +43,6 @@
     {
       "rows": [
         {
-          "external_id": "13",
-          "is_international": 1,
-          "name": "New Zealand"
-        },
-        {
-          "external_id": "2",
-          "is_international": 1,
-          "name": "India"
-        },
-        {
           "external_id": "3",
           "is_international": 1,
           "name": "Pakistan"
@@ -58,14 +53,54 @@
           "name": "Sri Lanka"
         },
         {
-          "external_id": "104",
+          "external_id": "2929",
           "is_international": 0,
-          "name": "New South Wales"
+          "name": "Karnali Yaks"
         },
         {
-          "external_id": "158",
+          "external_id": "2940",
           "is_international": 0,
-          "name": "South Australia"
+          "name": "Lumbini Lions"
+        },
+        {
+          "external_id": "2949",
+          "is_international": 0,
+          "name": "Pokhara Avengers"
+        },
+        {
+          "external_id": "2904",
+          "is_international": 0,
+          "name": "Biratnagar Kings"
+        },
+        {
+          "external_id": "223",
+          "is_international": 0,
+          "name": "Afghanistan U19"
+        },
+        {
+          "external_id": "54",
+          "is_international": 0,
+          "name": "India U19"
+        },
+        {
+          "external_id": "224",
+          "is_international": 0,
+          "name": "Bangladesh U19"
+        },
+        {
+          "external_id": "56",
+          "is_international": 0,
+          "name": "Pakistan U19"
+        },
+        {
+          "external_id": "435",
+          "is_international": 0,
+          "name": "Ireland A"
+        },
+        {
+          "external_id": "342",
+          "is_international": 0,
+          "name": "Zimbabwe A"
         },
         {
           "external_id": "52",
@@ -88,14 +123,29 @@
           "name": "Tasmania"
         },
         {
-          "external_id": "362",
+          "external_id": "104",
           "is_international": 0,
-          "name": "Sydney Thunder Women"
+          "name": "New South Wales"
         },
         {
-          "external_id": "360",
+          "external_id": "158",
           "is_international": 0,
-          "name": "Perth Scorchers Women"
+          "name": "South Australia"
+        },
+        {
+          "external_id": "361",
+          "is_international": 0,
+          "name": "Sydney Sixers Women"
+        },
+        {
+          "external_id": "358",
+          "is_international": 0,
+          "name": "Melbourne Renegades Women"
+        },
+        {
+          "external_id": "503",
+          "is_international": 0,
+          "name": "Namibia Women"
         },
         {
           "external_id": "720",
@@ -106,6 +156,31 @@
           "external_id": "448",
           "is_international": 0,
           "name": "Uganda Women"
+        },
+        {
+          "external_id": "592",
+          "is_international": 0,
+          "name": "United States of America Women"
+        },
+        {
+          "external_id": "329",
+          "is_international": 0,
+          "name": "Bangladesh Women"
+        },
+        {
+          "external_id": "259",
+          "is_international": 0,
+          "name": "Pakistan Women"
+        },
+        {
+          "external_id": "382",
+          "is_international": 0,
+          "name": "Thailand Women"
+        },
+        {
+          "external_id": "188",
+          "is_international": 0,
+          "name": "Netherlands Women"
         }
       ],
       "table": "teams"
@@ -113,19 +188,29 @@
     {
       "rows": [
         {
-          "city": "Hamilton",
-          "external_id": "100",
-          "name": "Seddon Park"
-        },
-        {
           "city": "Rawalpindi",
           "external_id": "25",
           "name": "Rawalpindi Cricket Stadium"
         },
         {
-          "city": "Sydney",
-          "external_id": "1727",
-          "name": "Cricket Central"
+          "city": "Kirtipur",
+          "external_id": "458",
+          "name": "Tribhuvan University International Cricket Ground"
+        },
+        {
+          "city": "Al Amerat",
+          "external_id": "709",
+          "name": "Al Amerat Cricket Ground (Ministry Turf 2)"
+        },
+        {
+          "city": "Al Amerat",
+          "external_id": "549",
+          "name": "Al Amerat Cricket Ground (Ministry Turf 1)"
+        },
+        {
+          "city": "Harare",
+          "external_id": "69",
+          "name": "Harare Sports Club"
         },
         {
           "city": "Melbourne",
@@ -138,14 +223,29 @@
           "name": "The Gabba"
         },
         {
-          "city": "Perth",
-          "external_id": "38",
-          "name": "W.A.C.A. Ground"
+          "city": "Sydney",
+          "external_id": "1727",
+          "name": "Cricket Central"
+        },
+        {
+          "city": "Melbourne",
+          "external_id": "122",
+          "name": "Junction Oval"
         },
         {
           "city": "Entebbe",
           "external_id": "1783",
           "name": "Entebbe Cricket Oval"
+        },
+        {
+          "city": "Ajman",
+          "external_id": "1438490",
+          "name": "Karwan Cricket Ground"
+        },
+        {
+          "city": "Ajman",
+          "external_id": "1438500",
+          "name": "Seven Districts Ground"
         }
       ],
       "table": "venues"
@@ -153,16 +253,28 @@
     {
       "rows": [
         {
-          "end_date": "2026-12-03",
-          "external_id": "12543",
-          "name": "India tour of New Zealand 2026",
-          "start_date": "2026-10-22"
-        },
-        {
           "end_date": "2026-11-23",
           "external_id": "13037",
           "name": "Sri Lanka tour of Pakistan, 2026",
           "start_date": "2026-10-09"
+        },
+        {
+          "end_date": "2026-11-23",
+          "external_id": "13430",
+          "name": "Nepal Premier League 2026",
+          "start_date": "2026-10-26"
+        },
+        {
+          "end_date": "2026-11-16",
+          "external_id": "13333",
+          "name": "ACC Men's U19 Asia Cup 2026",
+          "start_date": "2026-11-05"
+        },
+        {
+          "end_date": "2026-11-29",
+          "external_id": "13337",
+          "name": "Ireland A tour of Zimbabwe, 2026",
+          "start_date": "2026-11-05"
         },
         {
           "end_date": "2027-03-31",
@@ -181,6 +293,12 @@
           "external_id": "13413",
           "name": "Women's Victoria T20I Series, 2026",
           "start_date": "2026-11-06"
+        },
+        {
+          "end_date": "2026-11-27",
+          "external_id": "13420",
+          "name": "ICC Women's Emerging Nations Trophy, 2026",
+          "start_date": "2026-11-12"
         }
       ],
       "table": "series"
@@ -189,21 +307,41 @@
       "rows": [
         {
           "format_id": {
-            "code": "ODI",
-            "table": "formats"
-          },
-          "series_id": {
-            "external_id": "12543",
-            "table": "series"
-          }
-        },
-        {
-          "format_id": {
             "code": "TEST",
             "table": "formats"
           },
           "series_id": {
             "external_id": "13037",
+            "table": "series"
+          }
+        },
+        {
+          "format_id": {
+            "code": "LEAGUE_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13430",
+            "table": "series"
+          }
+        },
+        {
+          "format_id": {
+            "code": "DOMESTIC_ODI",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13333",
+            "table": "series"
+          }
+        },
+        {
+          "format_id": {
+            "code": "DOMESTIC_TEST",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13337",
             "table": "series"
           }
         },
@@ -236,31 +374,22 @@
             "external_id": "13413",
             "table": "series"
           }
+        },
+        {
+          "format_id": {
+            "code": "WOMEN_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13420",
+            "table": "series"
+          }
         }
       ],
       "table": "series_formats"
     },
     {
       "rows": [
-        {
-          "description": "3rd ODI",
-          "external_id": "161260",
-          "format_id": {
-            "code": "ODI",
-            "table": "formats"
-          },
-          "series_id": {
-            "external_id": "12543",
-            "table": "series"
-          },
-          "starts_at": "2026-11-10T02:00:00Z",
-          "status": "completed",
-          "status_text": "Match abandoned due to rain (with toss)",
-          "venue_id": {
-            "external_id": "100",
-            "table": "venues"
-          }
-        },
         {
           "description": "1st Test",
           "external_id": "170703",
@@ -274,28 +403,104 @@
           },
           "starts_at": "2026-11-09T04:30:00Z",
           "status": "live",
-          "status_text": "Day 3: Stumps - Sri Lanka trail by 30 runs",
+          "status_text": "Day 4: Stumps - Pakistan lead by 45 runs",
           "venue_id": {
             "external_id": "25",
             "table": "venues"
           }
         },
         {
-          "description": "10th Match",
-          "external_id": "166653",
+          "description": "23rd Match",
+          "external_id": "177770",
+          "format_id": {
+            "code": "LEAGUE_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13430",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T11:15:00Z",
+          "status": "live",
+          "status_text": "Lumbini Lions need 74 runs in 84 balls",
+          "venue_id": {
+            "external_id": "458",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "22nd Match",
+          "external_id": "177760",
+          "format_id": {
+            "code": "LEAGUE_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13430",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T06:45:00Z",
+          "status": "completed",
+          "status_text": "Biratnagar Kings won by 4 wkts",
+          "venue_id": {
+            "external_id": "458",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "Semi Final 2 (B1 v A2)",
+          "external_id": "175710",
+          "format_id": {
+            "code": "DOMESTIC_ODI",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13333",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T05:00:00Z",
+          "status": "completed",
+          "status_text": "India U19 won by 8 wkts",
+          "venue_id": {
+            "external_id": "709",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "Semi Final 1 (A1 v B2)",
+          "external_id": "175703",
+          "format_id": {
+            "code": "DOMESTIC_ODI",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13333",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T05:00:00Z",
+          "status": "completed",
+          "status_text": "Pakistan U19 won by 9 wkts",
+          "venue_id": {
+            "external_id": "549",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "2nd unofficial Test",
+          "external_id": "175821",
           "format_id": {
             "code": "DOMESTIC_TEST",
             "table": "formats"
           },
           "series_id": {
-            "external_id": "12717",
+            "external_id": "13337",
             "table": "series"
           },
-          "starts_at": "2026-11-10T23:30:00Z",
+          "starts_at": "2026-11-12T08:00:00Z",
           "status": "live",
-          "status_text": "Day 1: Stumps - South Australia trail by 42 runs",
+          "status_text": "Day 1: Lunch Break",
           "venue_id": {
-            "external_id": "1727",
+            "external_id": "69",
             "table": "venues"
           }
         },
@@ -312,7 +517,7 @@
           },
           "starts_at": "2026-11-10T23:30:00Z",
           "status": "live",
-          "status_text": "Day 1: Stumps",
+          "status_text": "Day 2: Stumps - Western Australia trail by 217 runs",
           "venue_id": {
             "external_id": "87",
             "table": "venues"
@@ -331,15 +536,34 @@
           },
           "starts_at": "2026-11-11T00:00:00Z",
           "status": "live",
-          "status_text": "Day 1: Stumps",
+          "status_text": "Day 2: Stumps - Tasmania trail by 215 runs",
           "venue_id": {
             "external_id": "35",
             "table": "venues"
           }
         },
         {
-          "description": "18th Match",
-          "external_id": "162827",
+          "description": "10th Match",
+          "external_id": "166653",
+          "format_id": {
+            "code": "DOMESTIC_TEST",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "12717",
+            "table": "series"
+          },
+          "starts_at": "2026-11-10T23:30:00Z",
+          "status": "live",
+          "status_text": "Day 2: Stumps - New South Wales lead by 70 runs",
+          "venue_id": {
+            "external_id": "1727",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "20th Match",
+          "external_id": "162843",
           "format_id": {
             "code": "WOMEN_T20",
             "table": "formats"
@@ -348,17 +572,17 @@
             "external_id": "12677",
             "table": "series"
           },
-          "starts_at": "2026-11-11T08:10:00Z",
+          "starts_at": "2026-11-12T08:10:00Z",
           "status": "completed",
-          "status_text": "Perth Scorchers Women won by 4 wkts",
+          "status_text": "Sydney Sixers Women won by 11 runs",
           "venue_id": {
-            "external_id": "38",
+            "external_id": "122",
             "table": "venues"
           }
         },
         {
-          "description": "9th Match",
-          "external_id": "177335",
+          "description": "12th Match",
+          "external_id": "177354",
           "format_id": {
             "code": "WOMEN_T20",
             "table": "formats"
@@ -367,11 +591,68 @@
             "external_id": "13413",
             "table": "series"
           },
-          "starts_at": "2026-11-11T06:30:00Z",
-          "status": "unknown",
-          "status_text": "Uganda Women opt to field",
+          "starts_at": "2026-11-12T11:00:00Z",
+          "status": "completed",
+          "status_text": "Rwanda Women won by 4 wkts",
           "venue_id": {
             "external_id": "1783",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "11th Match",
+          "external_id": "177343",
+          "format_id": {
+            "code": "WOMEN_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13413",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T06:30:00Z",
+          "status": "completed",
+          "status_text": "Uganda Women won by 14 runs",
+          "venue_id": {
+            "external_id": "1783",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "3rd Match, Group B",
+          "external_id": "177400",
+          "format_id": {
+            "code": "WOMEN_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13420",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T09:15:00Z",
+          "status": "completed",
+          "status_text": "Pakistan Women won by 8 wkts",
+          "venue_id": {
+            "external_id": "1438490",
+            "table": "venues"
+          }
+        },
+        {
+          "description": "4th Match, Group B",
+          "external_id": "177401",
+          "format_id": {
+            "code": "WOMEN_T20",
+            "table": "formats"
+          },
+          "series_id": {
+            "external_id": "13420",
+            "table": "series"
+          },
+          "starts_at": "2026-11-12T09:15:00Z",
+          "status": "completed",
+          "status_text": "Netherlands Women won by 5 wkts",
+          "venue_id": {
+            "external_id": "1438500",
             "table": "venues"
           }
         }
@@ -380,28 +661,6 @@
     },
     {
       "rows": [
-        {
-          "match_id": {
-            "external_id": "161260",
-            "table": "matches"
-          },
-          "slot": 1,
-          "team_id": {
-            "external_id": "13",
-            "table": "teams"
-          }
-        },
-        {
-          "match_id": {
-            "external_id": "161260",
-            "table": "matches"
-          },
-          "slot": 2,
-          "team_id": {
-            "external_id": "2",
-            "table": "teams"
-          }
-        },
         {
           "match_id": {
             "external_id": "170703",
@@ -426,23 +685,111 @@
         },
         {
           "match_id": {
-            "external_id": "166653",
+            "external_id": "177770",
             "table": "matches"
           },
           "slot": 1,
           "team_id": {
-            "external_id": "104",
+            "external_id": "2929",
             "table": "teams"
           }
         },
         {
           "match_id": {
-            "external_id": "166653",
+            "external_id": "177770",
             "table": "matches"
           },
           "slot": 2,
           "team_id": {
-            "external_id": "158",
+            "external_id": "2940",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177760",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "2949",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177760",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "2904",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175710",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "223",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175710",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "54",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175703",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "224",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175703",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "56",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175821",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "435",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175821",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "342",
             "table": "teams"
           }
         },
@@ -492,32 +839,65 @@
         },
         {
           "match_id": {
-            "external_id": "162827",
+            "external_id": "166653",
             "table": "matches"
           },
           "slot": 1,
           "team_id": {
-            "external_id": "362",
+            "external_id": "104",
             "table": "teams"
           }
         },
         {
           "match_id": {
-            "external_id": "162827",
+            "external_id": "166653",
             "table": "matches"
           },
           "slot": 2,
           "team_id": {
-            "external_id": "360",
+            "external_id": "158",
             "table": "teams"
           }
         },
         {
           "match_id": {
-            "external_id": "177335",
+            "external_id": "162843",
             "table": "matches"
           },
           "slot": 1,
+          "team_id": {
+            "external_id": "361",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "162843",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "358",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177354",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "503",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177354",
+            "table": "matches"
+          },
+          "slot": 2,
           "team_id": {
             "external_id": "720",
             "table": "teams"
@@ -525,12 +905,67 @@
         },
         {
           "match_id": {
-            "external_id": "177335",
+            "external_id": "177343",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "448",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177343",
             "table": "matches"
           },
           "slot": 2,
           "team_id": {
-            "external_id": "448",
+            "external_id": "592",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177400",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "329",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177400",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "259",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177401",
+            "table": "matches"
+          },
+          "slot": 1,
+          "team_id": {
+            "external_id": "382",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "177401",
+            "table": "matches"
+          },
+          "slot": 2,
+          "team_id": {
+            "external_id": "188",
             "table": "teams"
           }
         }
@@ -559,6 +994,24 @@
         },
         {
           "batting_team_id": {
+            "external_id": "3",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "5",
+            "table": "teams"
+          },
+          "innings_number": 3,
+          "legal_balls": 128,
+          "match_id": {
+            "external_id": "170703",
+            "table": "matches"
+          },
+          "total_runs": 57,
+          "wickets": 1
+        },
+        {
+          "batting_team_id": {
             "external_id": "5",
             "table": "teams"
           },
@@ -567,13 +1020,247 @@
             "table": "teams"
           },
           "innings_number": 2,
-          "legal_balls": 612,
+          "legal_balls": 704,
           "match_id": {
             "external_id": "170703",
             "table": "matches"
           },
-          "total_runs": 404,
-          "wickets": 4
+          "total_runs": 446,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "2929",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "2940",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 116,
+          "match_id": {
+            "external_id": "177770",
+            "table": "matches"
+          },
+          "total_runs": 105,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "2940",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "2929",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 36,
+          "match_id": {
+            "external_id": "177770",
+            "table": "matches"
+          },
+          "total_runs": 32,
+          "wickets": 3
+        },
+        {
+          "batting_team_id": {
+            "external_id": "2949",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "2904",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 107,
+          "match_id": {
+            "external_id": "177760",
+            "table": "matches"
+          },
+          "total_runs": 132,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "2904",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "2949",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 116,
+          "match_id": {
+            "external_id": "177760",
+            "table": "matches"
+          },
+          "total_runs": 136,
+          "wickets": 6
+        },
+        {
+          "batting_team_id": {
+            "external_id": "223",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "54",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 300,
+          "match_id": {
+            "external_id": "175710",
+            "table": "matches"
+          },
+          "total_runs": 227,
+          "wickets": 8
+        },
+        {
+          "batting_team_id": {
+            "external_id": "54",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "223",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 221,
+          "match_id": {
+            "external_id": "175710",
+            "table": "matches"
+          },
+          "total_runs": 230,
+          "wickets": 2
+        },
+        {
+          "batting_team_id": {
+            "external_id": "224",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "56",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 190,
+          "match_id": {
+            "external_id": "175703",
+            "table": "matches"
+          },
+          "total_runs": 138,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "56",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "224",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 131,
+          "match_id": {
+            "external_id": "175703",
+            "table": "matches"
+          },
+          "total_runs": 141,
+          "wickets": 1
+        },
+        {
+          "batting_team_id": {
+            "external_id": "435",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "342",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 156,
+          "match_id": {
+            "external_id": "175821",
+            "table": "matches"
+          },
+          "total_runs": 100,
+          "wickets": 1
+        },
+        {
+          "batting_team_id": {
+            "external_id": "52",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "87",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 717,
+          "match_id": {
+            "external_id": "166657",
+            "table": "matches"
+          },
+          "total_runs": 402,
+          "wickets": 5
+        },
+        {
+          "batting_team_id": {
+            "external_id": "87",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "52",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 402,
+          "match_id": {
+            "external_id": "166657",
+            "table": "matches"
+          },
+          "total_runs": 185,
+          "wickets": 3
+        },
+        {
+          "batting_team_id": {
+            "external_id": "164",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "166",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 669,
+          "match_id": {
+            "external_id": "166667",
+            "table": "matches"
+          },
+          "total_runs": 348,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "166",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "164",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 327,
+          "match_id": {
+            "external_id": "166667",
+            "table": "matches"
+          },
+          "total_runs": 133,
+          "wickets": 10
         },
         {
           "batting_team_id": {
@@ -595,6 +1282,24 @@
         },
         {
           "batting_team_id": {
+            "external_id": "104",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "158",
+            "table": "teams"
+          },
+          "innings_number": 3,
+          "legal_balls": 306,
+          "match_id": {
+            "external_id": "166653",
+            "table": "matches"
+          },
+          "total_runs": 191,
+          "wickets": 2
+        },
+        {
+          "batting_team_id": {
             "external_id": "158",
             "table": "teams"
           },
@@ -603,85 +1308,193 @@
             "table": "teams"
           },
           "innings_number": 2,
-          "legal_balls": 258,
+          "legal_balls": 497,
           "match_id": {
             "external_id": "166653",
             "table": "matches"
           },
-          "total_runs": 162,
-          "wickets": 5
+          "total_runs": 325,
+          "wickets": 10
         },
         {
           "batting_team_id": {
-            "external_id": "52",
+            "external_id": "361",
             "table": "teams"
           },
           "bowling_team_id": {
-            "external_id": "87",
-            "table": "teams"
-          },
-          "innings_number": 1,
-          "legal_balls": 576,
-          "match_id": {
-            "external_id": "166657",
-            "table": "matches"
-          },
-          "total_runs": 292,
-          "wickets": 3
-        },
-        {
-          "batting_team_id": {
-            "external_id": "164",
-            "table": "teams"
-          },
-          "bowling_team_id": {
-            "external_id": "166",
-            "table": "teams"
-          },
-          "innings_number": 1,
-          "legal_balls": 418,
-          "match_id": {
-            "external_id": "166667",
-            "table": "matches"
-          },
-          "total_runs": 195,
-          "wickets": 5
-        },
-        {
-          "batting_team_id": {
-            "external_id": "362",
-            "table": "teams"
-          },
-          "bowling_team_id": {
-            "external_id": "360",
+            "external_id": "358",
             "table": "teams"
           },
           "innings_number": 1,
           "legal_balls": 120,
           "match_id": {
-            "external_id": "162827",
+            "external_id": "162843",
             "table": "matches"
           },
-          "total_runs": 159,
-          "wickets": 5
+          "total_runs": 140,
+          "wickets": 6
         },
         {
           "batting_team_id": {
-            "external_id": "360",
+            "external_id": "358",
             "table": "teams"
           },
           "bowling_team_id": {
-            "external_id": "362",
+            "external_id": "361",
             "table": "teams"
           },
           "innings_number": 2,
-          "legal_balls": 111,
+          "legal_balls": 120,
           "match_id": {
-            "external_id": "162827",
+            "external_id": "162843",
             "table": "matches"
           },
-          "total_runs": 160,
+          "total_runs": 129,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "503",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "720",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 102,
+          "match_id": {
+            "external_id": "177354",
+            "table": "matches"
+          },
+          "total_runs": 58,
+          "wickets": 10
+        },
+        {
+          "batting_team_id": {
+            "external_id": "720",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "503",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 95,
+          "match_id": {
+            "external_id": "177354",
+            "table": "matches"
+          },
+          "total_runs": 59,
           "wickets": 6
+        },
+        {
+          "batting_team_id": {
+            "external_id": "448",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "592",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 120,
+          "match_id": {
+            "external_id": "177343",
+            "table": "matches"
+          },
+          "total_runs": 105,
+          "wickets": 6
+        },
+        {
+          "batting_team_id": {
+            "external_id": "592",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "448",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 120,
+          "match_id": {
+            "external_id": "177343",
+            "table": "matches"
+          },
+          "total_runs": 91,
+          "wickets": 9
+        },
+        {
+          "batting_team_id": {
+            "external_id": "329",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "259",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 120,
+          "match_id": {
+            "external_id": "177400",
+            "table": "matches"
+          },
+          "total_runs": 108,
+          "wickets": 9
+        },
+        {
+          "batting_team_id": {
+            "external_id": "259",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "329",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 95,
+          "match_id": {
+            "external_id": "177400",
+            "table": "matches"
+          },
+          "total_runs": 112,
+          "wickets": 2
+        },
+        {
+          "batting_team_id": {
+            "external_id": "382",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "188",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 120,
+          "match_id": {
+            "external_id": "177401",
+            "table": "matches"
+          },
+          "total_runs": 136,
+          "wickets": 2
+        },
+        {
+          "batting_team_id": {
+            "external_id": "188",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "382",
+            "table": "teams"
+          },
+          "innings_number": 2,
+          "legal_balls": 117,
+          "match_id": {
+            "external_id": "177401",
+            "table": "matches"
+          },
+          "total_runs": 137,
+          "wickets": 5
         }
       ],
       "table": "innings"
