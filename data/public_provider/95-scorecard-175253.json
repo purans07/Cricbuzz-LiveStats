@@ -1,0 +1,768 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "provider_version": "v2",
+    "capability": "match_scorecard",
+    "resource_key": "175253",
+    "fetched_at": "2026-11-24T15:56:39Z",
+    "upstream_updated_at": "2026-11-24T15:54:15Z",
+    "completeness": "partial"
+  },
+  "tables": [
+    {
+      "rows": [
+        {
+          "external_id": "18987",
+          "full_name": "Muhammad Waseem"
+        },
+        {
+          "external_id": "8116",
+          "full_name": "Kusal Perera"
+        },
+        {
+          "external_id": "9406",
+          "full_name": "Nicholas Pooran"
+        },
+        {
+          "external_id": "20241",
+          "full_name": "Sanjay Krishnamurthi"
+        },
+        {
+          "external_id": "13748",
+          "full_name": "Sherfane Rutherford"
+        },
+        {
+          "external_id": "657",
+          "full_name": "Kieron Pollard"
+        },
+        {
+          "external_id": "13646",
+          "full_name": "Romario Shepherd"
+        },
+        {
+          "external_id": "10738",
+          "full_name": "Rashid Khan"
+        },
+        {
+          "external_id": "13777",
+          "full_name": "Jordan Thompson"
+        },
+        {
+          "external_id": "6532",
+          "full_name": "Chris Jordan"
+        },
+        {
+          "external_id": "14282",
+          "full_name": "Fazalhaq Farooqi"
+        },
+        {
+          "external_id": "12247",
+          "full_name": "Zahoor Khan"
+        },
+        {
+          "external_id": "13214",
+          "full_name": "Azmatullah Omarzai"
+        },
+        {
+          "external_id": "11220",
+          "full_name": "Alzarri Joseph"
+        },
+        {
+          "external_id": "50458",
+          "full_name": "Shamar Joseph"
+        },
+        {
+          "external_id": "8589",
+          "full_name": "David Wiese"
+        },
+        {
+          "external_id": "1463289",
+          "full_name": "Haider Razzaq"
+        },
+        {
+          "external_id": "8435",
+          "full_name": "Akeal Hosein"
+        },
+        {
+          "external_id": "10045",
+          "full_name": "Liam Livingstone"
+        }
+      ],
+      "table": "players"
+    },
+    {
+      "rows": [
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "18987",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "8116",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "9406",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "20241",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "13748",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "657",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "13646",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "10738",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "13777",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "13214",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "11220",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "50458",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "8589",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1463289",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "8435",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "10045",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "match_players"
+    },
+    {
+      "rows": [
+        {
+          "batting_team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 96,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "total_runs": 79,
+          "wickets": 7
+        }
+      ],
+      "table": "innings"
+    },
+    {
+      "rows": [
+        {
+          "balls_faced": 3,
+          "batting_position": 1,
+          "dismissal_text": "b Azmatullah Omarzai",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "18987",
+            "table": "players"
+          },
+          "runs": 4,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 9,
+          "batting_position": 2,
+          "dismissal_text": "c Liam Livingstone b Shamar Joseph",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "8116",
+            "table": "players"
+          },
+          "runs": 6,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 34,
+          "batting_position": 3,
+          "dismissal_text": "c Liam Livingstone b Wiese",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "9406",
+            "table": "players"
+          },
+          "runs": 23,
+          "sixes": 1,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 2,
+          "batting_position": 4,
+          "dismissal_text": "b Shamar Joseph",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "20241",
+            "table": "players"
+          },
+          "runs": 0,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 7,
+          "batting_position": 5,
+          "dismissal_text": "b Shamar Joseph",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "13748",
+            "table": "players"
+          },
+          "runs": 1,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 18,
+          "batting_position": 6,
+          "dismissal_text": "lbw b Haider Razzaq",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "657",
+            "table": "players"
+          },
+          "runs": 13,
+          "sixes": 1,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 16,
+          "batting_position": 7,
+          "dismissal_text": "batting",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "13646",
+            "table": "players"
+          },
+          "runs": 13,
+          "sixes": 1,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 5,
+          "batting_position": 8,
+          "dismissal_text": "c David Miller b Wiese",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "10738",
+            "table": "players"
+          },
+          "runs": 7,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 2,
+          "batting_position": 9,
+          "dismissal_text": "batting",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "13777",
+            "table": "players"
+          },
+          "runs": 1,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "1307",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "batting_performances"
+    },
+    {
+      "rows": [
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "13214",
+            "table": "players"
+          },
+          "runs_conceded": 13,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "11220",
+            "table": "players"
+          },
+          "runs_conceded": 13,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 0
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "50458",
+            "table": "players"
+          },
+          "runs_conceded": 9,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 3
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 18,
+          "maidens": 1,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "8589",
+            "table": "players"
+          },
+          "runs_conceded": 16,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 2
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 12,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1463289",
+            "table": "players"
+          },
+          "runs_conceded": 12,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 1
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 6,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "8435",
+            "table": "players"
+          },
+          "runs_conceded": 3,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 0
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "175253",
+            "table": "innings"
+          },
+          "legal_balls": 6,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "175253",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "10045",
+            "table": "players"
+          },
+          "runs_conceded": 5,
+          "team_id": {
+            "external_id": "1319",
+            "table": "teams"
+          },
+          "wickets": 0
+        }
+      ],
+      "table": "bowling_performances"
+    }
+  ]
+}
