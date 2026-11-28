@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "provider": "cricketapilive-cricbuzz-cricket",
+    "provider_version": "v2",
+    "capability": "match_scorecard",
+    "resource_key": "178581",
+    "fetched_at": "2026-11-28T14:16:47Z",
+    "upstream_updated_at": "2026-11-28T14:06:56Z",
+    "completeness": "partial"
+  },
+  "tables": [
+    {
+      "rows": [
+        {
+          "external_id": "1483693",
+          "full_name": "Sawan Singh"
+        },
+        {
+          "external_id": "1483713",
+          "full_name": "Ajay Singh"
+        },
+        {
+          "external_id": "1483673",
+          "full_name": "Zorawar Singh"
+        },
+        {
+          "external_id": "1483703",
+          "full_name": "Sukhdev"
+        },
+        {
+          "external_id": "1483687",
+          "full_name": "Suresh Kumar"
+        },
+        {
+          "external_id": "1483717",
+          "full_name": "Ankush Kumar"
+        },
+        {
+          "external_id": "1483677",
+          "full_name": "Vikas Kumar"
+        },
+        {
+          "external_id": "1483733",
+          "full_name": "Vishal Singh"
+        },
+        {
+          "external_id": "1483753",
+          "full_name": "Surinder Singh"
+        },
+        {
+          "external_id": "1483760",
+          "full_name": "Bobby Singh"
+        },
+        {
+          "external_id": "1485499",
+          "full_name": "Rishab Jamwal"
+        },
+        {
+          "external_id": "1485307",
+          "full_name": "Shaik Baji"
+        },
+        {
+          "external_id": "1485273",
+          "full_name": "Vanka Sathish"
+        }
+      ],
+      "table": "players"
+    },
+    {
+      "rows": [
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483693",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483713",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483673",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483703",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483687",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1483717",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1485307",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3693",
+            "table": "teams"
+          }
+        },
+        {
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "participation": "observed",
+          "player_id": {
+            "external_id": "1485273",
+            "table": "players"
+          },
+          "team_id": {
+            "external_id": "3693",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "match_players"
+    },
+    {
+      "rows": [
+        {
+          "batting_team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          },
+          "bowling_team_id": {
+            "external_id": "3693",
+            "table": "teams"
+          },
+          "innings_number": 1,
+          "legal_balls": 18,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "total_runs": 13,
+          "wickets": 4
+        }
+      ],
+      "table": "innings"
+    },
+    {
+      "rows": [
+        {
+          "balls_faced": 1,
+          "batting_position": 1,
+          "dismissal_text": "c Vanka Sathish b Shaik Baji",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483693",
+            "table": "players"
+          },
+          "runs": 0,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 5,
+          "batting_position": 2,
+          "dismissal_text": "batting",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483713",
+            "table": "players"
+          },
+          "runs": 2,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 1,
+          "batting_position": 3,
+          "dismissal_text": "c Annapureddy Kranthi kiran b Shaik Baji",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483673",
+            "table": "players"
+          },
+          "runs": 0,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 1,
+          "batting_position": 4,
+          "dismissal_text": "c P Sathish b Shaik Baji",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483703",
+            "table": "players"
+          },
+          "runs": 0,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 8,
+          "batting_position": 5,
+          "dismissal_text": "run out (Shaik Hafeezulla)",
+          "fours": 0,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 1,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483687",
+            "table": "players"
+          },
+          "runs": 5,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        },
+        {
+          "balls_faced": 2,
+          "batting_position": 6,
+          "dismissal_text": "batting",
+          "fours": 1,
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "is_dismissed": 0,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1483717",
+            "table": "players"
+          },
+          "runs": 4,
+          "sixes": 0,
+          "team_id": {
+            "external_id": "3753",
+            "table": "teams"
+          }
+        }
+      ],
+      "table": "batting_performances"
+    },
+    {
+      "rows": [
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "legal_balls": 12,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1485307",
+            "table": "players"
+          },
+          "runs_conceded": 8,
+          "team_id": {
+            "external_id": "3693",
+            "table": "teams"
+          },
+          "wickets": 3
+        },
+        {
+          "innings_id": {
+            "innings_number": 1,
+            "match_external_id": "178581",
+            "table": "innings"
+          },
+          "legal_balls": 6,
+          "maidens": 0,
+          "match_id": {
+            "external_id": "178581",
+            "table": "matches"
+          },
+          "player_id": {
+            "external_id": "1485273",
+            "table": "players"
+          },
+          "runs_conceded": 4,
+          "team_id": {
+            "external_id": "3693",
+            "table": "teams"
+          },
+          "wickets": 0
+        }
+      ],
+      "table": "bowling_performances"
+    }
+  ]
+}
